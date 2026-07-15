@@ -2,7 +2,7 @@
 # Script: Intel-News-Feed.ps1
 # Author: Bruno Ricci
 # Description: Automated multi-source cyber threat intelligence aggregator
-#              supporting The Hacker News and BleepingComputer.
+#              supporting Local DB Caching, Target-Date Web Fetching, and reports.
 # ==============================================================================
 
 # --- CONFIGURAÇÃO GLOBAL DE PALAVRAS-CHAVE ---
@@ -13,47 +13,121 @@ $Global:TargetKeywords = @(
     "ransomware", "exploit", "active attack"
 )
 
-# --- AUXILIAR: THE HACKER NEWS INGESTION ---
-function Get-HackerNewsFeed {
-    [CmdletBinding()]
-    param (
-        [string]$FeedUrl = "https://thehackernews.com/feeds/posts/default?alt=json"
-    )
+# --- BLACKLIST DE PALAVRAS-CHAVE (NOTÍCIAS A DESCONSIDERAR) ---
+$Global:BlacklistKeywords = @(
+    "webinar", "webminar", "weekly recap"
+)
 
-    try {
-        $Response = Invoke-RestMethod -Uri $FeedUrl -Method Get -Headers @{ "User-Agent" = "Mozilla/5.0" } -TimeoutSec 30
-        $Entries = $Response.feed.entry
-        if (-not $Entries) { return @() }
+# --- CAMINHOS DE ARQUIVOS ---
+$Global:DbPath = Join-Path -Path $PSScriptRoot -ChildPath "feed_database.json"
 
-        $ParsedNews = [System.Collections.Generic.List[object]]::new()
-        foreach ($Entry in $Entries) {
-            $RawDate = $Entry.published.'$t'
-            $ArticleLink = ($Entry.link | Where-Object { $_.rel -eq "alternate" }).href
-
-            # Limpa o texto e garante que termine com reticências limpas
-            $CleanIntro = ($Entry.summary.'$t' -replace '\s+', ' ').Trim()
-            if ($CleanIntro) {
-                $CleanIntro = $CleanIntro.TrimEnd(" .…") + "..."
+# --- AUXILIAR: CARREGAR / SALVAR BANCO DE DADOS LOCAL ---
+function Get-LocalDatabase {
+    $List = [System.Collections.Generic.List[object]]::new()
+    if (Test-Path -Path $Global:DbPath) {
+        try {
+            $Content = Get-Content -Path $Global:DbPath -Raw -ErrorAction Stop
+            if (-not [string]::IsNullOrWhiteSpace($Content)) {
+                $Data = ConvertFrom-Json $Content
+                if ($Data) {
+                    foreach ($Item in $Data) {
+                        $Item.PublishedAt = [DateTime]$Item.PublishedAt
+                        $List.Add($Item)
+                    }
+                }
             }
-
-            $NewsObj = [PSCustomObject]@{
-                Source       = "The Hacker News"
-                Title        = $Entry.title.'$t'
-                Introduction = $CleanIntro
-                PublishedAt  = ([DateTime]$RawDate).ToUniversalTime()
-                Url          = $ArticleLink
-            }
-            $ParsedNews.Add($NewsObj)
         }
-        return $ParsedNews
+        catch {
+            Write-Warning "Falha ao ler banco de dados local. Iniciando novo banco de dados. Erro: $($_)"
+        }
+    }
+    return ,$List
+}
+
+function Save-LocalDatabase {
+    param (
+        [Parameter(Mandatory=$true)]
+        $Database
+    )
+    try {
+        $ReportsFolder = Split-Path -Path $Global:DbPath -Parent
+        if (-not (Test-Path -Path $ReportsFolder)) {
+            New-Item -Path $ReportsFolder -ItemType Directory | Out-Null
+        }
+        $Json = ConvertTo-Json -InputObject $Database -Depth 5
+        $Json | Out-File -FilePath $Global:DbPath -Encoding utf8 -Force
     }
     catch {
-        Write-Warning "Falha ao obter feed do The Hacker News: $_"
-        return @()
+        Write-Error "Falha ao salvar banco de dados local. Erro: $($_)"
     }
 }
 
-# --- AUXILIAR: BLEEPINGCOMPUTER INGESTION ---
+# --- AUXILIAR: THE HACKER NEWS INGESTION (FILTRADO POR DATA E PAGINADO) ---
+function Get-HackerNewsFeed {
+    [CmdletBinding()]
+    param (
+        [string]$BaseFeedUrl = "https://thehackernews.com/feeds/posts/default",
+        [DateTime]$StartDate,
+        [DateTime]$EndDate,
+        [int]$MaxPagesToFetch = 15
+    )
+
+    $ParsedNews = [System.Collections.Generic.List[object]]::new()
+    $MaxResults = 150
+    $StartIndex = 1
+
+    # Formata as datas no padrão RFC 3339 exigido pela API do Blogger
+    $PublishedMin = $StartDate.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
+    $PublishedMax = $EndDate.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
+
+    for ($Page = 1; $Page -le $MaxPagesToFetch; $Page++) {
+        # Monta a URL utilizando paginação E o range de datas
+        $FeedUrl = "$BaseFeedUrl`?alt=json&max-results=$MaxResults&start-index=$StartIndex&published-min=$PublishedMin&published-max=$PublishedMax"
+        
+        Write-Host "INFO: Fetching The Hacker News [Page $Page] (Range: $PublishedMin to $PublishedMax)..." -ForegroundColor Gray
+
+        try {
+            $Response = Invoke-RestMethod -Uri $FeedUrl -Method Get -Headers @{ "User-Agent" = "Mozilla/5.0" } -TimeoutSec 30
+            $Entries = $Response.feed.entry
+            
+            # Se não houver mais registros na página atual, interrompe a paginação
+            if ($null -eq $Entries -or $Entries.Count -eq 0) {
+                Write-Host "INFO: No more entries returned from API on page $Page." -ForegroundColor Gray
+                break
+            }
+
+            foreach ($Entry in $Entries) {
+                $RawDate = $Entry.published.'$t'
+                $ArticleLink = ($Entry.link | Where-Object { $_.rel -eq "alternate" }).href
+
+                $CleanIntro = ($Entry.summary.'$t' -replace '\s+', ' ').Trim()
+                if ($CleanIntro) {
+                    $CleanIntro = $CleanIntro.TrimEnd(" .…") + "..."
+                }
+
+                $NewsObj = [PSCustomObject]@{
+                    Source       = "The Hacker News"
+                    Title        = $Entry.title.'$t'
+                    Introduction = $CleanIntro
+                    PublishedAt  = ([DateTime]$RawDate).ToUniversalTime()
+                    Url          = $ArticleLink
+                }
+                $ParsedNews.Add($NewsObj)
+            }
+
+            $StartIndex += $MaxResults
+            Start-Sleep -Milliseconds 500
+        }
+        catch {
+            Write-Warning "Falha ao obter feed do The Hacker News na página $Page. Erro: $($_)"
+            break
+        }
+    }
+
+    return ,$ParsedNews
+}
+
+# --- AUXILIAR: BLEEPINGCOMPUTER INGESTION (RSS PADRÃO) ---
 function Get-BleepingComputerFeed {
     [CmdletBinding()]
     param (
@@ -68,7 +142,6 @@ function Get-BleepingComputerFeed {
         foreach ($Item in $Response) {
             $RawDate = $Item.pubDate
             
-            # Garante extração de string limpa caso o motor retorne XmlElement
             $RawDescription = ""
             if ($Item.description -is [System.Xml.XmlElement]) {
                 $RawDescription = $Item.description.InnerText
@@ -79,7 +152,6 @@ function Get-BleepingComputerFeed {
             $CleanIntro = $RawDescription -replace '<[^>]+>', ''
             $CleanIntro = ($CleanIntro -replace '\s+', ' ').Trim()
             
-            # Limpa pontuações órfãs no final e adiciona reticências padronizadas
             if ($CleanIntro) {
                 $CleanIntro = $CleanIntro.TrimEnd(" .…") + "..."
             }
@@ -93,15 +165,64 @@ function Get-BleepingComputerFeed {
             }
             $ParsedNews.Add($NewsObj)
         }
-        return $ParsedNews
+        return ,$ParsedNews
     }
     catch {
-        Write-Warning "Falha ao obter feed oficial do BleepingComputer: $_"
+        Write-Warning "Falha ao obter feed oficial do BleepingComputer. Erro: $($_)"
         return @()
     }
 }
 
-# --- AUXILIAR: FILTRAGEM POR PALAVRAS-CHAVE ---
+# --- SINK: SINCRONIZAÇÃO DE FEEDS BASEADA EM DEMANDA DE DATA (SEMPRE REQUISITA) ---
+function Sync-FeedsToDatabase {
+    param (
+        [Parameter(Mandatory=$true)][DateTime]$StartDate,
+        [Parameter(Mandatory=$true)][DateTime]$EndDate
+    )
+
+    $CurrentDb = Get-LocalDatabase
+    if ($null -eq $CurrentDb) {
+        $CurrentDb = [System.Collections.Generic.List[object]]::new()
+    }
+
+    # Calcula a diferença de dias para ajustar a profundidade de páginas necessárias na API do Blogger
+    $DaysDifference = ($EndDate - $StartDate).TotalDays
+    $PagesNeeded = 3
+    if ($DaysDifference -gt 10) {
+        $PagesNeeded = 20 # Amplia o limite para conseguir buscar todo o histórico mensal
+    }
+
+    Write-Host "INFO: Requesting data from web for range: $($StartDate.ToString('yyyy-MM-dd HH:mm:ss')) to $($EndDate.ToString('yyyy-MM-dd HH:mm:ss')) (Depth Pages: $PagesNeeded)..." -ForegroundColor Cyan
+    
+    # Busca dinamicamente na internet para o The Hacker News com filtros de data e profundidade corrigida
+    $ThnData = Get-HackerNewsFeed -StartDate $StartDate -EndDate $EndDate -MaxPagesToFetch $PagesNeeded
+    # O RSS do BC traz os mais recentes, salvamos e filtramos localmente
+    $BcData = Get-BleepingComputerFeed
+
+    $AllFetched = [System.Collections.Generic.List[object]]::new()
+    if ($null -ne $ThnData) { $AllFetched.AddRange($ThnData) }
+    if ($null -ne $BcData) { $AllFetched.AddRange($BcData) }
+
+    $NewArticles = 0
+    foreach ($Article in $AllFetched) {
+        $Exists = $CurrentDb | Where-Object { $_.Url -eq $Article.Url }
+        if (-not $Exists) {
+            $CurrentDb.Add($Article)
+            $NewArticles++
+        }
+    }
+
+    if ($NewArticles -gt 0) {
+        $SortedDb = $CurrentDb | Sort-Object PublishedAt -Descending
+        $ArrayToSave = @($SortedDb)
+        Save-LocalDatabase -Database $ArrayToSave
+        Write-Host "INFO: Added $NewArticles new articles to local database." -ForegroundColor Green
+    } else {
+        Write-Host "INFO: No new articles to add to database for this range." -ForegroundColor Yellow
+    }
+}
+
+# --- AUXILIAR: FILTRAGEM POR PALAVRAS-CHAVE (COM SUPORTE A BLACKLIST) ---
 function Filter-NewsByKeywords {
     [CmdletBinding()]
     param (
@@ -109,15 +230,29 @@ function Filter-NewsByKeywords {
         [array]$NewsList,
 
         [Parameter(Mandatory=$true)]
-        [string[]]$Keywords
+        [string[]]$Keywords,
+
+        [string[]]$Blacklist = $Global:BlacklistKeywords
     )
 
     if ($NewsList.Count -eq 0) { return @() }
 
+    # Escapa e monta o regex para as palavras-chave permitidas (Target)
     $EscapedKeywords = $Keywords | ForEach-Object { [regex]::Escape($_) }
     $Pattern = $EscapedKeywords -join '|'
 
+    # Filtra mantendo apenas o que bate com as palavras-chave alvo
     $FilteredList = $NewsList | Where-Object { $_.Title -match $Pattern }
+
+    # Aplica o filtro da Blacklist (se configurado)
+    if ($null -ne $Blacklist -and $Blacklist.Count -gt 0) {
+        $EscapedBlacklist = $Blacklist | ForEach-Object { [regex]::Escape($_) }
+        $BlacklistPattern = $EscapedBlacklist -join '|'
+        
+        # Remove qualquer item que bater com os termos da blacklist
+        $FilteredList = $FilteredList | Where-Object { $_.Title -notmatch $BlacklistPattern }
+    }
+
     return $FilteredList
 }
 
@@ -140,7 +275,6 @@ function Generate-MarkdownReport {
     $ThnCount   = @($Data | Where-Object { $_.Source -eq "The Hacker News" }).Count
     $BcCount    = @($Data | Where-Object { $_.Source -eq "BleepingComputer" }).Count
 
-    # Mapeamento de termos mais incidentes nos títulos recolhidos
     $TermHits = [System.Collections.Generic.List[string]]::new()
     foreach ($News in $Data) {
         foreach ($Keyword in $Global:TargetKeywords) {
@@ -158,7 +292,6 @@ function Generate-MarkdownReport {
 
     $Content = New-Object System.Collections.Generic.List[string]
 
-    # Estruturação do Relatório Markdown
     $Content.Add("# $Header")
     $Content.Add("")
     $Content.Add("This cyber intelligence report aggregates critical, filtered news from a curated list of trusted security websites and publications.")
@@ -183,15 +316,13 @@ function Generate-MarkdownReport {
 
     foreach ($Item in $Data) {
         $Content.Add("---")
-        # Hierarquia: Título principal (H3)
         $Content.Add("### $($Item.Title)")
         $Content.Add("")
-        # Source e Date unificados de forma discreta
         $Content.Add("*Source:* **$($Item.Source)** | *Published (UTC):* $($Item.PublishedAt.ToString('yyyy-MM-dd HH:mm:ssZ'))")
         $Content.Add("")
         $Content.Add("**Introduction:** $($Item.Introduction)")
         $Content.Add("")
-        $Content.Add("**Url:** [$($Item.Url)]($($($Item.Url)))")
+        $Content.Add("**Url:** [$($Item.Url)]($($Item.Url))")
         $Content.Add("")
     }
 
@@ -199,19 +330,12 @@ function Generate-MarkdownReport {
     Write-Host "SUCCESS: Report generated at $MarkdownPath" -ForegroundColor Green
 }
 
-# --- FUNÇÃO 1: RELATÓRIO DIÁRIO (ONTEM UTC) ---
-function Get-DailyCyberNews {
-    [CmdletBinding()]
-    param (
-        [string[]]$Keywords = $Global:TargetKeywords
-    )
+# ==============================================================================
+# --- FUNÇÕES DE FILTRAGEM E GERAÇÃO DE RELATÓRIO (INTERFACE DO USUÁRIO) ---
+# ==============================================================================
 
-    $OntemStr = ([DateTime]::UtcNow.Date).AddDays(-1).ToString("yyyy-MM-dd")
-    Get-SpecificDateCyberNews -TargetDate $OntemStr -Keywords $Keywords
-}
-
-# --- FUNÇÃO 2: RELATÓRIO DE DATA ESPECÍFICA ---
-function Get-SpecificDateCyberNews {
+# --- FILTRO 1: DATA ESPECÍFICA ---
+function Get-SpecificDateNews {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory=$false)]
@@ -229,32 +353,18 @@ function Get-SpecificDateCyberNews {
         return
     }
 
-    Write-Host "INFO: Aggregating feeds..." -ForegroundColor Cyan
+    # Sincroniza forçando a requisição na internet para o período de 1 dia
+    Sync-FeedsToDatabase -StartDate $TargetDateParsed -EndDate $NextDayParsed
+
+    $LocalDb = Get-LocalDatabase
+    Write-Host "INFO: Filtering local database for: $($TargetDateParsed.ToString('yyyy-MM-dd')) (UTC)" -ForegroundColor Cyan
     
-    $AllFeeds = [System.Collections.Generic.List[object]]::new()
-    
-    $ThnData = Get-HackerNewsFeed
-    if ($null -ne $ThnData -and $ThnData.Count -gt 0) {
-        $AllFeeds.AddRange($ThnData)
-    }
-
-    $BcData = Get-BleepingComputerFeed
-    if ($null -ne $BcData -and $BcData.Count -gt 0) {
-        $AllFeeds.AddRange($BcData)
-    }
-
-    if ($AllFeeds.Count -eq 0) {
-        Write-Warning "Nenhum dado pôde ser coletado das fontes externas."
-        return
-    }
-
-    Write-Host "INFO: Filtering articles published on: $($TargetDateParsed.ToString('yyyy-MM-dd')) (UTC)" -ForegroundColor Cyan
-    $DateFiltered = $AllFeeds | Where-Object { 
+    $DateFiltered = $LocalDb | Where-Object { 
         $_.PublishedAt -ge $TargetDateParsed -and $_.PublishedAt -lt $NextDayParsed 
     }
 
     if ($DateFiltered.Count -eq 0) {
-        Write-Host "INFO: No articles published on this date in UTC." -ForegroundColor Yellow
+        Write-Host "INFO: No cached articles found for this date." -ForegroundColor Yellow
         return
     }
 
@@ -265,12 +375,139 @@ function Get-SpecificDateCyberNews {
         return
     }
 
-    # O arquivo gerado assume exatamente o nome da data em formato YYYY-MM-DD
     $OutputFileName = "$($TargetDateParsed.ToString('yyyy-MM-dd')).md"
     $HeaderTitle    = "Daily Security News Report: $($TargetDateParsed.ToString('yyyy-MM-dd'))"
 
     Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
 }
 
-# --- EXECUÇÃO ---
+# --- FILTRO 2: RELATÓRIO MENSAL ---
+function Get-SpecificMonthNews {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory=$false)]
+        [string]$TargetMonth,
+
+        [string[]]$Keywords = $Global:TargetKeywords
+    )
+
+    # Se nenhum mês for passado, calcula dinamicamente o mês anterior no padrão YYYY-MM
+    if ([string]::IsNullOrWhiteSpace($TargetMonth)) {
+        $TargetMonth = ([DateTime]::UtcNow).AddMonths(-1).ToString("yyyy-MM")
+        Write-Host "INFO: Nenhum mês especificado. Assumindo mês anterior automático: $TargetMonth" -ForegroundColor Gray
+    }
+
+    try {
+        $StartOfMonth = [DateTime]"$TargetMonth-01"
+        $EndOfMonth   = $StartOfMonth.AddMonths(1)
+    }
+    catch {
+        Write-Error "Formato de mês inválido ($TargetMonth). Use o padrão YYYY-MM."
+        return
+    }
+
+    # Sincroniza forçando a requisição na internet para todo o mês (com paginação expandida)
+    Sync-FeedsToDatabase -StartDate $StartOfMonth -EndDate $EndOfMonth
+
+    $LocalDb = Get-LocalDatabase
+    $MonthLabel = $StartOfMonth.ToString("yyyy-MM")
+    Write-Host "INFO: Filtering local database for month: $MonthLabel (UTC)" -ForegroundColor Cyan
+
+    $MonthFiltered = $LocalDb | Where-Object {
+        $_.PublishedAt -ge $StartOfMonth -and $_.PublishedAt -lt $EndOfMonth
+    }
+
+    if ($MonthFiltered.Count -eq 0) {
+        Write-Host "INFO: No cached articles found for month $MonthLabel." -ForegroundColor Yellow
+        return
+    }
+
+    $PriorityNews = Filter-NewsByKeywords -NewsList $MonthFiltered -Keywords $Keywords
+
+    if ($PriorityNews.Count -eq 0) {
+        Write-Host "INFO: $($MonthFiltered.Count) articles found, but zero matches for security keywords." -ForegroundColor Yellow
+        return
+    }
+
+    $OutputFileName = "Monthly-Report-$MonthLabel.md"
+    $HeaderTitle    = "Monthly Security News Summary: $MonthLabel"
+
+    Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
+}
+
+# --- FILTRO 3: INTERVALO CUSTOMIZADO ---
+function Get-NewsByRange {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory=$true)]
+        [string]$StartDate,
+
+        [Parameter(Mandatory=$true)]
+        [string]$EndDate,
+
+        [string[]]$Keywords = $Global:TargetKeywords
+    )
+
+    try {
+        $Start = [DateTime]$StartDate
+        $End   = ([DateTime]$EndDate).Date.AddDays(1)
+    }
+    catch {
+        Write-Error "Formato de datas inválido. Use o padrão YYYY-MM-DD para ambas as datas."
+        return
+    }
+
+    if ($Start -gt $End) {
+        Write-Error "A data inicial ($StartDate) não pode ser posterior à data final ($EndDate)."
+        return
+    }
+
+    # Sincroniza forçando a requisição na internet para o intervalo especificado
+    Sync-FeedsToDatabase -StartDate $Start -EndDate $End
+
+    $LocalDb = Get-LocalDatabase
+    $RangeLabel = "$($Start.ToString('yyyyMMdd'))-to-$((($End).AddDays(-1)).ToString('yyyyMMdd'))"
+    Write-Host "INFO: Filtering local database from $($Start.ToString('yyyy-MM-dd')) to $((($End).AddDays(-1)).ToString('yyyy-MM-dd')) (UTC)" -ForegroundColor Cyan
+
+    $RangeFiltered = $LocalDb | Where-Object {
+        $_.PublishedAt -ge $Start -and $_.PublishedAt -lt $End
+    }
+
+    if ($RangeFiltered.Count -eq 0) {
+        Write-Host "INFO: No cached articles found for the specified date range." -ForegroundColor Yellow
+        return
+    }
+
+    $PriorityNews = Filter-NewsByKeywords -NewsList $RangeFiltered -Keywords $Keywords
+
+    if ($PriorityNews.Count -eq 0) {
+        Write-Host "INFO: $($RangeFiltered.Count) articles found, but zero matches for security keywords." -ForegroundColor Yellow
+        return
+    }
+
+    $OutputFileName = "CustomRange-Report-$RangeLabel.md"
+    $HeaderTitle    = "Custom Range Security News Report ($($Start.ToString('yyyy-MM-dd')) to $((($End).AddDays(-1)).ToString('yyyy-MM-dd')))"
+
+    Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
+}
+
+# --- HELPER DE EXECUÇÃO DIÁRIA ---
+function Get-DailyCyberNews {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory=$false)]
+        [string]$TargetDate
+    )
+
+    if ([string]::IsNullOrWhiteSpace($TargetDate)) {
+        $TargetDate = ([DateTime]::UtcNow.Date).AddDays(-1).ToString("yyyy-MM-dd")
+        Write-Host "INFO: Nenhuma data especificada. Buscando notícias de ontem: $TargetDate" -ForegroundColor Gray
+    }
+
+    Get-SpecificDateNews -TargetDate $TargetDate
+}
+
+# --- EXECUÇÃO PADRÃO ---
+# Roda para ontem por padrão se o script for executado sem parâmetros diretos
 Get-DailyCyberNews
+Get-SpecificMonthNews 
