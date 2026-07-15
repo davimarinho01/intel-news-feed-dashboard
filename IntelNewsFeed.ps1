@@ -5,7 +5,7 @@
 #              supporting Local DB Caching, Target-Date Web Fetching, and reports.
 # ==============================================================================
 
-# --- CONFIGURAÇÃO GLOBAL DE PALAVRAS-CHAVE ---
+# --- GLOBAL TARGET KEYWORDS CONFIGURATION ---
 $Global:TargetKeywords = @(
     "malware", "0day", "0-day", "zeroday", "zero-day", 
     "critical", "security flaw", "code execution", 
@@ -13,15 +13,15 @@ $Global:TargetKeywords = @(
     "ransomware", "exploit", "active attack"
 )
 
-# --- BLACKLIST DE PALAVRAS-CHAVE (NOTÍCIAS A DESCONSIDERAR) ---
+# --- GLOBAL BLACKLIST KEYWORDS CONFIGURATION (TERMS TO EXCLUDE) ---
 $Global:BlacklistKeywords = @(
     "webinar", "webminar", "weekly recap"
 )
 
-# --- CAMINHOS DE ARQUIVOS ---
+# --- FILE PATH CONFIGURATION ---
 $Global:DbPath = Join-Path -Path $PSScriptRoot -ChildPath "feed_database.json"
 
-# --- AUXILIAR: CARREGAR / SALVAR BANCO DE DADOS LOCAL ---
+# --- HELPER: LOAD / SAVE LOCAL DATABASE ---
 function Get-LocalDatabase {
     $List = [System.Collections.Generic.List[object]]::new()
     if (Test-Path -Path $Global:DbPath) {
@@ -38,7 +38,7 @@ function Get-LocalDatabase {
             }
         }
         catch {
-            Write-Warning "Falha ao ler banco de dados local. Iniciando novo banco de dados. Erro: $($_)"
+            Write-Warning "Failed to read local database. Starting a new database. Error: $($_)"
         }
     }
     return ,$List
@@ -58,11 +58,11 @@ function Save-LocalDatabase {
         $Json | Out-File -FilePath $Global:DbPath -Encoding utf8 -Force
     }
     catch {
-        Write-Error "Falha ao salvar banco de dados local. Erro: $($_)"
+        Write-Error "Failed to save local database. Error: $($_)"
     }
 }
 
-# --- AUXILIAR: THE HACKER NEWS INGESTION (FILTRADO POR DATA E PAGINADO) ---
+# --- HELPER: THE HACKER NEWS INGESTION (DATE-FILTERED & PAGINATED) ---
 function Get-HackerNewsFeed {
     [CmdletBinding()]
     param (
@@ -76,12 +76,11 @@ function Get-HackerNewsFeed {
     $MaxResults = 150
     $StartIndex = 1
 
-    # Formata as datas no padrão RFC 3339 exigido pela API do Blogger
+    # Format dates to RFC 3339 standard required by the Blogger API
     $PublishedMin = $StartDate.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
     $PublishedMax = $EndDate.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
 
     for ($Page = 1; $Page -le $MaxPagesToFetch; $Page++) {
-        # Monta a URL utilizando paginação E o range de datas
         $FeedUrl = "$BaseFeedUrl`?alt=json&max-results=$MaxResults&start-index=$StartIndex&published-min=$PublishedMin&published-max=$PublishedMax"
         
         Write-Host "INFO: Fetching The Hacker News [Page $Page] (Range: $PublishedMin to $PublishedMax)..." -ForegroundColor Gray
@@ -90,7 +89,6 @@ function Get-HackerNewsFeed {
             $Response = Invoke-RestMethod -Uri $FeedUrl -Method Get -Headers @{ "User-Agent" = "Mozilla/5.0" } -TimeoutSec 30
             $Entries = $Response.feed.entry
             
-            # Se não houver mais registros na página atual, interrompe a paginação
             if ($null -eq $Entries -or $Entries.Count -eq 0) {
                 Write-Host "INFO: No more entries returned from API on page $Page." -ForegroundColor Gray
                 break
@@ -99,11 +97,8 @@ function Get-HackerNewsFeed {
             foreach ($Entry in $Entries) {
                 $RawDate = $Entry.published.'$t'
                 $ArticleLink = ($Entry.link | Where-Object { $_.rel -eq "alternate" }).href
-
                 $CleanIntro = ($Entry.summary.'$t' -replace '\s+', ' ').Trim()
-                if ($CleanIntro) {
-                    $CleanIntro = $CleanIntro.TrimEnd(" .…") + "..."
-                }
+                if ($CleanIntro) { $CleanIntro = $CleanIntro.TrimEnd(" .…") + "..." }
 
                 $NewsObj = [PSCustomObject]@{
                     Source       = "The Hacker News"
@@ -114,25 +109,21 @@ function Get-HackerNewsFeed {
                 }
                 $ParsedNews.Add($NewsObj)
             }
-
             $StartIndex += $MaxResults
             Start-Sleep -Milliseconds 500
         }
         catch {
-            Write-Warning "Falha ao obter feed do The Hacker News na página $Page. Erro: $($_)"
+            Write-Warning "Failed to fetch The Hacker News feed on page $Page. Error: $($_)"
             break
         }
     }
-
     return ,$ParsedNews
 }
 
-# --- AUXILIAR: BLEEPINGCOMPUTER INGESTION (RSS PADRÃO) ---
+# --- HELPER: BLEEPINGCOMPUTER INGESTION (STANDARD RSS) ---
 function Get-BleepingComputerFeed {
     [CmdletBinding()]
-    param (
-        [string]$FeedUrl = "https://www.bleepingcomputer.com/feed/"
-    )
+    param ([string]$FeedUrl = "https://www.bleepingcomputer.com/feed/")
 
     try {
         $Response = Invoke-RestMethod -Uri $FeedUrl -Method Get -TimeoutSec 30
@@ -141,20 +132,9 @@ function Get-BleepingComputerFeed {
         $ParsedNews = [System.Collections.Generic.List[object]]::new()
         foreach ($Item in $Response) {
             $RawDate = $Item.pubDate
-            
-            $RawDescription = ""
-            if ($Item.description -is [System.Xml.XmlElement]) {
-                $RawDescription = $Item.description.InnerText
-            } else {
-                $RawDescription = $Item.description.ToString()
-            }
-
-            $CleanIntro = $RawDescription -replace '<[^>]+>', ''
-            $CleanIntro = ($CleanIntro -replace '\s+', ' ').Trim()
-            
-            if ($CleanIntro) {
-                $CleanIntro = $CleanIntro.TrimEnd(" .…") + "..."
-            }
+            $RawDescription = if ($Item.description -is [System.Xml.XmlElement]) { $Item.description.InnerText } else { $Item.description.ToString() }
+            $CleanIntro = ($RawDescription -replace '<[^>]+>', '' -replace '\s+', ' ').Trim()
+            if ($CleanIntro) { $CleanIntro = $CleanIntro.TrimEnd(" .…") + "..." }
 
             $NewsObj = [PSCustomObject]@{
                 Source       = "BleepingComputer"
@@ -168,35 +148,24 @@ function Get-BleepingComputerFeed {
         return ,$ParsedNews
     }
     catch {
-        Write-Warning "Falha ao obter feed oficial do BleepingComputer. Erro: $($_)"
+        Write-Warning "Failed to fetch BleepingComputer RSS feed. Error: $($_)"
         return @()
     }
 }
 
-# --- SINK: SINCRONIZAÇÃO DE FEEDS BASEADA EM DEMANDA DE DATA (SEMPRE REQUISITA) ---
+# --- SINK: FEED SYNCHRONIZATION ---
 function Sync-FeedsToDatabase {
-    param (
-        [Parameter(Mandatory=$true)][DateTime]$StartDate,
-        [Parameter(Mandatory=$true)][DateTime]$EndDate
-    )
+    param ([Parameter(Mandatory=$true)][DateTime]$StartDate, [Parameter(Mandatory=$true)][DateTime]$EndDate)
 
     $CurrentDb = Get-LocalDatabase
-    if ($null -eq $CurrentDb) {
-        $CurrentDb = [System.Collections.Generic.List[object]]::new()
-    }
+    if ($null -eq $CurrentDb) { $CurrentDb = [System.Collections.Generic.List[object]]::new() }
 
-    # Calcula a diferença de dias para ajustar a profundidade de páginas necessárias na API do Blogger
     $DaysDifference = ($EndDate - $StartDate).TotalDays
-    $PagesNeeded = 3
-    if ($DaysDifference -gt 10) {
-        $PagesNeeded = 20 # Amplia o limite para conseguir buscar todo o histórico mensal
-    }
+    $PagesNeeded = if ($DaysDifference -gt 10) { 20 } else { 3 }
 
-    Write-Host "INFO: Requesting data from web for range: $($StartDate.ToString('yyyy-MM-dd HH:mm:ss')) to $($EndDate.ToString('yyyy-MM-dd HH:mm:ss')) (Depth Pages: $PagesNeeded)..." -ForegroundColor Cyan
+    Write-Host "INFO: Syncing data range: $($StartDate.ToString('yyyy-MM-dd')) to $($EndDate.ToString('yyyy-MM-dd')) (Pages: $PagesNeeded)..." -ForegroundColor Cyan
     
-    # Busca dinamicamente na internet para o The Hacker News com filtros de data e profundidade corrigida
     $ThnData = Get-HackerNewsFeed -StartDate $StartDate -EndDate $EndDate -MaxPagesToFetch $PagesNeeded
-    # O RSS do BC traz os mais recentes, salvamos e filtramos localmente
     $BcData = Get-BleepingComputerFeed
 
     $AllFetched = [System.Collections.Generic.List[object]]::new()
@@ -205,309 +174,85 @@ function Sync-FeedsToDatabase {
 
     $NewArticles = 0
     foreach ($Article in $AllFetched) {
-        $Exists = $CurrentDb | Where-Object { $_.Url -eq $Article.Url }
-        if (-not $Exists) {
+        if (-not ($CurrentDb | Where-Object { $_.Url -eq $Article.Url })) {
             $CurrentDb.Add($Article)
             $NewArticles++
         }
     }
 
     if ($NewArticles -gt 0) {
-        $SortedDb = $CurrentDb | Sort-Object PublishedAt -Descending
-        $ArrayToSave = @($SortedDb)
-        Save-LocalDatabase -Database $ArrayToSave
-        Write-Host "INFO: Added $NewArticles new articles to local database." -ForegroundColor Green
-    } else {
-        Write-Host "INFO: No new articles to add to database for this range." -ForegroundColor Yellow
+        Save-LocalDatabase -Database ($CurrentDb | Sort-Object PublishedAt -Descending)
+        Write-Host "INFO: Added $NewArticles new articles." -ForegroundColor Green
     }
 }
 
-# --- AUXILIAR: FILTRAGEM POR PALAVRAS-CHAVE (COM SUPORTE A BLACKLIST) ---
+# --- HELPER: FILTERING (WITH BLACKLIST) ---
 function Filter-NewsByKeywords {
     [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true)]
-        [array]$NewsList,
-
-        [Parameter(Mandatory=$true)]
-        [string[]]$Keywords,
-
-        [string[]]$Blacklist = $Global:BlacklistKeywords
-    )
+    param ([Parameter(Mandatory=$true)][array]$NewsList, [Parameter(Mandatory=$true)][string[]]$Keywords, [string[]]$Blacklist = $Global:BlacklistKeywords)
 
     if ($NewsList.Count -eq 0) { return @() }
-
-    # Escapa e monta o regex para as palavras-chave permitidas (Target)
-    $EscapedKeywords = $Keywords | ForEach-Object { [regex]::Escape($_) }
-    $Pattern = $EscapedKeywords -join '|'
-
-    # Filtra mantendo apenas o que bate com as palavras-chave alvo
+    $Pattern = ($Keywords | ForEach-Object { [regex]::Escape($_) }) -join '|'
     $FilteredList = $NewsList | Where-Object { $_.Title -match $Pattern }
 
-    # Aplica o filtro da Blacklist (se configurado)
     if ($null -ne $Blacklist -and $Blacklist.Count -gt 0) {
-        $EscapedBlacklist = $Blacklist | ForEach-Object { [regex]::Escape($_) }
-        $BlacklistPattern = $EscapedBlacklist -join '|'
-        
-        # Remove qualquer item que bater com os termos da blacklist
+        $BlacklistPattern = ($Blacklist | ForEach-Object { [regex]::Escape($_) }) -join '|'
         $FilteredList = $FilteredList | Where-Object { $_.Title -notmatch $BlacklistPattern }
     }
-
     return $FilteredList
 }
 
-# --- AUXILIAR: GERADOR DE RELATÓRIO MARKDOWN ---
+# --- HELPER: MARKDOWN GENERATOR ---
 function Generate-MarkdownReport {
-    param (
-        [Parameter(Mandatory=$true)]$Data,
-        [Parameter(Mandatory=$true)][string]$FileName,
-        [Parameter(Mandatory=$true)][string]$Header
-    )
+    param ([Parameter(Mandatory=$true)]$Data, [Parameter(Mandatory=$true)][string]$FileName, [Parameter(Mandatory=$true)][string]$Header)
 
     $ReportsFolder = Join-Path -Path $PSScriptRoot -ChildPath "reports"
-    $MarkdownPath  = Join-Path -Path $ReportsFolder -ChildPath $FileName
-
-    if (-not (Test-Path -Path $ReportsFolder)) {
-        New-Item -Path $ReportsFolder -ItemType Directory | Out-Null
-    }
-
-    $TotalCount = @($Data).Count
-    $ThnCount   = @($Data | Where-Object { $_.Source -eq "The Hacker News" }).Count
-    $BcCount    = @($Data | Where-Object { $_.Source -eq "BleepingComputer" }).Count
-
-    $TermHits = [System.Collections.Generic.List[string]]::new()
-    foreach ($News in $Data) {
-        foreach ($Keyword in $Global:TargetKeywords) {
-            if ($News.Title.ToLower().Contains($Keyword.ToLower())) {
-                $TermHits.Add($Keyword)
-            }
-        }
-    }
+    if (-not (Test-Path -Path $ReportsFolder)) { New-Item -Path $ReportsFolder -ItemType Directory | Out-Null }
     
-    $HotTerms = "None"
-    if ($TermHits.Count -gt 0) {
-        $Top3Groups = $TermHits | Group-Object | Sort-Object Count -Descending | Select-Object -First 3
-        $HotTerms = ($Top3Groups.Name) -join ", "
-    }
-
     $Content = New-Object System.Collections.Generic.List[string]
-
-    $Content.Add("# $Header")
-    $Content.Add("")
-    $Content.Add("This cyber intelligence report aggregates critical, filtered news from a curated list of trusted security websites and publications.")
-    $Content.Add("")
-
-    # Sumário Executivo
-    $Content.Add("## Executive Summary")
-    $Content.Add("This section provides a high-level overview of high-priority cybersecurity news matching our target monitoring criteria.")
-    $Content.Add("")
-    $Content.Add("| Metric | Value |")
-    $Content.Add("| :--- | :--- |")
-    $Content.Add("| **Total News** | $TotalCount |")
-    $Content.Add("| **The Hacker News** | $ThnCount |")
-    $Content.Add("| **BleepingComputer** | $BcCount |")
-    $Content.Add("| **Top Mentioned Indicators** | $HotTerms |")
-    $Content.Add("")
-
-    # Detalhamento dos Registros
-    $Content.Add("## Security News Findings")
-    $Content.Add("The following selection covers the security news matching our monitoring criteria.")
-    $Content.Add("")
-
+    $Content.Add("# $Header`n`nThis cyber intelligence report aggregates critical, filtered news.")
+    $Content.Add("## Security News Findings`n")
+    
     foreach ($Item in $Data) {
-        $Content.Add("---")
-        $Content.Add("### $($Item.Title)")
-        $Content.Add("")
-        $Content.Add("*Source:* **$($Item.Source)** | *Published (UTC):* $($Item.PublishedAt.ToString('yyyy-MM-dd HH:mm:ssZ'))")
-        $Content.Add("")
-        $Content.Add("**Introduction:** $($Item.Introduction)")
-        $Content.Add("")
-        $Content.Add("**Url:** [$($Item.Url)]($($Item.Url))")
-        $Content.Add("")
+        $Content.Add("---`n### $($Item.Title)`n*Source:* **$($Item.Source)** | *Published (UTC):* $($Item.PublishedAt.ToString('yyyy-MM-dd HH:mm:ssZ'))`n`n**Introduction:** $($Item.Introduction)`n`n**Url:** [$($Item.Url)]($($Item.Url))`n")
     }
 
-    $Content | Out-File -FilePath $MarkdownPath -Encoding utf8 -Force
-    Write-Host "SUCCESS: Report generated at $MarkdownPath" -ForegroundColor Green
+    $Content | Out-File -FilePath (Join-Path $ReportsFolder $FileName) -Encoding utf8 -Force
+    Write-Host "SUCCESS: Report generated at $(Join-Path $ReportsFolder $FileName)" -ForegroundColor Green
 }
 
-# ==============================================================================
-# --- FUNÇÕES DE FILTRAGEM E GERAÇÃO DE RELATÓRIO (INTERFACE DO USUÁRIO) ---
-# ==============================================================================
-
-# --- FILTRO 1: DATA ESPECÍFICA ---
+# --- FILTERS ---
 function Get-SpecificDateNews {
     [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$false)]
-        [string]$TargetDate = ([DateTime]::UtcNow.Date).AddDays(-1).ToString("yyyy-MM-dd"),
-
-        [string[]]$Keywords = $Global:TargetKeywords
-    )
-
-    try {
-        $TargetDateParsed = [DateTime]$TargetDate
-        $NextDayParsed    = $TargetDateParsed.AddDays(1)
-    }
-    catch {
-        Write-Error "Formato de data inválido ($TargetDate). Use o padrão YYYY-MM-DD."
-        return
-    }
-
-    # Sincroniza forçando a requisição na internet para o período de 1 dia
-    Sync-FeedsToDatabase -StartDate $TargetDateParsed -EndDate $NextDayParsed
-
-    $LocalDb = Get-LocalDatabase
-    Write-Host "INFO: Filtering local database for: $($TargetDateParsed.ToString('yyyy-MM-dd')) (UTC)" -ForegroundColor Cyan
-    
-    $DateFiltered = $LocalDb | Where-Object { 
-        $_.PublishedAt -ge $TargetDateParsed -and $_.PublishedAt -lt $NextDayParsed 
-    }
-
-    if ($DateFiltered.Count -eq 0) {
-        Write-Host "INFO: No cached articles found for this date." -ForegroundColor Yellow
-        return
-    }
-
-    $PriorityNews = Filter-NewsByKeywords -NewsList $DateFiltered -Keywords $Keywords
-
-    if ($PriorityNews.Count -eq 0) {
-        Write-Host "INFO: $($DateFiltered.Count) articles found, but zero matches for security keywords." -ForegroundColor Yellow
-        return
-    }
-
-    $OutputFileName = "$($TargetDateParsed.ToString('yyyy-MM-dd')).md"
-    $HeaderTitle    = "Daily Security News Report: $($TargetDateParsed.ToString('yyyy-MM-dd'))"
-
-    Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
+    param ([string]$TargetDate = ([DateTime]::UtcNow.Date).AddDays(-1).ToString("yyyy-MM-dd"), [string[]]$Keywords = $Global:TargetKeywords)
+    $Start = [DateTime]$TargetDate; $End = $Start.AddDays(1)
+    Sync-FeedsToDatabase -StartDate $Start -EndDate $End
+    $PriorityNews = Filter-NewsByKeywords -NewsList (Get-LocalDatabase | Where-Object { $_.PublishedAt -ge $Start -and $_.PublishedAt -lt $End }) -Keywords $Keywords
+    if ($PriorityNews) { Generate-MarkdownReport -Data $PriorityNews -FileName "$TargetDate.md" -Header "Daily Security News: $TargetDate" }
 }
 
-# --- FILTRO 2: RELATÓRIO MENSAL ---
 function Get-SpecificMonthNews {
     [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$false)]
-        [string]$TargetMonth,
-
-        [string[]]$Keywords = $Global:TargetKeywords
-    )
-
-    # Se nenhum mês for passado, calcula dinamicamente o mês anterior no padrão YYYY-MM
-    if ([string]::IsNullOrWhiteSpace($TargetMonth)) {
-        $TargetMonth = ([DateTime]::UtcNow).AddMonths(-1).ToString("yyyy-MM")
-        Write-Host "INFO: Nenhum mês especificado. Assumindo mês anterior automático: $TargetMonth" -ForegroundColor Gray
-    }
-
-    try {
-        $StartOfMonth = [DateTime]"$TargetMonth-01"
-        $EndOfMonth   = $StartOfMonth.AddMonths(1)
-    }
-    catch {
-        Write-Error "Formato de mês inválido ($TargetMonth). Use o padrão YYYY-MM."
-        return
-    }
-
-    # Sincroniza forçando a requisição na internet para todo o mês (com paginação expandida)
-    Sync-FeedsToDatabase -StartDate $StartOfMonth -EndDate $EndOfMonth
-
-    $LocalDb = Get-LocalDatabase
-    $MonthLabel = $StartOfMonth.ToString("yyyy-MM")
-    Write-Host "INFO: Filtering local database for month: $MonthLabel (UTC)" -ForegroundColor Cyan
-
-    $MonthFiltered = $LocalDb | Where-Object {
-        $_.PublishedAt -ge $StartOfMonth -and $_.PublishedAt -lt $EndOfMonth
-    }
-
-    if ($MonthFiltered.Count -eq 0) {
-        Write-Host "INFO: No cached articles found for month $MonthLabel." -ForegroundColor Yellow
-        return
-    }
-
-    $PriorityNews = Filter-NewsByKeywords -NewsList $MonthFiltered -Keywords $Keywords
-
-    if ($PriorityNews.Count -eq 0) {
-        Write-Host "INFO: $($MonthFiltered.Count) articles found, but zero matches for security keywords." -ForegroundColor Yellow
-        return
-    }
-
-    $OutputFileName = "Monthly-Report-$MonthLabel.md"
-    $HeaderTitle    = "Monthly Security News Summary: $MonthLabel"
-
-    Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
+    param ([string]$TargetMonth, [string[]]$Keywords = $Global:TargetKeywords)
+    if (-not $TargetMonth) { $TargetMonth = ([DateTime]::UtcNow).AddMonths(-1).ToString("yyyy-MM") }
+    $Start = [DateTime]"$TargetMonth-01"; $End = $Start.AddMonths(1)
+    Sync-FeedsToDatabase -StartDate $Start -EndDate $End
+    $PriorityNews = Filter-NewsByKeywords -NewsList (Get-LocalDatabase | Where-Object { $_.PublishedAt -ge $Start -and $_.PublishedAt -lt $End }) -Keywords $Keywords
+    if ($PriorityNews) { Generate-MarkdownReport -Data $PriorityNews -FileName "Monthly-Report-$TargetMonth.md" -Header "Monthly Security News: $TargetMonth" }
 }
 
-# --- FILTRO 3: INTERVALO CUSTOMIZADO ---
 function Get-NewsByRange {
     [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true)]
-        [string]$StartDate,
-
-        [Parameter(Mandatory=$true)]
-        [string]$EndDate,
-
-        [string[]]$Keywords = $Global:TargetKeywords
-    )
-
-    try {
-        $Start = [DateTime]$StartDate
-        $End   = ([DateTime]$EndDate).Date.AddDays(1)
-    }
-    catch {
-        Write-Error "Formato de datas inválido. Use o padrão YYYY-MM-DD para ambas as datas."
-        return
-    }
-
-    if ($Start -gt $End) {
-        Write-Error "A data inicial ($StartDate) não pode ser posterior à data final ($EndDate)."
-        return
-    }
-
-    # Sincroniza forçando a requisição na internet para o intervalo especificado
+    param ([Parameter(Mandatory=$true)][string]$StartDate, [Parameter(Mandatory=$true)][string]$EndDate, [string[]]$Keywords = $Global:TargetKeywords)
+    $Start = [DateTime]$StartDate; $End = ([DateTime]$EndDate).Date.AddDays(1)
     Sync-FeedsToDatabase -StartDate $Start -EndDate $End
-
-    $LocalDb = Get-LocalDatabase
-    $RangeLabel = "$($Start.ToString('yyyyMMdd'))-to-$((($End).AddDays(-1)).ToString('yyyyMMdd'))"
-    Write-Host "INFO: Filtering local database from $($Start.ToString('yyyy-MM-dd')) to $((($End).AddDays(-1)).ToString('yyyy-MM-dd')) (UTC)" -ForegroundColor Cyan
-
-    $RangeFiltered = $LocalDb | Where-Object {
-        $_.PublishedAt -ge $Start -and $_.PublishedAt -lt $End
+    $PriorityNews = Filter-NewsByKeywords -NewsList (Get-LocalDatabase | Where-Object { $_.PublishedAt -ge $Start -and $_.PublishedAt -lt $End }) -Keywords $Keywords
+    if ($PriorityNews) { 
+        $FileName = "Range-Report-$($StartDate)-to-$($EndDate).md"
+        Generate-MarkdownReport -Data $PriorityNews -FileName $FileName -Header "Custom Range Report ($StartDate to $EndDate)" 
     }
-
-    if ($RangeFiltered.Count -eq 0) {
-        Write-Host "INFO: No cached articles found for the specified date range." -ForegroundColor Yellow
-        return
-    }
-
-    $PriorityNews = Filter-NewsByKeywords -NewsList $RangeFiltered -Keywords $Keywords
-
-    if ($PriorityNews.Count -eq 0) {
-        Write-Host "INFO: $($RangeFiltered.Count) articles found, but zero matches for security keywords." -ForegroundColor Yellow
-        return
-    }
-
-    $OutputFileName = "CustomRange-Report-$RangeLabel.md"
-    $HeaderTitle    = "Custom Range Security News Report ($($Start.ToString('yyyy-MM-dd')) to $((($End).AddDays(-1)).ToString('yyyy-MM-dd')))"
-
-    Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
 }
 
-# --- HELPER DE EXECUÇÃO DIÁRIA ---
-function Get-DailyCyberNews {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$false)]
-        [string]$TargetDate
-    )
-
-    if ([string]::IsNullOrWhiteSpace($TargetDate)) {
-        $TargetDate = ([DateTime]::UtcNow.Date).AddDays(-1).ToString("yyyy-MM-dd")
-        Write-Host "INFO: Nenhuma data especificada. Buscando notícias de ontem: $TargetDate" -ForegroundColor Gray
-    }
-
-    Get-SpecificDateNews -TargetDate $TargetDate
-}
-
-# --- EXECUÇÃO PADRÃO ---
-# Roda para ontem por padrão se o script for executado sem parâmetros diretos
-Get-DailyCyberNews
-Get-SpecificMonthNews 
+# Execution
+Get-SpecificDateNews
+Get-SpecificMonthNews
