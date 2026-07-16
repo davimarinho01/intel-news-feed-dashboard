@@ -14,7 +14,6 @@ This project provides an automated pipeline to monitor and track the cybersecuri
 ## 🛠️ Technology Stack
 
 - **Language:** PowerShell (Core)
-- **Data Persistence:** Local JSON-based caching
 - **Intelligence Sources:** The Hacker News & BleepingComputer
 - **Output:** Markdown (.md) reports
 
