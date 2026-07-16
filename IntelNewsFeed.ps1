@@ -488,3 +488,5 @@ function Get-DailyCyberNews {
 
 # --- EXECUÇÃO PADRÃO ---
 Get-DailyCyberNews
+Get-SpecificMonthNews
+Get-NewsByRange -StartDate "2026-05-01" -EndDate "2026-05-15"
