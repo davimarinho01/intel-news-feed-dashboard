@@ -49,6 +49,12 @@ Each generated report includes an Executive Summary and detailed findings per ar
   - Brief introduction/summary.
   - Direct URL for deeper investigation.
 
+## 🤖 Automation Schedule
+
+The feed is configured to run automatically via GitHub Actions:
+
+- **Schedule:** Daily at `03:00 AM UTC`.  
+ 
  ## 📂 Project Structure
 ```
 ├── reports/                # History of generated daily/monthly/range reports
