@@ -334,15 +334,21 @@ function Generate-MarkdownReport {
 # --- MAIN FILTRATION & REPORT GENERATION FUNCTIONS (USER INTERFACE) ---
 # ==============================================================================
 
-# --- FILTER 1: SPECIFIC DATE REPORT ---
-function Get-SpecificDateNews {
+# --- FILTER 1: SINGLE DATE REPORT ---
+function Get-NewsByDate {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory=$false)]
-        [string]$TargetDate = ([DateTime]::UtcNow.Date).AddDays(-1).ToString("yyyy-MM-dd"),
+        [string]$TargetDate,
 
         [string[]]$Keywords = $Global:TargetKeywords
     )
+
+    # If no date is specified, default to yesterday
+    if ([string]::IsNullOrWhiteSpace($TargetDate)) {
+        $TargetDate = ([DateTime]::UtcNow.Date).AddDays(-1).ToString("yyyy-MM-dd")
+        Write-Host "INFO: No specific date provided. Defaulting to yesterday: $TargetDate" -ForegroundColor Gray
+    }
 
     try {
         $TargetDateParsed = [DateTime]$TargetDate
@@ -382,7 +388,7 @@ function Get-SpecificDateNews {
 }
 
 # --- FILTER 2: MONTHLY REPORT (DEFAULTS TO PREVIOUS MONTH IF OMITTED) ---
-function Get-SpecificMonthNews {
+function Get-NewsByMonth {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory=$false)]
@@ -491,23 +497,10 @@ function Get-NewsByRange {
     Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
 }
 
-# --- DAILY EXECUTION HELPER WRAPPER ---
-function Get-DailyCyberNews {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$false)]
-        [string]$TargetDate
-    )
-
-    if ([string]::IsNullOrWhiteSpace($TargetDate)) {
-        $TargetDate = ([DateTime]::UtcNow.Date).AddDays(-1).ToString("yyyy-MM-dd")
-        Write-Host "INFO: No specific date provided. Fetching yesterday's entries: $TargetDate" -ForegroundColor Gray
-    }
-
-    Get-SpecificDateNews -TargetDate $TargetDate
-}
-
 # --- DEFAULT SCRIPT EXECUTION ---
 # Runs daily checks for yesterday's data on script execution if no parameters are supplied
-Get-DailyCyberNews
-Get-SpecificMonthNews 
+Get-NewsByDate
+Get-NewsByDate -TargetDate "2026-05-13"
+Get-NewsByDate -TargetDate "2026-04-13"
+Get-NewsByMonth 
+Get-NewsByRange -StartDate "2026-05-01" -EndDate "2026-05-15"
