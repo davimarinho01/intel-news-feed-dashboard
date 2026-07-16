@@ -29,3 +29,32 @@ Checks for news published on a specific date (defaults to yesterday if no date i
 ```
 Get-NewsByDate -TargetDate "2026-07-15"
 ```
+### Monthly Summary
+Aggregates all relevant security news published during a specific month.
+```
+Get-NewsByMonth -TargetMonth "2026-06"
+```
+### Custom Range
+Generates a report for a specific window of time.
+```
+Get-NewsByRange -StartDate "2026-07-01" -EndDate "2026-07-15"
+```
+
+## 📋 Report Structure
+Each generated report includes an Executive Summary and detailed findings per article:
+
+- Metric Table: Total count of news and source breakdown.
+- Top Mentions: Analysis of most frequent threat indicators identified.
+- Article Details:
+  - Title of the threat report.
+  - Source and precise UTC publication timestamp.
+  - Brief introduction/summary.
+  - Direct URL for deeper investigation.
+
+ ## 📂 Project Structure
+```
+├── reports/                # History of generated daily/monthly/range reports
+├── feed_database.json      # Local cache of ingested security articles
+├── Intel-News-Feed.ps1     # Main PowerShell logic
+└── README.md               # Project documentation
+```
