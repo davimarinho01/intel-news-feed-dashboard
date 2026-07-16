@@ -46,7 +46,7 @@ Each generated report includes an Executive Summary and detailed findings per ar
 - Metric Table: Total count of news and source breakdown.
 - Top Mentions: Analysis of most frequent threat indicators identified.
 - Article Details:
-  - Title of the threat report.
+  - Title of the News.
   - Source and precise UTC publication timestamp.
   - Brief introduction/summary.
   - Direct URL for deeper investigation.
