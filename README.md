@@ -58,3 +58,10 @@ Each generated report includes an Executive Summary and detailed findings per ar
 ├── Intel-News-Feed.ps1     # Main PowerShell logic
 └── README.md               # Project documentation
 ```
+
+## 👤 Author
+**Bruno Ricci, CISSP, OSCP, PMP**  
+*Cybersecurity Specialist | Technical Author*  
+- **Website:** [techexpert.tips](https://techexpert.tips)
+- **LinkedIn:** [linkedin.com/in/brunoricci/](https://www.linkedin.com/in/brunoricci/)
+
