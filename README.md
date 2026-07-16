@@ -14,6 +14,7 @@ This project provides an automated pipeline to monitor and track the cybersecuri
 ## 🛠️ Technology Stack
 
 - **Language:** PowerShell (Core)
+- **Automation:** GitHub Actions (CI/CD)
 - **Intelligence Sources:** The Hacker News & BleepingComputer
 - **Output:** Markdown (.md) reports
 
