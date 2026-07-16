@@ -485,7 +485,7 @@ function Get-NewsByRange {
         return
     }
 
-    $OutputFileName = "CustomRange-Report-$RangeLabel.md"
+    $OutputFileName = "Range-Report-$($Start.ToString('yyyy-MM-dd'))-to-$((($End).AddDays(-1)).ToString('yyyy-MM-dd')).md"
     $HeaderTitle    = "Custom Range Security News Report ($($Start.ToString('yyyy-MM-dd')) to $((($End).AddDays(-1)).ToString('yyyy-MM-dd')))"
 
     Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
@@ -511,4 +511,3 @@ function Get-DailyCyberNews {
 # Runs daily checks for yesterday's data on script execution if no parameters are supplied
 Get-DailyCyberNews
 Get-SpecificMonthNews 
-#Get-NewsByRange -StartDate "2026-05-01" -EndDate "2026-05-15"
