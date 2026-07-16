@@ -500,7 +500,6 @@ function Get-NewsByRange {
 # --- DEFAULT SCRIPT EXECUTION ---
 # Runs daily checks for yesterday's data on script execution if no parameters are supplied
 Get-NewsByDate
-Get-NewsByDate -TargetDate "2026-05-13"
-Get-NewsByDate -TargetDate "2026-04-13"
 Get-NewsByMonth 
-Get-NewsByRange -StartDate "2026-05-01" -EndDate "2026-05-15"
+#Get-NewsByDate -TargetDate "2026-05-13"
+#Get-NewsByRange -StartDate "2026-05-01" -EndDate "2026-05-15"
