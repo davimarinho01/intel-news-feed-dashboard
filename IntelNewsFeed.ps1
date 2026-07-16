@@ -5,7 +5,7 @@
 #              supporting Local DB Caching, Target-Date Web Fetching, and reports.
 # ==============================================================================
 
-# --- CONFIGURAÇÃO GLOBAL DE PALAVRAS-CHAVE ---
+# --- GLOBAL TARGET KEYWORDS CONFIGURATION ---
 $Global:TargetKeywords = @(
     "malware", "0day", "0-day", "zeroday", "zero-day", 
     "critical", "security flaw", "code execution", 
@@ -13,15 +13,15 @@ $Global:TargetKeywords = @(
     "ransomware", "exploit", "active attack"
 )
 
-# --- CONFIGURAÇÃO GLOBAL DA BLACKLIST ---
+# --- GLOBAL BLACKLIST KEYWORDS CONFIGURATION (TERMS TO EXCLUDE) ---
 $Global:BlacklistKeywords = @(
     "webinar", "webminar", "weekly recap"
 )
 
-# --- CAMINHOS DE ARQUIVOS ---
+# --- FILE PATH CONFIGURATION ---
 $Global:DbPath = Join-Path -Path $PSScriptRoot -ChildPath "feed_database.json"
 
-# --- AUXILIAR: CARREGAR / SALVAR BANCO DE DADOS LOCAL ---
+# --- HELPER: LOAD / SAVE LOCAL DATABASE ---
 function Get-LocalDatabase {
     $List = [System.Collections.Generic.List[object]]::new()
     if (Test-Path -Path $Global:DbPath) {
@@ -38,7 +38,7 @@ function Get-LocalDatabase {
             }
         }
         catch {
-            Write-Warning "Falha ao ler banco de dados local. Iniciando novo banco de dados. Erro: $($_)"
+            Write-Warning "Failed to read local database. Starting a new database. Error: $($_)"
         }
     }
     return ,$List
@@ -58,11 +58,11 @@ function Save-LocalDatabase {
         $Json | Out-File -FilePath $Global:DbPath -Encoding utf8 -Force
     }
     catch {
-        Write-Error "Falha ao salvar banco de dados local. Erro: $($_)"
+        Write-Error "Failed to save local database. Error: $($_)"
     }
 }
 
-# --- AUXILIAR: THE HACKER NEWS INGESTION (FILTRADO POR DATA E PAGINADO) ---
+# --- HELPER: THE HACKER NEWS INGESTION (DATE-FILTERED & PAGINATED) ---
 function Get-HackerNewsFeed {
     [CmdletBinding()]
     param (
@@ -76,10 +76,12 @@ function Get-HackerNewsFeed {
     $MaxResults = 150
     $StartIndex = 1
 
+    # Format dates to RFC 3339 standard required by the Blogger API
     $PublishedMin = $StartDate.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
     $PublishedMax = $EndDate.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
 
     for ($Page = 1; $Page -le $MaxPagesToFetch; $Page++) {
+        # Build API request URL using pagination and published date parameters
         $FeedUrl = "$BaseFeedUrl`?alt=json&max-results=$MaxResults&start-index=$StartIndex&published-min=$PublishedMin&published-max=$PublishedMax"
         
         Write-Host "INFO: Fetching The Hacker News [Page $Page] (Range: $PublishedMin to $PublishedMax)..." -ForegroundColor Gray
@@ -88,6 +90,7 @@ function Get-HackerNewsFeed {
             $Response = Invoke-RestMethod -Uri $FeedUrl -Method Get -Headers @{ "User-Agent" = "Mozilla/5.0" } -TimeoutSec 30
             $Entries = $Response.feed.entry
             
+            # Stop paginating if no entries are returned
             if ($null -eq $Entries -or $Entries.Count -eq 0) {
                 Write-Host "INFO: No more entries returned from API on page $Page." -ForegroundColor Gray
                 break
@@ -116,7 +119,7 @@ function Get-HackerNewsFeed {
             Start-Sleep -Milliseconds 500
         }
         catch {
-            Write-Warning "Falha ao obter feed do The Hacker News na página $Page. Erro: $($_)"
+            Write-Warning "Failed to fetch The Hacker News feed on page $Page. Error: $($_)"
             break
         }
     }
@@ -124,7 +127,7 @@ function Get-HackerNewsFeed {
     return ,$ParsedNews
 }
 
-# --- AUXILIAR: BLEEPINGCOMPUTER INGESTION (RSS PADRÃO) ---
+# --- HELPER: BLEEPINGCOMPUTER INGESTION (STANDARD RSS) ---
 function Get-BleepingComputerFeed {
     [CmdletBinding()]
     param (
@@ -165,12 +168,12 @@ function Get-BleepingComputerFeed {
         return ,$ParsedNews
     }
     catch {
-        Write-Warning "Falha ao obter feed oficial do BleepingComputer. Erro: $($_)"
+        Write-Warning "Failed to fetch BleepingComputer RSS feed. Error: $($_)"
         return @()
     }
 }
 
-# --- SINK: SINCRONIZAÇÃO DE FEEDS ---
+# --- SINK: FEED SYNCHRONIZATION WITH TARGETED TIME RANGE ---
 function Sync-FeedsToDatabase {
     param (
         [Parameter(Mandatory=$true)][DateTime]$StartDate,
@@ -182,15 +185,18 @@ function Sync-FeedsToDatabase {
         $CurrentDb = [System.Collections.Generic.List[object]]::new()
     }
 
+    # Calculate date range span to scale API pagination depth dynamically
     $DaysDifference = ($EndDate - $StartDate).TotalDays
     $PagesNeeded = 3
     if ($DaysDifference -gt 10) {
-        $PagesNeeded = 20 
+        $PagesNeeded = 20 # Extend page depth limit to successfully fetch full monthly history
     }
 
     Write-Host "INFO: Requesting data from web for range: $($StartDate.ToString('yyyy-MM-dd HH:mm:ss')) to $($EndDate.ToString('yyyy-MM-dd HH:mm:ss')) (Depth Pages: $PagesNeeded)..." -ForegroundColor Cyan
     
+    # Force query execution on the Blogger API with calculated pagination limits
     $ThnData = Get-HackerNewsFeed -StartDate $StartDate -EndDate $EndDate -MaxPagesToFetch $PagesNeeded
+    # Bleeping Computer only publishes recent entries via RSS; fetched and filtered locally
     $BcData = Get-BleepingComputerFeed
 
     $AllFetched = [System.Collections.Generic.List[object]]::new()
@@ -216,7 +222,7 @@ function Sync-FeedsToDatabase {
     }
 }
 
-# --- AUXILIAR: FILTRAGEM POR PALAVRAS-CHAVE E BLACKLIST ---
+# --- HELPER: KEYWORD-BASED FILTERING WITH BLACKLIST FILTER ---
 function Filter-NewsByKeywords {
     [CmdletBinding()]
     param (
@@ -225,29 +231,32 @@ function Filter-NewsByKeywords {
 
         [Parameter(Mandatory=$true)]
         [string[]]$Keywords,
-        
+
         [string[]]$Blacklist = $Global:BlacklistKeywords
     )
 
     if ($NewsList.Count -eq 0) { return @() }
 
+    # Escape and build regex for target keywords (inclusion filter)
     $EscapedKeywords = $Keywords | ForEach-Object { [regex]::Escape($_) }
     $Pattern = $EscapedKeywords -join '|'
 
-    # Aplica filtro positivo
+    # Filter entries matching target keywords
     $FilteredList = $NewsList | Where-Object { $_.Title -match $Pattern }
 
-    # Aplica filtro negativo (Blacklist)
+    # Exclude entries matching blacklist words
     if ($null -ne $Blacklist -and $Blacklist.Count -gt 0) {
         $EscapedBlacklist = $Blacklist | ForEach-Object { [regex]::Escape($_) }
         $BlacklistPattern = $EscapedBlacklist -join '|'
+        
+        # Strip out matching blacklist items from the dataset
         $FilteredList = $FilteredList | Where-Object { $_.Title -notmatch $BlacklistPattern }
     }
 
     return $FilteredList
 }
 
-# --- AUXILIAR: GERADOR DE RELATÓRIO MARKDOWN ---
+# --- HELPER: MARKDOWN REPORT GENERATOR ---
 function Generate-MarkdownReport {
     param (
         [Parameter(Mandatory=$true)]$Data,
@@ -288,7 +297,7 @@ function Generate-MarkdownReport {
     $Content.Add("This cyber intelligence report aggregates critical, filtered news from a curated list of trusted security websites and publications.")
     $Content.Add("")
 
-    # Sumário Executivo
+    # Executive Summary Section
     $Content.Add("## Executive Summary")
     $Content.Add("This section provides a high-level overview of high-priority cybersecurity news matching our target monitoring criteria.")
     $Content.Add("")
@@ -300,7 +309,7 @@ function Generate-MarkdownReport {
     $Content.Add("| **Top Mentioned Indicators** | $HotTerms |")
     $Content.Add("")
 
-    # Detalhamento dos Registros
+    # Security News Findings Section
     $Content.Add("## Security News Findings")
     $Content.Add("The following selection covers the security news matching our monitoring criteria.")
     $Content.Add("")
@@ -322,10 +331,10 @@ function Generate-MarkdownReport {
 }
 
 # ==============================================================================
-# --- FUNÇÕES DE FILTRAGEM E GERAÇÃO DE RELATÓRIO (INTERFACE DO USUÁRIO) ---
+# --- MAIN FILTRATION & REPORT GENERATION FUNCTIONS (USER INTERFACE) ---
 # ==============================================================================
 
-# --- FILTRO 1: DATA ESPECÍFICA ---
+# --- FILTER 1: SPECIFIC DATE REPORT ---
 function Get-SpecificDateNews {
     [CmdletBinding()]
     param (
@@ -340,13 +349,15 @@ function Get-SpecificDateNews {
         $NextDayParsed    = $TargetDateParsed.AddDays(1)
     }
     catch {
-        Write-Error "Formato de data inválido ($TargetDate). Use o padrão YYYY-MM-DD."
+        Write-Error "Invalid date format ($TargetDate). Please use YYYY-MM-DD pattern."
         return
     }
 
+    # Fetch and sync fresh feed data for the 24-hour target date range
     Sync-FeedsToDatabase -StartDate $TargetDateParsed -EndDate $NextDayParsed
 
     $LocalDb = Get-LocalDatabase
+    Write-Host "INFO: Filtering local database for: $($TargetDateParsed.ToString('yyyy-MM-dd')) (UTC)" -ForegroundColor Cyan
     
     $DateFiltered = $LocalDb | Where-Object { 
         $_.PublishedAt -ge $TargetDateParsed -and $_.PublishedAt -lt $NextDayParsed 
@@ -370,29 +381,37 @@ function Get-SpecificDateNews {
     Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
 }
 
-# --- FILTRO 2: RELATÓRIO MENSAL ---
+# --- FILTER 2: MONTHLY REPORT (DEFAULTS TO PREVIOUS MONTH IF OMITTED) ---
 function Get-SpecificMonthNews {
     [CmdletBinding()]
     param (
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory=$false)]
         [string]$TargetMonth,
 
         [string[]]$Keywords = $Global:TargetKeywords
     )
+
+    # Automatically calculate previous month in YYYY-MM if no month parameter is provided
+    if ([string]::IsNullOrWhiteSpace($TargetMonth)) {
+        $TargetMonth = ([DateTime]::UtcNow).AddMonths(-1).ToString("yyyy-MM")
+        Write-Host "INFO: No target month specified. Automatically targeting previous month: $TargetMonth" -ForegroundColor Gray
+    }
 
     try {
         $StartOfMonth = [DateTime]"$TargetMonth-01"
         $EndOfMonth   = $StartOfMonth.AddMonths(1)
     }
     catch {
-        Write-Error "Formato de mês inválido ($TargetMonth). Use o padrão YYYY-MM."
+        Write-Error "Invalid month format ($TargetMonth). Please use YYYY-MM pattern."
         return
     }
 
+    # Retrieve and sync data for the full month period with expanded deep-pagination checks
     Sync-FeedsToDatabase -StartDate $StartOfMonth -EndDate $EndOfMonth
 
     $LocalDb = Get-LocalDatabase
     $MonthLabel = $StartOfMonth.ToString("yyyy-MM")
+    Write-Host "INFO: Filtering local database for month: $MonthLabel (UTC)" -ForegroundColor Cyan
 
     $MonthFiltered = $LocalDb | Where-Object {
         $_.PublishedAt -ge $StartOfMonth -and $_.PublishedAt -lt $EndOfMonth
@@ -416,7 +435,7 @@ function Get-SpecificMonthNews {
     Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
 }
 
-# --- FILTRO 3: INTERVALO CUSTOMIZADO ---
+# --- FILTER 3: CUSTOM DATE RANGE REPORT ---
 function Get-NewsByRange {
     [CmdletBinding()]
     param (
@@ -434,19 +453,21 @@ function Get-NewsByRange {
         $End   = ([DateTime]$EndDate).Date.AddDays(1)
     }
     catch {
-        Write-Error "Formato de datas inválido. Use o padrão YYYY-MM-DD para ambas as datas."
+        Write-Error "Invalid date input. Please use the YYYY-MM-DD pattern for both dates."
         return
     }
 
     if ($Start -gt $End) {
-        Write-Error "A data inicial ($StartDate) não pode ser posterior à data final ($EndDate)."
+        Write-Error "The start date ($StartDate) cannot be later than the end date ($EndDate)."
         return
     }
 
+    # Pull latest data within custom constraints
     Sync-FeedsToDatabase -StartDate $Start -EndDate $End
 
     $LocalDb = Get-LocalDatabase
     $RangeLabel = "$($Start.ToString('yyyyMMdd'))-to-$((($End).AddDays(-1)).ToString('yyyyMMdd'))"
+    Write-Host "INFO: Filtering local database from $($Start.ToString('yyyy-MM-dd')) to $((($End).AddDays(-1)).ToString('yyyy-MM-dd')) (UTC)" -ForegroundColor Cyan
 
     $RangeFiltered = $LocalDb | Where-Object {
         $_.PublishedAt -ge $Start -and $_.PublishedAt -lt $End
@@ -470,7 +491,7 @@ function Get-NewsByRange {
     Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
 }
 
-# --- HELPER DE EXECUÇÃO DIÁRIA ---
+# --- DAILY EXECUTION HELPER WRAPPER ---
 function Get-DailyCyberNews {
     [CmdletBinding()]
     param (
@@ -480,13 +501,14 @@ function Get-DailyCyberNews {
 
     if ([string]::IsNullOrWhiteSpace($TargetDate)) {
         $TargetDate = ([DateTime]::UtcNow.Date).AddDays(-1).ToString("yyyy-MM-dd")
-        Write-Host "INFO: Nenhuma data especificada. Buscando notícias de ontem: $TargetDate" -ForegroundColor Gray
+        Write-Host "INFO: No specific date provided. Fetching yesterday's entries: $TargetDate" -ForegroundColor Gray
     }
 
     Get-SpecificDateNews -TargetDate $TargetDate
 }
 
-# --- EXECUÇÃO PADRÃO ---
+# --- DEFAULT SCRIPT EXECUTION ---
+# Runs daily checks for yesterday's data on script execution if no parameters are supplied
 Get-DailyCyberNews
-Get-SpecificMonthNews
-Get-NewsByRange -StartDate "2026-05-01" -EndDate "2026-05-15"
+Get-SpecificMonthNews 
+#Get-NewsByRange -StartDate "2026-05-01" -EndDate "2026-05-15"
