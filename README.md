@@ -69,5 +69,5 @@ The feed is configured to run automatically via GitHub Actions:
 *Cybersecurity Specialist | Technical Author*  
 - **Website:** [techexpert.tips](https://techexpert.tips)
 - **LinkedIn:** [linkedin.com/in/brunoricci/](https://www.linkedin.com/in/brunoricci/)
-- **Books Published:** [Network](https://www.amazon.com.br/Network-Project-HP-Switch-Ricci/dp/153529387X) | [Linux](https://www.amazon.com.br/Slackware-Linux-Pratico-Bruno-Ricci/dp/8573933739) | [Proxy](https://www.amazon.com.br/Squid-Solucao-Definitiva-Nelson-Mendonca/dp/8573935235) | [VPN](https://www.amazon.com.br/Rede-Segura-Linux-Bruno-Ricci/dp/8573935839/) 
+- **Books:** [Network](https://www.amazon.com.br/Network-Project-HP-Switch-Ricci/dp/153529387X) | [Linux](https://www.amazon.com.br/Slackware-Linux-Pratico-Bruno-Ricci/dp/8573933739) | [Proxy](https://www.amazon.com.br/Squid-Solucao-Definitiva-Nelson-Mendonca/dp/8573935235) | [VPN](https://www.amazon.com.br/Rede-Segura-Linux-Bruno-Ricci/dp/8573935839/) 
 
