@@ -64,4 +64,5 @@ Each generated report includes an Executive Summary and detailed findings per ar
 *Cybersecurity Specialist | Technical Author*  
 - **Website:** [techexpert.tips](https://techexpert.tips)
 - **LinkedIn:** [linkedin.com/in/brunoricci/](https://www.linkedin.com/in/brunoricci/)
+- **Books Published: [Network](https://www.amazon.com.br/Network-Project-HP-Switch-Ricci/dp/153529387X) | [Proxy](https://www.amazon.com.br/Squid-Solucao-Definitiva-Nelson-Mendonca/dp/8573935235) | [VPN](https://www.amazon.com.br/Rede-Segura-Linux-Bruno-Ricci/dp/8573935839/) | [Linux](https://www.amazon.com.br/Slackware-Linux-Pratico-Bruno-Ricci/dp/8573933739)
 
