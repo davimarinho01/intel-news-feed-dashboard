@@ -7,9 +7,9 @@ This section provides a high-level overview of high-priority cybersecurity news 
 
 | Metric | Value |
 | :--- | :--- |
-| **Total News** | 103 |
+| **Total News** | 102 |
 | **The Hacker News** | 96 |
-| **BleepingComputer** | 7 |
+| **BleepingComputer** | 6 |
 | **Top Mentioned Indicators** | exploit, malware, critical |
 
 ## Security News Findings
@@ -95,15 +95,6 @@ The following selection covers the security news matching our monitoring criteri
 **Introduction:** Residential security company Brinks Home has disclosed that hackers breached some of its systems and are threatening to leak allegedly stolen data. [...]...
 
 **Url:** [https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/](https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/)
-
----
-### Microsoft Teams vishing attacks lead to Chaos ransomware attacks
-
-*Source:* **BleepingComputer** | *Published (UTC):* 2026-07-30 15:56:33Z
-
-**Introduction:** Threat actors are impersonating IT support staff in Microsoft Teams calls to gain remote access to corporate devices and deploy Chaos ransomware in attacks targeting North American organizations. [...]...
-
-**Url:** [https://www.bleepingcomputer.com/news/security/microsoft-teams-vishing-attacks-lead-to-chaos-ransomware-attacks/](https://www.bleepingcomputer.com/news/security/microsoft-teams-vishing-attacks-lead-to-chaos-ransomware-attacks/)
 
 ---
 ### Hackers Exploit AnySign4PC via Hacked Korean Sites to Install Backdoors Without Prompts
