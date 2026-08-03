@@ -7,9 +7,9 @@ This section provides a high-level overview of high-priority cybersecurity news 
 
 | Metric | Value |
 | :--- | :--- |
-| **Total News** | 102 |
+| **Total News** | 100 |
 | **The Hacker News** | 96 |
-| **BleepingComputer** | 6 |
+| **BleepingComputer** | 4 |
 | **Top Mentioned Indicators** | exploit, malware, critical |
 
 ## Security News Findings
@@ -77,24 +77,6 @@ The following selection covers the security news matching our monitoring criteri
 **Introduction:** Threat actors with ties to North Korea have been attributed to a sophisticated macOS malvertising campaign that involves redirecting users to fake web pages displaying a full-screen non-existent update sequence to deliver malware as part of a new iteration of the long-running Contagious Interview campaign. The defining aspect of the attack is that bogus macOS software update screen stealthily...
 
 **Url:** [http://thehackernews.com/2026/07/dprk-linked-macos-malvertising-uses.html](http://thehackernews.com/2026/07/dprk-linked-macos-malvertising-uses.html)
-
----
-### VMware fixes three critical flaws allowing auth bypass, VM escapes
-
-*Source:* **BleepingComputer** | *Published (UTC):* 2026-07-30 18:00:51Z
-
-**Introduction:** Broadcom has released security updates to fix five vulnerabilities in VMware vCenter, ESX, Workstation, and Fusion, including three critical flaws that allow attackers to bypass authentication, execute arbitrary code, or escape from a virtual machine to the host. [...]...
-
-**Url:** [https://www.bleepingcomputer.com/news/security/vmware-fixes-three-critical-flaws-allowing-auth-bypass-vm-escapes/](https://www.bleepingcomputer.com/news/security/vmware-fixes-three-critical-flaws-allowing-auth-bypass-vm-escapes/)
-
----
-### ShinyHunters claims Brinks Home breach, threatens to leak stolen data
-
-*Source:* **BleepingComputer** | *Published (UTC):* 2026-07-30 16:46:15Z
-
-**Introduction:** Residential security company Brinks Home has disclosed that hackers breached some of its systems and are threatening to leak allegedly stolen data. [...]...
-
-**Url:** [https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/](https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/)
 
 ---
 ### Hackers Exploit AnySign4PC via Hacked Korean Sites to Install Backdoors Without Prompts
