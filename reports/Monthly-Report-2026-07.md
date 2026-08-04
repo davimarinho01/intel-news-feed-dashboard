@@ -7,9 +7,9 @@ This section provides a high-level overview of high-priority cybersecurity news 
 
 | Metric | Value |
 | :--- | :--- |
-| **Total News** | 100 |
+| **Total News** | 97 |
 | **The Hacker News** | 96 |
-| **BleepingComputer** | 4 |
+| **BleepingComputer** | 1 |
 | **Top Mentioned Indicators** | exploit, malware, critical |
 
 ## Security News Findings
@@ -34,15 +34,6 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [http://thehackernews.com/2026/07/hollowframe-loader-deploys-matryoshka.html](http://thehackernews.com/2026/07/hollowframe-loader-deploys-matryoshka.html)
 
 ---
-### ESET tracks rise in malicious AI skills and adaptable malware
-
-*Source:* **BleepingComputer** | *Published (UTC):* 2026-07-31 14:01:11Z
-
-**Introduction:** Attackers are adapting established techniques to AI platforms, emerging technologies, and changing user behavior. ESET's new threat report examines the rise of malicious AI skills, AI-assisted malware, ClickFix attacks, record quishing activity, and ransomware tools designed to disable security software. [...]...
-
-**Url:** [https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/](https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/)
-
----
 ### 6 Reasons Why Device Code Phishing is the Fastest-Growing Threat of 2026
 
 *Source:* **The Hacker News** | *Published (UTC):* 2026-07-31 11:24:59Z
@@ -50,24 +41,6 @@ The following selection covers the security news matching our monitoring criteri
 **Introduction:** Device code phishing - the abuse of the OAuth 2.0 device authorization grant to steal access tokens - has evolved from a niche red-team technique to an industrial-scale threat in under six months. Designed for input-constrained devices like smart TVs, printers, and so on, the device authorization login flow has been adopted by a wide range of apps and use-cases that it wasn't originally...
 
 **Url:** [http://thehackernews.com/2026/07/6-reasons-why-device-code-phishing-is.html](http://thehackernews.com/2026/07/6-reasons-why-device-code-phishing-is.html)
-
----
-### Anthropic's Claude breached 3 orgs, uploaded PyPI malware during tests
-
-*Source:* **BleepingComputer** | *Published (UTC):* 2026-07-31 00:57:25Z
-
-**Introduction:** One of Anthropic's Claude models built and uploaded a malicious Python package to PyPI during a botched security evaluation, where it ran on 15 real systems and stole credentials from a security vendor. It was one of three incidents affecting real companies. [...]...
-
-**Url:** [https://www.bleepingcomputer.com/news/security/anthropics-claude-breached-3-orgs-uploaded-pypi-malware-during-tests/](https://www.bleepingcomputer.com/news/security/anthropics-claude-breached-3-orgs-uploaded-pypi-malware-during-tests/)
-
----
-### JetBrains warns of critical TeamCity remote code execution flaw
-
-*Source:* **BleepingComputer** | *Published (UTC):* 2026-07-30 22:01:31Z
-
-**Introduction:** JetBrains is warning of a critical authentication bypass vulnerability affecting TeamCity On-Premises that could be exploited to achieve remote code execution. [...]...
-
-**Url:** [https://www.bleepingcomputer.com/news/security/jetbrains-warns-of-critical-teamcity-remote-code-execution-flaw/](https://www.bleepingcomputer.com/news/security/jetbrains-warns-of-critical-teamcity-remote-code-execution-flaw/)
 
 ---
 ### DPRK-Linked macOS Malvertising Uses Fake Updates to Deliver Crypto-Stealing Malware
