@@ -7,22 +7,13 @@ This section provides a high-level overview of high-priority cybersecurity news 
 
 | Metric | Value |
 | :--- | :--- |
-| **Total News** | 97 |
+| **Total News** | 96 |
 | **The Hacker News** | 96 |
-| **BleepingComputer** | 1 |
+| **BleepingComputer** | 0 |
 | **Top Mentioned Indicators** | exploit, malware, critical |
 
 ## Security News Findings
 The following selection covers the security news matching our monitoring criteria.
-
----
-### Arch Linux disables AUR package adoption to stop malware flood
-
-*Source:* **BleepingComputer** | *Published (UTC):* 2026-07-31 21:38:08Z
-
-**Introduction:** The Arch Linux project has temporarily disabled adoption of Arch User Repository (AUR) packages after a surge in malicious takeovers of existing packages. [...]...
-
-**Url:** [https://www.bleepingcomputer.com/news/security/arch-linux-disables-aur-package-adoption-to-stop-malware-flood/](https://www.bleepingcomputer.com/news/security/arch-linux-disables-aur-package-adoption-to-stop-malware-flood/)
 
 ---
 ### HollowFrame Loader Deploys Matryoshka Backdoor in Spear-Phishing Attack on Law Firm
