@@ -22,6 +22,14 @@ jobs:
       # Import and execute the script (ensure function call is at the end of the .ps1)# Import and execute the script (ensure function call is at the end of the .ps1)
       - name: Run News Script
         shell: pwsh
+        env:
+          # Optional: only set these repo secrets if you want Critical/High findings
+          # emailed to you. Send-SeverityAlertEmail skips silently when unset.
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
         run: |
           . ./IntelNewsFeed.ps1
 
@@ -30,9 +38,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Stage only the generated reports
-          git add reports/*.md
-          
+          # Stage the generated reports and the persisted historical database
+          git add reports/*.md data/*.json
+
           # Use diff --cached to check if there are actual files in the staging area
           if git diff --cached --quiet; then
             echo "No new reports found. Nothing to commit."

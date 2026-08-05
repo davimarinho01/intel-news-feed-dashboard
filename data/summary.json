@@ -1,0 +1,606 @@
+{
+  "GeneratedAt": "2026-08-05T20:53:15Z",
+  "TotalArticles": 374,
+  "SourceBreakdown": [
+    {
+      "Source": "The Hacker News",
+      "Count": 269
+    },
+    {
+      "Source": "Dark Reading",
+      "Count": 50
+    },
+    {
+      "Source": "CISA Advisories",
+      "Count": 30
+    },
+    {
+      "Source": "BleepingComputer",
+      "Count": 15
+    },
+    {
+      "Source": "Krebs on Security",
+      "Count": 10
+    }
+  ],
+  "SeverityBreakdown": [
+    {
+      "Severity": "Critical",
+      "Count": 21
+    },
+    {
+      "Severity": "High",
+      "Count": 22
+    },
+    {
+      "Severity": "Medium",
+      "Count": 180
+    },
+    {
+      "Severity": "Low",
+      "Count": 151
+    }
+  ],
+  "DailyTrend": {
+    "Labels": [
+      "2026-06-09",
+      "2026-06-10",
+      "2026-06-18",
+      "2026-06-23",
+      "2026-07-01",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-07-04",
+      "2026-07-06",
+      "2026-07-07",
+      "2026-07-08",
+      "2026-07-09",
+      "2026-07-10",
+      "2026-07-11",
+      "2026-07-13",
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-19",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-24",
+      "2026-07-25",
+      "2026-07-27",
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-07-31",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05"
+    ],
+    "Datasets": [
+      {
+        "Source": "The Hacker News",
+        "Data": [
+          0,
+          0,
+          0,
+          0,
+          16,
+          9,
+          7,
+          2,
+          10,
+          10,
+          11,
+          12,
+          12,
+          3,
+          10,
+          13,
+          9,
+          12,
+          12,
+          3,
+          10,
+          12,
+          10,
+          10,
+          10,
+          6,
+          9,
+          10,
+          14,
+          11,
+          8,
+          0,
+          8,
+          0
+        ]
+      },
+      {
+        "Source": "Dark Reading",
+        "Data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          5,
+          0,
+          5,
+          7,
+          7,
+          5,
+          5,
+          5,
+          3,
+          4
+        ]
+      },
+      {
+        "Source": "CISA Advisories",
+        "Data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          8,
+          2,
+          13,
+          0,
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "Source": "BleepingComputer",
+        "Data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          8,
+          5
+        ]
+      },
+      {
+        "Source": "Krebs on Security",
+        "Data": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "TopCves": [
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-63077",
+      "Count": 2,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/05/cisa-adds-one-known-exploited-vulnerability-catalog"
+    },
+    {
+      "Cve": "CVE-2026-16232",
+      "Count": 2,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
+    },
+    {
+      "Cve": "CVE-2026-18556",
+      "Count": 2,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/04/cisa-adds-three-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-16812",
+      "Count": 2,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
+    },
+    {
+      "Cve": "CVE-2026-20316",
+      "Count": 2,
+      "Severity": "Medium",
+      "Url": "http://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html"
+    },
+    {
+      "Cve": "CVE-2026-21662",
+      "Count": 1,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-211-02"
+    },
+    {
+      "Cve": "CVE-2026-23475",
+      "Count": 1,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-04"
+    },
+    {
+      "Cve": "CVE-2026-23474",
+      "Count": 1,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-04"
+    },
+    {
+      "Cve": "CVE-2026-23463",
+      "Count": 1,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-04"
+    }
+  ],
+  "TopKeywords": [
+    {
+      "Keyword": "exploit",
+      "Count": 42
+    },
+    {
+      "Keyword": "malware",
+      "Count": 29
+    },
+    {
+      "Keyword": "ransomware",
+      "Count": 18
+    },
+    {
+      "Keyword": "phishing",
+      "Count": 16
+    },
+    {
+      "Keyword": "critical",
+      "Count": 15
+    },
+    {
+      "Keyword": "zero-day",
+      "Count": 12
+    },
+    {
+      "Keyword": "leak",
+      "Count": 8
+    },
+    {
+      "Keyword": "vulnerability",
+      "Count": 8
+    },
+    {
+      "Keyword": "code execution",
+      "Count": 5
+    },
+    {
+      "Keyword": "takeover",
+      "Count": 4
+    }
+  ],
+  "RecentCritical": [
+    {
+      "Title": "CISA warns of hackers exploiting Langflow, N-central, Apache Tomcat flaws",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-08-05T15:51:33Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-langflow-n-central-apache-tomcat-flaws/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "New cPanel Critical Flaw Could Let Hosting Customers Run SQL as Database Root",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-04T10:36:27Z",
+      "Url": "http://thehackernews.com/2026/08/new-cpanel-critical-flaw-could-let.html",
+      "Severity": "Critical",
+      "Cvss": 9.4,
+      "Cves": [
+        "CVE-2026-58048"
+      ]
+    },
+    {
+      "Title": "CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-04T07:00:13Z",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
+      "Severity": "High",
+      "Cvss": 8.2,
+      "Cves": [
+        "CVE-2026-18577",
+        "CVE-2026-18556"
+      ]
+    },
+    {
+      "Title": "Critical Rails Flaw Could Let Unauthenticated Attackers Read Server Files via Image Uploads",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-29T18:10:00Z",
+      "Url": "http://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
+      "Severity": "Critical",
+      "Cvss": 9.5,
+      "Cves": [
+        "CVE-2026-66066"
+      ]
+    },
+    {
+      "Title": "Ruflo MCP Flaw Lets Unauthenticated Attackers Run Commands and Poison AI Memory",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-29T15:39:30Z",
+      "Url": "http://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-59726"
+      ]
+    },
+    {
+      "Title": "Three Critical VMware Flaws Allow Auth Bypass, Code Execution, and VM Escape",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-29T15:31:15Z",
+      "Url": "http://thehackernews.com/2026/07/three-critical-vmware-flaws-allow-auth.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-59309"
+      ]
+    },
+    {
+      "Title": "Public PoC Released for Exploited Check Point SmartConsole Authentication Bypass",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-29T08:58:27Z",
+      "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html",
+      "Severity": "Critical",
+      "Cvss": 9.3,
+      "Cves": [
+        "CVE-2026-16232"
+      ]
+    },
+    {
+      "Title": "New Gitea RCE Lets Repository Writers Plant a Git Hook to Run Shell Commands",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-29T07:47:19Z",
+      "Url": "http://thehackernews.com/2026/07/new-gitea-rce-lets-repository-writers.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-60004"
+      ]
+    },
+    {
+      "Title": "JFrog Confirms OpenAI Models Exploited Artifactory Zero-Day Before Hugging Face Breach",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-28T13:33:47Z",
+      "Url": "http://thehackernews.com/2026/07/jfrog-confirms-openai-models-exploited.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Critical TeamCity Flaw Could Let Attackers Run OS Commands Without Logging In",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-28T08:11:22Z",
+      "Url": "http://thehackernews.com/2026/07/critical-teamcity-flaw-could-let.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-63077"
+      ]
+    },
+    {
+      "Title": "Researcher Says AI Helped Develop Linux Traffic-Control Race Into Root Exploit",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-28T08:04:44Z",
+      "Url": "http://thehackernews.com/2026/07/researcher-says-ai-helped-develop-linux.html",
+      "Severity": "High",
+      "Cvss": 7.8,
+      "Cves": [
+        "CVE-2026-53264"
+      ]
+    },
+    {
+      "Title": "Attackers Exploit Arista VeloCloud Orchestrator Command Injection Flaw",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-28T04:43:53Z",
+      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-16812"
+      ]
+    },
+    {
+      "Title": "Adversaries Don't Need a Zero-Day — They Read Your Rulebook",
+      "Source": "Dark Reading",
+      "PublishedAt": "2026-07-27T17:31:18Z",
+      "Url": "https://www.darkreading.com/threat-intelligence/adversaries-do-not-need-zero-day-they-read-your-rulebook",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Kimi K3 Agents Found Redis Zero-Days and Built RCE Exploit, Researchers Say",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-24T06:58:27Z",
+      "Url": "http://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Russian Hackers Exploit Zimbra Zero-Day Against US, Ukraine Targets",
+      "Source": "Dark Reading",
+      "PublishedAt": "2026-07-23T21:23:18Z",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/russian-hackers-zimbra-zero-day-us-ukraine-targets",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Russian Espionage Group Exploited Zimbra Zero-Day to Steal Mail and 2FA Codes",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-23T18:36:08Z",
+      "Url": "http://thehackernews.com/2026/07/russian-espionage-group-exploited.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Check Point Patches Exploited SmartConsole Flaw Allowing Full Admin Access",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-23T06:34:36Z",
+      "Url": "http://thehackernews.com/2026/07/check-point-patches-exploited.html",
+      "Severity": "Critical",
+      "Cvss": 9.3,
+      "Cves": [
+        "CVE-2026-16232"
+      ]
+    },
+    {
+      "Title": "Ubuntu snap-confine Flaw Could Give Local Users Root on Default Desktop Installs",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-22T18:07:16Z",
+      "Url": "http://thehackernews.com/2026/07/ubuntu-snap-confine-flaw-could-give.html",
+      "Severity": "High",
+      "Cvss": 7.8,
+      "Cves": [
+        "CVE-2026-8933"
+      ]
+    },
+    {
+      "Title": "Adobe Acrobat Extension Flaw Let Malicious Sites Read WhatsApp Web Data",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-22T15:01:21Z",
+      "Url": "http://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html",
+      "Severity": "High",
+      "Cvss": 7.4,
+      "Cves": [
+        "CVE-2026-48294"
+      ]
+    },
+    {
+      "Title": "Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-07-22T12:36:36Z",
+      "Url": "http://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html",
+      "Severity": "High",
+      "Cvss": 7.5,
+      "Cves": [
+        "CVE-2026-29059"
+      ]
+    }
+  ]
+}

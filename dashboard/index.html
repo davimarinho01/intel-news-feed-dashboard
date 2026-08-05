@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intel News Feed — Dashboard</title>
+  <meta name="description" content="Dashboard de threat intelligence: tendências, severidade, CVEs e achados críticos agregados das fontes monitoradas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <div>
+        <h1>Intel News Feed</h1>
+        <p id="header-subtitle">Carregando dados…</p>
+      </div>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">
+        <span id="theme-toggle-label">Modo escuro</span>
+      </button>
+    </header>
+
+    <main id="dashboard-root" aria-live="polite">
+      <!-- KPI row -->
+      <section class="kpi-row" id="kpi-row" aria-label="Indicadores gerais"></section>
+
+      <!-- Severity + Source breakdown -->
+      <div class="grid-2">
+        <section class="card" aria-labelledby="severity-title">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title" id="severity-title">Distribuição por severidade</h2>
+              <p class="card-subtitle">Histórico completo, todas as fontes</p>
+            </div>
+          </div>
+          <div id="severity-chart"></div>
+        </section>
+
+        <section class="card" aria-labelledby="source-title">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title" id="source-title">Artigos por fonte</h2>
+              <p class="card-subtitle">Volume total monitorado</p>
+            </div>
+          </div>
+          <div id="source-chart"></div>
+        </section>
+      </div>
+
+      <!-- Daily trend -->
+      <section class="card" aria-labelledby="trend-title">
+        <div class="card-header">
+          <div>
+            <h2 class="card-title" id="trend-title">Tendência diária por fonte</h2>
+            <p class="card-subtitle">Artigos publicados por dia</p>
+          </div>
+          <button type="button" class="card-action" id="trend-table-toggle" aria-pressed="false">Ver como tabela</button>
+        </div>
+        <div id="trend-chart"></div>
+        <div id="trend-table" style="display:none;"></div>
+      </section>
+
+      <!-- Top CVEs + Top keywords -->
+      <div class="grid-2">
+        <section class="card" aria-labelledby="cve-title">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title" id="cve-title">CVEs mais mencionados</h2>
+              <p class="card-subtitle">Cor indica a severidade do achado</p>
+            </div>
+          </div>
+          <div id="cve-chart"></div>
+        </section>
+
+        <section class="card" aria-labelledby="keyword-title">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title" id="keyword-title">Indicadores mais frequentes</h2>
+              <p class="card-subtitle">Palavras-chave nos títulos monitorados</p>
+            </div>
+          </div>
+          <div id="keyword-chart"></div>
+        </section>
+      </div>
+
+      <!-- Recent critical/high findings -->
+      <section class="card" aria-labelledby="recent-title">
+        <div class="card-header">
+          <div>
+            <h2 class="card-title" id="recent-title">Achados recentes de alta severidade</h2>
+            <p class="card-subtitle">Últimos artigos Critical/High</p>
+          </div>
+        </div>
+        <div id="recent-table"></div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <span>Gerado automaticamente pelo <a href="https://github.com/davimarinho01/intel-news-feed-dashboard" id="repo-link" target="_blank" rel="noopener">Intel News Feed</a> a cada execução do pipeline.</span>
+      <span id="footer-total"></span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

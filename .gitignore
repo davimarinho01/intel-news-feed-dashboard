@@ -1,0 +1,3 @@
+# Copied into place by the GitHub Pages deploy workflow at publish time —
+# not source, shouldn't be committed. See .github/workflows/pages-deploy.yml
+dashboard/data/

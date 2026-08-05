@@ -1,5 +1,5 @@
 # ==============================================================================
-# Script: Intel-News-Feed.ps1
+# Script: IntelNewsFeed.ps1
 # Author: Bruno Ricci
 # Description: Automated multi-source cyber threat intelligence aggregator
 #              supporting Local DB Caching, Target-Date Web Fetching, and reports.
@@ -7,8 +7,8 @@
 
 # --- GLOBAL TARGET KEYWORDS CONFIGURATION ---
 $Global:TargetKeywords = @(
-    "malware", "0day", "0-day", "zeroday", "zero-day", 
-    "critical", "security flaw", "code execution", 
+    "malware", "0day", "0-day", "zeroday", "zero-day",
+    "critical", "security flaw", "code execution",
     "cvss", "leak", "vulnerability", "takeover", "abused", "phishing",
     "ransomware", "exploit", "active attack"
 )
@@ -19,7 +19,17 @@ $Global:BlacklistKeywords = @(
 )
 
 # --- FILE PATH CONFIGURATION ---
-$Global:DbPath = Join-Path -Path $PSScriptRoot -ChildPath "feed_database.json"
+$Global:DbPath = Join-Path -Path $PSScriptRoot -ChildPath "data/feed_database.json"
+$Global:ReportsPath = Join-Path -Path $PSScriptRoot -ChildPath "reports"
+$Global:SummaryPath = Join-Path -Path $PSScriptRoot -ChildPath "data/summary.json"
+
+# --- MODULE IMPORTS ---
+$Global:ModulesPath = Join-Path -Path $PSScriptRoot -ChildPath "modules"
+. (Join-Path -Path $Global:ModulesPath -ChildPath "Sources.ps1")
+. (Join-Path -Path $Global:ModulesPath -ChildPath "Enrichment.ps1")
+. (Join-Path -Path $Global:ModulesPath -ChildPath "Reports.ps1")
+. (Join-Path -Path $Global:ModulesPath -ChildPath "Dashboard.ps1")
+. (Join-Path -Path $Global:ModulesPath -ChildPath "Notify.ps1")
 
 # --- HELPER: LOAD / SAVE LOCAL DATABASE ---
 function Get-LocalDatabase {
@@ -50,126 +60,15 @@ function Save-LocalDatabase {
         $Database
     )
     try {
-        $ReportsFolder = Split-Path -Path $Global:DbPath -Parent
-        if (-not (Test-Path -Path $ReportsFolder)) {
-            New-Item -Path $ReportsFolder -ItemType Directory | Out-Null
+        $DataFolder = Split-Path -Path $Global:DbPath -Parent
+        if (-not (Test-Path -Path $DataFolder)) {
+            New-Item -Path $DataFolder -ItemType Directory | Out-Null
         }
         $Json = ConvertTo-Json -InputObject $Database -Depth 5
         $Json | Out-File -FilePath $Global:DbPath -Encoding utf8 -Force
     }
     catch {
         Write-Error "Failed to save local database. Error: $($_)"
-    }
-}
-
-# --- HELPER: THE HACKER NEWS INGESTION (DATE-FILTERED & PAGINATED) ---
-function Get-HackerNewsFeed {
-    [CmdletBinding()]
-    param (
-        [string]$BaseFeedUrl = "https://thehackernews.com/feeds/posts/default",
-        [DateTime]$StartDate,
-        [DateTime]$EndDate,
-        [int]$MaxPagesToFetch = 15
-    )
-
-    $ParsedNews = [System.Collections.Generic.List[object]]::new()
-    $MaxResults = 150
-    $StartIndex = 1
-
-    # Format dates to RFC 3339 standard required by the Blogger API
-    $PublishedMin = $StartDate.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
-    $PublishedMax = $EndDate.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
-
-    for ($Page = 1; $Page -le $MaxPagesToFetch; $Page++) {
-        # Build API request URL using pagination and published date parameters
-        $FeedUrl = "$BaseFeedUrl`?alt=json&max-results=$MaxResults&start-index=$StartIndex&published-min=$PublishedMin&published-max=$PublishedMax"
-        
-        Write-Host "INFO: Fetching The Hacker News [Page $Page] (Range: $PublishedMin to $PublishedMax)..." -ForegroundColor Gray
-
-        try {
-            $Response = Invoke-RestMethod -Uri $FeedUrl -Method Get -Headers @{ "User-Agent" = "Mozilla/5.0" } -TimeoutSec 30
-            $Entries = $Response.feed.entry
-            
-            # Stop paginating if no entries are returned
-            if ($null -eq $Entries -or $Entries.Count -eq 0) {
-                Write-Host "INFO: No more entries returned from API on page $Page." -ForegroundColor Gray
-                break
-            }
-
-            foreach ($Entry in $Entries) {
-                $RawDate = $Entry.published.'$t'
-                $ArticleLink = ($Entry.link | Where-Object { $_.rel -eq "alternate" }).href
-
-                $CleanIntro = ($Entry.summary.'$t' -replace '\s+', ' ').Trim()
-                if ($CleanIntro) {
-                    $CleanIntro = $CleanIntro.TrimEnd(" .…") + "..."
-                }
-
-                $NewsObj = [PSCustomObject]@{
-                    Source       = "The Hacker News"
-                    Title        = $Entry.title.'$t'
-                    Introduction = $CleanIntro
-                    PublishedAt  = ([DateTime]$RawDate).ToUniversalTime()
-                    Url          = $ArticleLink
-                }
-                $ParsedNews.Add($NewsObj)
-            }
-
-            $StartIndex += $MaxResults
-            Start-Sleep -Milliseconds 500
-        }
-        catch {
-            Write-Warning "Failed to fetch The Hacker News feed on page $Page. Error: $($_)"
-            break
-        }
-    }
-
-    return ,$ParsedNews
-}
-
-# --- HELPER: BLEEPINGCOMPUTER INGESTION (STANDARD RSS) ---
-function Get-BleepingComputerFeed {
-    [CmdletBinding()]
-    param (
-        [string]$FeedUrl = "https://www.bleepingcomputer.com/feed/"
-    )
-
-    try {
-        $Response = Invoke-RestMethod -Uri $FeedUrl -Method Get -TimeoutSec 30
-        if (-not $Response) { return @() }
-
-        $ParsedNews = [System.Collections.Generic.List[object]]::new()
-        foreach ($Item in $Response) {
-            $RawDate = $Item.pubDate
-            
-            $RawDescription = ""
-            if ($Item.description -is [System.Xml.XmlElement]) {
-                $RawDescription = $Item.description.InnerText
-            } else {
-                $RawDescription = $Item.description.ToString()
-            }
-
-            $CleanIntro = $RawDescription -replace '<[^>]+>', ''
-            $CleanIntro = ($CleanIntro -replace '\s+', ' ').Trim()
-            
-            if ($CleanIntro) {
-                $CleanIntro = $CleanIntro.TrimEnd(" .…") + "..."
-            }
-
-            $NewsObj = [PSCustomObject]@{
-                Source       = "BleepingComputer"
-                Title        = $Item.title
-                Introduction = $CleanIntro
-                PublishedAt  = ([DateTime]$RawDate).ToUniversalTime()
-                Url          = $Item.link
-            }
-            $ParsedNews.Add($NewsObj)
-        }
-        return ,$ParsedNews
-    }
-    catch {
-        Write-Warning "Failed to fetch BleepingComputer RSS feed. Error: $($_)"
-        return @()
     }
 }
 
@@ -193,20 +92,29 @@ function Sync-FeedsToDatabase {
     }
 
     Write-Host "INFO: Requesting data from web for range: $($StartDate.ToString('yyyy-MM-dd HH:mm:ss')) to $($EndDate.ToString('yyyy-MM-dd HH:mm:ss')) (Depth Pages: $PagesNeeded)..." -ForegroundColor Cyan
-    
-    # Force query execution on the Blogger API with calculated pagination limits
-    $ThnData = Get-HackerNewsFeed -StartDate $StartDate -EndDate $EndDate -MaxPagesToFetch $PagesNeeded
-    # Bleeping Computer only publishes recent entries via RSS; fetched and filtered locally
-    $BcData = Get-BleepingComputerFeed
 
     $AllFetched = [System.Collections.Generic.List[object]]::new()
+
+    # Force query execution on the Blogger API with calculated pagination limits
+    $ThnData = Get-HackerNewsFeed -StartDate $StartDate -EndDate $EndDate -MaxPagesToFetch $PagesNeeded
     if ($null -ne $ThnData) { $AllFetched.AddRange($ThnData) }
-    if ($null -ne $BcData) { $AllFetched.AddRange($BcData) }
+
+    # Plain RSS sources only publish recent entries; fetched and filtered locally against the date range
+    foreach ($RssSource in $Global:RssSources) {
+        $SourceData = Get-RssFeed -FeedUrl $RssSource.Url -SourceName $RssSource.Name
+        if ($null -ne $SourceData) { $AllFetched.AddRange($SourceData) }
+    }
 
     $NewArticles = 0
     foreach ($Article in $AllFetched) {
         $Exists = $CurrentDb | Where-Object { $_.Url -eq $Article.Url }
         if (-not $Exists) {
+            $Enrichment = Get-ArticleEnrichment -Title $Article.Title -Introduction $Article.Introduction
+            $Article | Add-Member -NotePropertyName Severity -NotePropertyValue $Enrichment.Severity
+            $Article | Add-Member -NotePropertyName Cvss -NotePropertyValue $Enrichment.Cvss
+            $Article | Add-Member -NotePropertyName Cves -NotePropertyValue $Enrichment.Cves
+            $Article | Add-Member -NotePropertyName Iocs -NotePropertyValue $Enrichment.Iocs
+
             $CurrentDb.Add($Article)
             $NewArticles++
         }
@@ -220,114 +128,6 @@ function Sync-FeedsToDatabase {
     } else {
         Write-Host "INFO: No new articles to add to database for this range." -ForegroundColor Yellow
     }
-}
-
-# --- HELPER: KEYWORD-BASED FILTERING WITH BLACKLIST FILTER ---
-function Filter-NewsByKeywords {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true)]
-        [array]$NewsList,
-
-        [Parameter(Mandatory=$true)]
-        [string[]]$Keywords,
-
-        [string[]]$Blacklist = $Global:BlacklistKeywords
-    )
-
-    if ($NewsList.Count -eq 0) { return @() }
-
-    # Escape and build regex for target keywords (inclusion filter)
-    $EscapedKeywords = $Keywords | ForEach-Object { [regex]::Escape($_) }
-    $Pattern = $EscapedKeywords -join '|'
-
-    # Filter entries matching target keywords
-    $FilteredList = $NewsList | Where-Object { $_.Title -match $Pattern }
-
-    # Exclude entries matching blacklist words
-    if ($null -ne $Blacklist -and $Blacklist.Count -gt 0) {
-        $EscapedBlacklist = $Blacklist | ForEach-Object { [regex]::Escape($_) }
-        $BlacklistPattern = $EscapedBlacklist -join '|'
-        
-        # Strip out matching blacklist items from the dataset
-        $FilteredList = $FilteredList | Where-Object { $_.Title -notmatch $BlacklistPattern }
-    }
-
-    return $FilteredList
-}
-
-# --- HELPER: MARKDOWN REPORT GENERATOR ---
-function Generate-MarkdownReport {
-    param (
-        [Parameter(Mandatory=$true)]$Data,
-        [Parameter(Mandatory=$true)][string]$FileName,
-        [Parameter(Mandatory=$true)][string]$Header
-    )
-
-    $ReportsFolder = Join-Path -Path $PSScriptRoot -ChildPath "reports"
-    $MarkdownPath  = Join-Path -Path $ReportsFolder -ChildPath $FileName
-
-    if (-not (Test-Path -Path $ReportsFolder)) {
-        New-Item -Path $ReportsFolder -ItemType Directory | Out-Null
-    }
-
-    $TotalCount = @($Data).Count
-    $ThnCount   = @($Data | Where-Object { $_.Source -eq "The Hacker News" }).Count
-    $BcCount    = @($Data | Where-Object { $_.Source -eq "BleepingComputer" }).Count
-
-    $TermHits = [System.Collections.Generic.List[string]]::new()
-    foreach ($News in $Data) {
-        foreach ($Keyword in $Global:TargetKeywords) {
-            if ($News.Title.ToLower().Contains($Keyword.ToLower())) {
-                $TermHits.Add($Keyword)
-            }
-        }
-    }
-    
-    $HotTerms = "None"
-    if ($TermHits.Count -gt 0) {
-        $Top3Groups = $TermHits | Group-Object | Sort-Object Count -Descending | Select-Object -First 3
-        $HotTerms = ($Top3Groups.Name) -join ", "
-    }
-
-    $Content = New-Object System.Collections.Generic.List[string]
-
-    $Content.Add("# $Header")
-    $Content.Add("")
-    $Content.Add("This cyber intelligence report aggregates critical, filtered news from a curated list of trusted security websites and publications.")
-    $Content.Add("")
-
-    # Executive Summary Section
-    $Content.Add("## Executive Summary")
-    $Content.Add("This section provides a high-level overview of high-priority cybersecurity news matching our target monitoring criteria.")
-    $Content.Add("")
-    $Content.Add("| Metric | Value |")
-    $Content.Add("| :--- | :--- |")
-    $Content.Add("| **Total News** | $TotalCount |")
-    $Content.Add("| **The Hacker News** | $ThnCount |")
-    $Content.Add("| **BleepingComputer** | $BcCount |")
-    $Content.Add("| **Top Mentioned Indicators** | $HotTerms |")
-    $Content.Add("")
-
-    # Security News Findings Section
-    $Content.Add("## Security News Findings")
-    $Content.Add("The following selection covers the security news matching our monitoring criteria.")
-    $Content.Add("")
-
-    foreach ($Item in $Data) {
-        $Content.Add("---")
-        $Content.Add("### $($Item.Title)")
-        $Content.Add("")
-        $Content.Add("*Source:* **$($Item.Source)** | *Published (UTC):* $($Item.PublishedAt.ToString('yyyy-MM-dd HH:mm:ssZ'))")
-        $Content.Add("")
-        $Content.Add("**Introduction:** $($Item.Introduction)")
-        $Content.Add("")
-        $Content.Add("**Url:** [$($Item.Url)]($($Item.Url))")
-        $Content.Add("")
-    }
-
-    $Content | Out-File -FilePath $MarkdownPath -Encoding utf8 -Force
-    Write-Host "SUCCESS: Report generated at $MarkdownPath" -ForegroundColor Green
 }
 
 # ==============================================================================
@@ -364,9 +164,9 @@ function Get-NewsByDate {
 
     $LocalDb = Get-LocalDatabase
     Write-Host "INFO: Filtering local database for: $($TargetDateParsed.ToString('yyyy-MM-dd')) (UTC)" -ForegroundColor Cyan
-    
-    $DateFiltered = $LocalDb | Where-Object { 
-        $_.PublishedAt -ge $TargetDateParsed -and $_.PublishedAt -lt $NextDayParsed 
+
+    $DateFiltered = $LocalDb | Where-Object {
+        $_.PublishedAt -ge $TargetDateParsed -and $_.PublishedAt -lt $NextDayParsed
     }
 
     if ($DateFiltered.Count -eq 0) {
@@ -385,6 +185,7 @@ function Get-NewsByDate {
     $HeaderTitle    = "Daily Security News Report: $($TargetDateParsed.ToString('yyyy-MM-dd'))"
 
     Generate-MarkdownReport -Data $PriorityNews -FileName $OutputFileName -Header $HeaderTitle
+    Send-SeverityAlertEmail -Articles $PriorityNews
 }
 
 # --- FILTER 2: MONTHLY REPORT (DEFAULTS TO PREVIOUS MONTH IF OMITTED) ---
@@ -500,6 +301,9 @@ function Get-NewsByRange {
 # --- DEFAULT SCRIPT EXECUTION ---
 # Runs daily checks for yesterday's data on script execution if no parameters are supplied
 Get-NewsByDate
-Get-NewsByMonth 
+Get-NewsByMonth
 #Get-NewsByDate -TargetDate "2026-05-13"
 #Get-NewsByRange -StartDate "2026-05-01" -EndDate "2026-05-15"
+
+# Refresh the dashboard summary from the full accumulated history (not just today/this month)
+Export-DashboardData -Articles (Get-LocalDatabase) -OutputPath $Global:SummaryPath
