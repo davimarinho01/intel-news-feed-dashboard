@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-08-05T20:53:15Z",
-  "TotalArticles": 374,
+  "GeneratedAt": "2026-08-06T05:55:39Z",
+  "TotalArticles": 393,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 269
+      "Count": 283
     },
     {
       "Source": "Dark Reading",
-      "Count": 50
+      "Count": 53
     },
     {
       "Source": "CISA Advisories",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "BleepingComputer",
-      "Count": 15
+      "Count": 17
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 21
-    },
-    {
-      "Severity": "High",
       "Count": 22
     },
     {
+      "Severity": "High",
+      "Count": 23
+    },
+    {
       "Severity": "Medium",
-      "Count": 180
+      "Count": 188
     },
     {
       "Severity": "Low",
-      "Count": 151
+      "Count": 160
     }
   ],
   "DailyTrend": {
@@ -115,7 +115,7 @@
           8,
           0,
           8,
-          0
+          14
         ]
       },
       {
@@ -154,7 +154,7 @@
           5,
           5,
           3,
-          4
+          7
         ]
       },
       {
@@ -232,7 +232,7 @@
           0,
           2,
           8,
-          5
+          7
         ]
       },
       {
@@ -284,22 +284,10 @@
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-63077",
+      "Cve": "CVE-2026-20316",
       "Count": 2,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/05/cisa-adds-one-known-exploited-vulnerability-catalog"
-    },
-    {
-      "Cve": "CVE-2026-16232",
-      "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
-    },
-    {
-      "Cve": "CVE-2026-18556",
-      "Count": 2,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/04/cisa-adds-three-known-exploited-vulnerabilities-catalog"
+      "Url": "http://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html"
     },
     {
       "Cve": "CVE-2026-16812",
@@ -308,31 +296,43 @@
       "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
     },
     {
-      "Cve": "CVE-2026-20316",
+      "Cve": "CVE-2026-16232",
+      "Count": 2,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
+    },
+    {
+      "Cve": "CVE-2026-9198",
+      "Count": 2,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html"
+    },
+    {
+      "Cve": "CVE-2026-63077",
       "Count": 2,
       "Severity": "Medium",
-      "Url": "http://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/05/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-21662",
+      "Cve": "CVE-2026-18556",
+      "Count": 2,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/04/cisa-adds-three-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-66369",
       "Count": 1,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-211-02"
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-211-10"
     },
     {
-      "Cve": "CVE-2026-23475",
+      "Cve": "CVE-2026-23458",
       "Count": 1,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-04"
     },
     {
-      "Cve": "CVE-2026-23474",
-      "Count": 1,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-04"
-    },
-    {
-      "Cve": "CVE-2026-23463",
+      "Cve": "CVE-2026-23457",
       "Count": 1,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-04"
@@ -341,23 +341,23 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 42
+      "Count": 43
     },
     {
       "Keyword": "malware",
-      "Count": 29
+      "Count": 30
     },
     {
       "Keyword": "ransomware",
-      "Count": 18
+      "Count": 19
+    },
+    {
+      "Keyword": "critical",
+      "Count": 17
     },
     {
       "Keyword": "phishing",
       "Count": 16
-    },
-    {
-      "Keyword": "critical",
-      "Count": 15
     },
     {
       "Keyword": "zero-day",
@@ -365,7 +365,7 @@
     },
     {
       "Keyword": "leak",
-      "Count": 8
+      "Count": 9
     },
     {
       "Keyword": "vulnerability",
@@ -390,6 +390,28 @@
       "Cvss": null,
       "Cves": [
         null
+      ]
+    },
+    {
+      "Title": "New OVSwrap Linux Kernel Flaw Lets Local Users Gain Root via Open vSwitch",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-05T11:43:27Z",
+      "Url": "http://thehackernews.com/2026/08/new-ovswrap-linux-kernel-flaw-lets.html",
+      "Severity": "High",
+      "Cvss": 7.8,
+      "Cves": [
+        "CVE-2026-64531"
+      ]
+    },
+    {
+      "Title": "CISA Flags Langflow RCE, Tomcat, and N-central Flaws as Actively Exploited",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-05T07:40:39Z",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-9198"
       ]
     },
     {
@@ -578,28 +600,6 @@
       "Cvss": 7.8,
       "Cves": [
         "CVE-2026-8933"
-      ]
-    },
-    {
-      "Title": "Adobe Acrobat Extension Flaw Let Malicious Sites Read WhatsApp Web Data",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-07-22T15:01:21Z",
-      "Url": "http://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html",
-      "Severity": "High",
-      "Cvss": 7.4,
-      "Cves": [
-        "CVE-2026-48294"
-      ]
-    },
-    {
-      "Title": "Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-07-22T12:36:36Z",
-      "Url": "http://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html",
-      "Severity": "High",
-      "Cvss": 7.5,
-      "Cves": [
-        "CVE-2026-29059"
       ]
     }
   ]
