@@ -1,10 +1,10 @@
 {
-  "GeneratedAt": "2026-08-08T04:15:25Z",
-  "TotalArticles": 442,
+  "GeneratedAt": "2026-08-09T04:23:23Z",
+  "TotalArticles": 448,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 309
+      "Count": 314
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "BleepingComputer",
-      "Count": 29
+      "Count": 30
     },
     {
       "Source": "Krebs on Security",
@@ -26,7 +26,7 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 23
+      "Count": 25
     },
     {
       "Severity": "High",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 210
+      "Count": 213
     },
     {
       "Severity": "Low",
-      "Count": 182
+      "Count": 183
     }
   ],
   "DailyTrend": {
@@ -78,7 +78,8 @@
       "2026-08-04",
       "2026-08-05",
       "2026-08-06",
-      "2026-08-07"
+      "2026-08-07",
+      "2026-08-08"
     ],
     "Datasets": [
       {
@@ -119,7 +120,8 @@
           8,
           14,
           14,
-          12
+          12,
+          5
         ]
       },
       {
@@ -160,7 +162,8 @@
           3,
           7,
           4,
-          1
+          1,
+          0
         ]
       },
       {
@@ -201,7 +204,8 @@
           3,
           1,
           3,
-          2
+          2,
+          0
         ]
       },
       {
@@ -242,7 +246,8 @@
           8,
           7,
           7,
-          5
+          5,
+          1
         ]
       },
       {
@@ -283,6 +288,7 @@
           0,
           0,
           1,
+          0,
           0
         ]
       }
@@ -294,6 +300,12 @@
       "Count": 3,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+    },
+    {
+      "Cve": "CVE-2026-8037",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
       "Cve": "CVE-2026-18577",
@@ -332,16 +344,10 @@
       "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
     },
     {
-      "Cve": "CVE-2026-8037",
-      "Count": 2,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/07/cisa-adds-one-known-exploited-vulnerability-catalog"
-    },
-    {
-      "Cve": "CVE-2026-17583",
+      "Cve": "CVE-2026-18064",
       "Count": 1,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-216-01"
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-211-06"
     },
     {
       "Cve": "CVE-2026-23458",
@@ -353,7 +359,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 46
+      "Count": 48
     },
     {
       "Keyword": "malware",
@@ -373,7 +379,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 14
+      "Count": 15
     },
     {
       "Keyword": "leak",
@@ -393,6 +399,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-08T06:58:31Z",
+      "Url": "http://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Progress Kemp LoadMaster Flaw Hits CISA KEV After 792 Reported Exploit Attempts",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-08T06:52:16Z",
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html",
+      "Severity": "Critical",
+      "Cvss": 9.6,
+      "Cves": [
+        "CVE-2026-8037"
+      ]
+    },
     {
       "Title": "Metabase SQLi zero-day exploited in customer data-theft attacks",
       "Source": "BleepingComputer",
@@ -590,28 +618,6 @@
       "Cvss": 7.8,
       "Cves": [
         "CVE-2026-53264"
-      ]
-    },
-    {
-      "Title": "Attackers Exploit Arista VeloCloud Orchestrator Command Injection Flaw",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-07-28T04:43:53Z",
-      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-16812"
-      ]
-    },
-    {
-      "Title": "Adversaries Don't Need a Zero-Day — They Read Your Rulebook",
-      "Source": "Dark Reading",
-      "PublishedAt": "2026-07-27T17:31:18Z",
-      "Url": "https://www.darkreading.com/threat-intelligence/adversaries-do-not-need-zero-day-they-read-your-rulebook",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
