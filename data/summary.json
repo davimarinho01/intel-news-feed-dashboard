@@ -1,26 +1,26 @@
 {
-  "GeneratedAt": "2026-08-11T04:25:37Z",
-  "TotalArticles": 474,
+  "GeneratedAt": "2026-08-12T04:53:32Z",
+  "TotalArticles": 511,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 322
+      "Count": 337
     },
     {
       "Source": "Dark Reading",
-      "Count": 65
+      "Count": 67
     },
     {
       "Source": "BleepingComputer",
-      "Count": 40
+      "Count": 55
     },
     {
       "Source": "CISA Advisories",
-      "Count": 36
+      "Count": 40
     },
     {
       "Source": "Krebs on Security",
-      "Count": 11
+      "Count": 12
     }
   ],
   "SeverityBreakdown": [
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 30
+      "Count": 36
     },
     {
       "Severity": "Medium",
-      "Count": 224
+      "Count": 237
     },
     {
       "Severity": "Low",
-      "Count": 195
+      "Count": 213
     }
   ],
   "DailyTrend": {
@@ -80,7 +80,9 @@
       "2026-08-06",
       "2026-08-07",
       "2026-08-08",
-      "2026-08-10"
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12"
     ],
     "Datasets": [
       {
@@ -123,7 +125,9 @@
           14,
           12,
           5,
-          8
+          8,
+          15,
+          0
         ]
       },
       {
@@ -166,7 +170,9 @@
           4,
           1,
           0,
-          7
+          7,
+          2,
+          0
         ]
       },
       {
@@ -209,7 +215,9 @@
           7,
           5,
           1,
-          10
+          10,
+          14,
+          1
         ]
       },
       {
@@ -252,7 +260,9 @@
           3,
           2,
           0,
-          1
+          1,
+          4,
+          0
         ]
       },
       {
@@ -295,6 +305,8 @@
           1,
           0,
           0,
+          0,
+          1,
           0
         ]
       }
@@ -302,34 +314,22 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-8037",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
-    },
-    {
       "Cve": "CVE-2026-18577",
       "Count": 3,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
+      "Cve": "CVE-2026-8037",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
+    },
+    {
       "Cve": "CVE-2026-63077",
       "Count": 3,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
-      "Cve": "CVE-2026-16232",
-      "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
-    },
-    {
-      "Cve": "CVE-2026-16812",
-      "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
     },
     {
       "Cve": "CVE-2026-18556",
@@ -344,19 +344,31 @@
       "Url": "http://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html"
     },
     {
+      "Cve": "CVE-2026-16812",
+      "Count": 2,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
+    },
+    {
+      "Cve": "CVE-2026-68820",
+      "Count": 2,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html"
+    },
+    {
       "Cve": "CVE-2026-9198",
       "Count": 2,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html"
     },
     {
-      "Cve": "CVE-2026-66364",
-      "Count": 1,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-211-10"
+      "Cve": "CVE-2026-16232",
+      "Count": 2,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
     },
     {
-      "Cve": "CVE-2026-23454",
+      "Cve": "CVE-2026-23455",
       "Count": 1,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-04"
@@ -365,7 +377,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 52
+      "Count": 60
     },
     {
       "Keyword": "malware",
@@ -373,7 +385,7 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 24
+      "Count": 30
     },
     {
       "Keyword": "phishing",
@@ -385,7 +397,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 16
+      "Count": 18
     },
     {
       "Keyword": "leak",
@@ -401,10 +413,76 @@
     },
     {
       "Keyword": "takeover",
-      "Count": 5
+      "Count": 6
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Microsoft Plugs Nearly 400 Security Holes",
+      "Source": "Krebs on Security",
+      "PublishedAt": "2026-08-11T21:28:35Z",
+      "Url": "https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-11T20:10:55Z",
+      "Url": "http://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
+      "Severity": "High",
+      "Cvss": 7.0,
+      "Cves": [
+        "CVE-2026-68820"
+      ]
+    },
+    {
+      "Title": "Cisco warns of ASA and FTD VPN flaw exploited to crash devices",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-08-11T19:45:31Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Microsoft August 2026 Patch Tuesday fixes 400 flaws, 3 zero-days",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-08-11T18:08:50Z",
+      "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-august-2026-patch-tuesday-fixes-400-flaws-3-zero-days/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "OpenAI Launches GPT-5.6-Cyber with Reduced Safeguards for Exploit Development",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-11T13:11:23Z",
+      "Url": "http://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA: Microsoft SharePoint flaw now exploited in ransomware attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-08-11T12:12:16Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-flaw-now-exploited-in-ransomware-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Metabase SQL Zero-Day Attacks Could Have Wide Blast Radius",
       "Source": "Dark Reading",
@@ -557,73 +635,6 @@
       "Cvss": 9.4,
       "Cves": [
         "CVE-2026-58048"
-      ]
-    },
-    {
-      "Title": "CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-04T07:00:13Z",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
-      "Severity": "High",
-      "Cvss": 8.2,
-      "Cves": [
-        "CVE-2026-18577",
-        "CVE-2026-18556"
-      ]
-    },
-    {
-      "Title": "Critical Rails Flaw Could Let Unauthenticated Attackers Read Server Files via Image Uploads",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-07-29T18:10:00Z",
-      "Url": "http://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
-      "Severity": "Critical",
-      "Cvss": 9.5,
-      "Cves": [
-        "CVE-2026-66066"
-      ]
-    },
-    {
-      "Title": "Ruflo MCP Flaw Lets Unauthenticated Attackers Run Commands and Poison AI Memory",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-07-29T15:39:30Z",
-      "Url": "http://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-59726"
-      ]
-    },
-    {
-      "Title": "Three Critical VMware Flaws Allow Auth Bypass, Code Execution, and VM Escape",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-07-29T15:31:15Z",
-      "Url": "http://thehackernews.com/2026/07/three-critical-vmware-flaws-allow-auth.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-59309"
-      ]
-    },
-    {
-      "Title": "Public PoC Released for Exploited Check Point SmartConsole Authentication Bypass",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-07-29T08:58:27Z",
-      "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html",
-      "Severity": "Critical",
-      "Cvss": 9.3,
-      "Cves": [
-        "CVE-2026-16232"
-      ]
-    },
-    {
-      "Title": "New Gitea RCE Lets Repository Writers Plant a Git Hook to Run Shell Commands",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-07-29T07:47:19Z",
-      "Url": "http://thehackernews.com/2026/07/new-gitea-rce-lets-repository-writers.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-60004"
       ]
     }
   ]
