@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-08-13T04:57:58Z",
-  "TotalArticles": 536,
+  "GeneratedAt": "2026-08-14T04:55:07Z",
+  "TotalArticles": 572,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 347
-    },
-    {
-      "Source": "Dark Reading",
-      "Count": 71
+      "Count": 354
     },
     {
       "Source": "BleepingComputer",
-      "Count": 66
+      "Count": 77
+    },
+    {
+      "Source": "Dark Reading",
+      "Count": 74
     },
     {
       "Source": "CISA Advisories",
-      "Count": 40
+      "Count": 55
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 27
+      "Count": 28
     },
     {
       "Severity": "High",
-      "Count": 41
+      "Count": 43
     },
     {
       "Severity": "Medium",
-      "Count": 243
+      "Count": 264
     },
     {
       "Severity": "Low",
-      "Count": 225
+      "Count": 237
     }
   ],
   "DailyTrend": {
@@ -82,7 +82,9 @@
       "2026-08-08",
       "2026-08-10",
       "2026-08-11",
-      "2026-08-12"
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14"
     ],
     "Datasets": [
       {
@@ -127,52 +129,9 @@
           5,
           8,
           15,
-          10
-        ]
-      },
-      {
-        "Source": "Dark Reading",
-        "Data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          4,
-          5,
-          0,
-          5,
+          10,
           7,
-          7,
-          5,
-          5,
-          5,
-          3,
-          7,
-          4,
-          1,
-          0,
-          7,
-          2,
-          4
+          0
         ]
       },
       {
@@ -217,7 +176,56 @@
           1,
           10,
           14,
-          12
+          12,
+          10,
+          1
+        ]
+      },
+      {
+        "Source": "Dark Reading",
+        "Data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          5,
+          0,
+          5,
+          7,
+          7,
+          5,
+          5,
+          5,
+          3,
+          7,
+          4,
+          1,
+          0,
+          7,
+          2,
+          4,
+          3,
+          0
         ]
       },
       {
@@ -262,6 +270,8 @@
           0,
           1,
           4,
+          1,
+          14,
           0
         ]
       },
@@ -307,6 +317,8 @@
           0,
           0,
           1,
+          0,
+          0,
           0
         ]
       }
@@ -314,10 +326,10 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-18577",
+      "Cve": "CVE-2026-63077",
       "Count": 3,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
     },
     {
       "Cve": "CVE-2026-8037",
@@ -326,34 +338,22 @@
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
+      "Cve": "CVE-2026-18577",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
       "Cve": "CVE-2026-68820",
       "Count": 3,
       "Severity": "High",
       "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     },
     {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
-      "Cve": "CVE-2026-18556",
+      "Cve": "CVE-2026-59310",
       "Count": 2,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/04/cisa-adds-three-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-20349",
-      "Count": 2,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html"
-    },
-    {
-      "Cve": "CVE-2026-16812",
-      "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
+      "Url": "https://www.bleepingcomputer.com/news/security/critical-vmware-vcenter-rce-flaw-exploited-for-reverse-ssh-access/"
     },
     {
       "Cve": "CVE-2026-16232",
@@ -362,26 +362,38 @@
       "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
     },
     {
-      "Cve": "CVE-2026-9198",
+      "Cve": "CVE-2026-18556",
       "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/04/cisa-adds-three-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-50656",
+      "Cve": "CVE-2026-55040",
       "Count": 2,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/attackers-exploit-sharepoint.html"
+    },
+    {
+      "Cve": "CVE-2026-20316",
+      "Count": 2,
+      "Severity": "Medium",
+      "Url": "http://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html"
+    },
+    {
+      "Cve": "CVE-2026-16812",
+      "Count": 2,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 66
+      "Count": 69
     },
     {
       "Keyword": "malware",
-      "Count": 33
+      "Count": 34
     },
     {
       "Keyword": "ransomware",
@@ -389,22 +401,22 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 22
+      "Count": 24
     },
     {
       "Keyword": "critical",
-      "Count": 19
+      "Count": 22
     },
     {
       "Keyword": "phishing",
       "Count": 19
     },
     {
-      "Keyword": "leak",
-      "Count": 10
+      "Keyword": "vulnerability",
+      "Count": 11
     },
     {
-      "Keyword": "vulnerability",
+      "Keyword": "leak",
       "Count": 10
     },
     {
@@ -417,6 +429,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Unpatched GeoServer Zero-Day Targeted in Active Exploitation Attempts, Can Lead to RCE",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-13T18:45:12Z",
+      "Url": "http://thehackernews.com/2026/08/unpatched-geoserver-zero-day-targeted.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Microsoft patches LegacyHive Windows zero-day vulnerability",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-08-13T17:46:20Z",
+      "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-legacyhive-windows-zero-day-vulnerability/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-13T06:09:48Z",
+      "Url": "http://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
+      "Severity": "Critical",
+      "Cvss": 9.1,
+      "Cves": [
+        "CVE-2026-55040"
+      ]
+    },
     {
       "Title": "Lazarus Exploits Windows Zero-Day to Gain SYSTEM Access and Deploy Backdoor",
       "Source": "The Hacker News",
@@ -602,39 +647,6 @@
       "Cvss": 10.0,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Progress Kemp LoadMaster Flaw Hits CISA KEV After 792 Reported Exploit Attempts",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-08T06:52:16Z",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html",
-      "Severity": "Critical",
-      "Cvss": 9.6,
-      "Cves": [
-        "CVE-2026-8037"
-      ]
-    },
-    {
-      "Title": "Metabase SQLi zero-day exploited in customer data-theft attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-07T20:14:46Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/framework-tally-disclose-metabase-data-theft-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "New WordPress Pre-Auth XSS Could Lead to PHP Code Execution - Patch ASAP",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-07T12:56:23Z",
-      "Url": "http://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html",
-      "Severity": "High",
-      "Cvss": 8.9,
-      "Cves": [
-        "CVE-2026-64638"
       ]
     }
   ]
