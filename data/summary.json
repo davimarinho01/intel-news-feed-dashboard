@@ -1,18 +1,18 @@
 {
-  "GeneratedAt": "2026-08-14T04:55:07Z",
-  "TotalArticles": 572,
+  "GeneratedAt": "2026-08-15T03:46:12Z",
+  "TotalArticles": 594,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 354
+      "Count": 362
     },
     {
       "Source": "BleepingComputer",
-      "Count": 77
+      "Count": 85
     },
     {
       "Source": "Dark Reading",
-      "Count": 74
+      "Count": 79
     },
     {
       "Source": "CISA Advisories",
@@ -20,7 +20,7 @@
     },
     {
       "Source": "Krebs on Security",
-      "Count": 12
+      "Count": 13
     }
   ],
   "SeverityBreakdown": [
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 264
+      "Count": 273
     },
     {
       "Severity": "Low",
-      "Count": 237
+      "Count": 250
     }
   ],
   "DailyTrend": {
@@ -131,7 +131,7 @@
           15,
           10,
           7,
-          0
+          8
         ]
       },
       {
@@ -178,7 +178,7 @@
           14,
           12,
           10,
-          1
+          9
         ]
       },
       {
@@ -225,7 +225,7 @@
           2,
           4,
           3,
-          0
+          5
         ]
       },
       {
@@ -319,7 +319,7 @@
           1,
           0,
           0,
-          0
+          1
         ]
       }
     ]
@@ -389,11 +389,11 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 69
+      "Count": 71
     },
     {
       "Keyword": "malware",
-      "Count": 34
+      "Count": 35
     },
     {
       "Keyword": "ransomware",
@@ -409,7 +409,7 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 19
+      "Count": 20
     },
     {
       "Keyword": "vulnerability",
