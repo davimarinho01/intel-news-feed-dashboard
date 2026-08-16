@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-08-15T03:46:12Z",
-  "TotalArticles": 594,
+  "GeneratedAt": "2026-08-16T03:53:46Z",
+  "TotalArticles": 597,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 362
+      "Count": 364
     },
     {
       "Source": "BleepingComputer",
-      "Count": 85
+      "Count": 86
     },
     {
       "Source": "Dark Reading",
@@ -26,7 +26,7 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 28
+      "Count": 29
     },
     {
       "Severity": "High",
@@ -34,7 +34,7 @@
     },
     {
       "Severity": "Medium",
-      "Count": 273
+      "Count": 275
     },
     {
       "Severity": "Low",
@@ -84,7 +84,8 @@
       "2026-08-11",
       "2026-08-12",
       "2026-08-13",
-      "2026-08-14"
+      "2026-08-14",
+      "2026-08-15"
     ],
     "Datasets": [
       {
@@ -131,7 +132,8 @@
           15,
           10,
           7,
-          8
+          8,
+          2
         ]
       },
       {
@@ -178,7 +180,8 @@
           14,
           12,
           10,
-          9
+          9,
+          1
         ]
       },
       {
@@ -225,7 +228,8 @@
           2,
           4,
           3,
-          5
+          5,
+          0
         ]
       },
       {
@@ -272,6 +276,7 @@
           4,
           1,
           14,
+          0,
           0
         ]
       },
@@ -319,7 +324,8 @@
           1,
           0,
           0,
-          1
+          1,
+          0
         ]
       }
     ]
@@ -350,16 +356,16 @@
       "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     },
     {
-      "Cve": "CVE-2026-59310",
-      "Count": 2,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/critical-vmware-vcenter-rce-flaw-exploited-for-reverse-ssh-access/"
-    },
-    {
       "Cve": "CVE-2026-16232",
       "Count": 2,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
+    },
+    {
+      "Cve": "CVE-2026-58231",
+      "Count": 2,
+      "Severity": "Medium",
+      "Url": "http://thehackernews.com/2026/08/sap-commerce-cloud-cve-2026-58231.html"
     },
     {
       "Cve": "CVE-2026-18556",
@@ -389,7 +395,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 71
+      "Count": 73
     },
     {
       "Keyword": "malware",
@@ -429,6 +435,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-15T07:24:04Z",
+      "Url": "http://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-65400"
+      ]
+    },
     {
       "Title": "Unpatched GeoServer Zero-Day Targeted in Active Exploitation Attempts, Can Lead to RCE",
       "Source": "The Hacker News",
@@ -634,17 +651,6 @@
       "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-progress-loadmaster-flaw-exploited-in-attacks/",
       "Severity": "High",
       "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-08T06:58:31Z",
-      "Url": "http://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
       "Cves": [
         null
       ]
