@@ -1,6 +1,6 @@
 {
-  "GeneratedAt": "2026-08-16T03:53:46Z",
-  "TotalArticles": 597,
+  "GeneratedAt": "2026-08-17T03:55:56Z",
+  "TotalArticles": 601,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
@@ -8,7 +8,7 @@
     },
     {
       "Source": "BleepingComputer",
-      "Count": 86
+      "Count": 90
     },
     {
       "Source": "Dark Reading",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 275
+      "Count": 277
     },
     {
       "Severity": "Low",
-      "Count": 250
+      "Count": 252
     }
   ],
   "DailyTrend": {
@@ -85,7 +85,8 @@
       "2026-08-12",
       "2026-08-13",
       "2026-08-14",
-      "2026-08-15"
+      "2026-08-15",
+      "2026-08-16"
     ],
     "Datasets": [
       {
@@ -133,7 +134,8 @@
           10,
           7,
           8,
-          2
+          2,
+          0
         ]
       },
       {
@@ -181,7 +183,8 @@
           12,
           10,
           9,
-          1
+          1,
+          4
         ]
       },
       {
@@ -229,6 +232,7 @@
           4,
           3,
           5,
+          0,
           0
         ]
       },
@@ -276,6 +280,7 @@
           4,
           1,
           14,
+          0,
           0,
           0
         ]
@@ -325,6 +330,7 @@
           0,
           0,
           1,
+          0,
           0
         ]
       }
@@ -399,7 +405,7 @@
     },
     {
       "Keyword": "malware",
-      "Count": 35
+      "Count": 36
     },
     {
       "Keyword": "ransomware",
