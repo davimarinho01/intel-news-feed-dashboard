@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-08-17T03:55:56Z",
-  "TotalArticles": 601,
+  "GeneratedAt": "2026-08-18T03:50:51Z",
+  "TotalArticles": 623,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 364
+      "Count": 373
     },
     {
       "Source": "BleepingComputer",
-      "Count": 90
+      "Count": 98
     },
     {
       "Source": "Dark Reading",
-      "Count": 79
+      "Count": 83
     },
     {
       "Source": "CISA Advisories",
-      "Count": 55
+      "Count": 56
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 29
+      "Count": 30
     },
     {
       "Severity": "High",
-      "Count": 43
+      "Count": 45
     },
     {
       "Severity": "Medium",
-      "Count": 277
+      "Count": 287
     },
     {
       "Severity": "Low",
-      "Count": 252
+      "Count": 261
     }
   ],
   "DailyTrend": {
@@ -86,7 +86,8 @@
       "2026-08-13",
       "2026-08-14",
       "2026-08-15",
-      "2026-08-16"
+      "2026-08-16",
+      "2026-08-17"
     ],
     "Datasets": [
       {
@@ -135,7 +136,8 @@
           7,
           8,
           2,
-          0
+          0,
+          9
         ]
       },
       {
@@ -184,7 +186,8 @@
           10,
           9,
           1,
-          4
+          4,
+          8
         ]
       },
       {
@@ -233,7 +236,8 @@
           3,
           5,
           0,
-          0
+          0,
+          4
         ]
       },
       {
@@ -282,7 +286,8 @@
           14,
           0,
           0,
-          0
+          0,
+          1
         ]
       },
       {
@@ -331,6 +336,7 @@
           0,
           1,
           0,
+          0,
           0
         ]
       }
@@ -350,6 +356,12 @@
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
+      "Cve": "CVE-2026-59310",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html"
+    },
+    {
       "Cve": "CVE-2026-18577",
       "Count": 3,
       "Severity": "High",
@@ -362,62 +374,56 @@
       "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     },
     {
+      "Cve": "CVE-2026-50656",
+      "Count": 2,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html"
+    },
+    {
+      "Cve": "CVE-2026-43284",
+      "Count": 2,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-04"
+    },
+    {
       "Cve": "CVE-2026-16232",
       "Count": 2,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
     },
     {
-      "Cve": "CVE-2026-58231",
+      "Cve": "CVE-2026-16812",
       "Count": 2,
-      "Severity": "Medium",
-      "Url": "http://thehackernews.com/2026/08/sap-commerce-cloud-cve-2026-58231.html"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
     },
     {
       "Cve": "CVE-2026-18556",
       "Count": 2,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/04/cisa-adds-three-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-55040",
-      "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/attackers-exploit-sharepoint.html"
-    },
-    {
-      "Cve": "CVE-2026-20316",
-      "Count": 2,
-      "Severity": "Medium",
-      "Url": "http://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html"
-    },
-    {
-      "Cve": "CVE-2026-16812",
-      "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 73
+      "Count": 79
     },
     {
       "Keyword": "malware",
-      "Count": 36
+      "Count": 37
     },
     {
       "Keyword": "ransomware",
-      "Count": 31
+      "Count": 33
     },
     {
       "Keyword": "zero-day",
-      "Count": 24
+      "Count": 25
     },
     {
       "Keyword": "critical",
-      "Count": 22
+      "Count": 23
     },
     {
       "Keyword": "phishing",
@@ -425,7 +431,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 11
+      "Count": 12
     },
     {
       "Keyword": "leak",
@@ -441,6 +447,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "⚡ Weekly Recap: VMware Exploits, Windows 0-Day, MCP Attacks, Browser Hijacks and More",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-17T13:23:51Z",
+      "Url": "http://thehackernews.com/2026/08/weekly-recap-vmware-exploits-windows-0.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Microsoft working on Defender patch for ShieldBreak zero-day",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-08-17T09:05:33Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-69414"
+      ]
+    },
+    {
+      "Title": "Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-17T07:36:19Z",
+      "Url": "http://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-59310"
+      ]
+    },
     {
       "Title": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
       "Source": "The Hacker News",
@@ -622,39 +661,6 @@
       "Source": "BleepingComputer",
       "PublishedAt": "2026-08-11T12:12:16Z",
       "Url": "https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-flaw-now-exploited-in-ransomware-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Metabase SQL Zero-Day Attacks Could Have Wide Blast Radius",
-      "Source": "Dark Reading",
-      "PublishedAt": "2026-08-10T21:02:23Z",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/metabase-sql-zero-day-attacks-wide-blast-radius",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "⚡ Weekly Recap: AI Goes Rogue, Metabase 0-Day, MCP Supply-Chain Attacks, and Router Backdoors",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-10T15:00:29Z",
-      "Url": "http://thehackernews.com/2026/08/weekly-recap-ai-goes-rogue-metabase-0.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Critical Progress LoadMaster flaw now actively exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-10T09:49:37Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-progress-loadmaster-flaw-exploited-in-attacks/",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
