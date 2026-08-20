@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-08-19T03:52:05Z",
-  "TotalArticles": 648,
+  "GeneratedAt": "2026-08-20T03:52:22Z",
+  "TotalArticles": 674,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 382
+      "Count": 391
     },
     {
       "Source": "BleepingComputer",
-      "Count": 105
+      "Count": 117
     },
     {
       "Source": "Dark Reading",
-      "Count": 89
+      "Count": 92
     },
     {
       "Source": "CISA Advisories",
-      "Count": 59
+      "Count": 61
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 30
+      "Count": 31
     },
     {
       "Severity": "High",
-      "Count": 47
+      "Count": 48
     },
     {
       "Severity": "Medium",
-      "Count": 297
+      "Count": 309
     },
     {
       "Severity": "Low",
-      "Count": 274
+      "Count": 286
     }
   ],
   "DailyTrend": {
@@ -89,7 +89,8 @@
       "2026-08-16",
       "2026-08-17",
       "2026-08-18",
-      "2026-08-19"
+      "2026-08-19",
+      "2026-08-20"
     ],
     "Datasets": [
       {
@@ -139,6 +140,7 @@
           8,
           2,
           0,
+          9,
           9,
           9,
           0
@@ -193,7 +195,8 @@
           4,
           8,
           7,
-          0
+          11,
+          1
         ]
       },
       {
@@ -244,8 +247,9 @@
           0,
           0,
           4,
-          5,
-          1
+          6,
+          3,
+          0
         ]
       },
       {
@@ -297,6 +301,7 @@
           0,
           1,
           3,
+          2,
           0
         ]
       },
@@ -349,6 +354,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -362,16 +368,10 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-55040",
+      "Cve": "CVE-2026-18577",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-68820",
@@ -380,10 +380,16 @@
       "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     },
     {
-      "Cve": "CVE-2026-18577",
+      "Cve": "CVE-2026-55040",
       "Count": 3,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-65400",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
     },
     {
       "Cve": "CVE-2026-8037",
@@ -392,62 +398,62 @@
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
-      "Cve": "CVE-2026-20316",
-      "Count": 2,
-      "Severity": "Medium",
-      "Url": "http://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html"
+      "Cve": "CVE-2026-63077",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
     },
     {
-      "Cve": "CVE-2026-16812",
+      "Cve": "CVE-2026-20349",
       "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html"
+    },
+    {
+      "Cve": "CVE-2026-50656",
+      "Count": 2,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html"
     },
     {
       "Cve": "CVE-2026-18556",
       "Count": 2,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/04/cisa-adds-three-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-9198",
-      "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 83
+      "Count": 87
     },
     {
       "Keyword": "malware",
-      "Count": 37
+      "Count": 38
     },
     {
       "Keyword": "ransomware",
-      "Count": 36
+      "Count": 38
+    },
+    {
+      "Keyword": "critical",
+      "Count": 28
     },
     {
       "Keyword": "zero-day",
       "Count": 25
     },
     {
-      "Keyword": "critical",
-      "Count": 24
-    },
-    {
       "Keyword": "phishing",
-      "Count": 20
+      "Count": 21
     },
     {
       "Keyword": "vulnerability",
-      "Count": 12
+      "Count": 13
     },
     {
       "Keyword": "leak",
-      "Count": 10
+      "Count": 11
     },
     {
       "Keyword": "code execution",
@@ -459,6 +465,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-19T11:01:48Z",
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-65400"
+      ]
+    },
+    {
+      "Title": "Critical RCE flaw in Windows IKE Extension now actively exploited",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-08-19T10:12:24Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "CISA: Windows Task Host flaw now exploited by ransomware gangs",
       "Source": "BleepingComputer",
@@ -655,28 +683,6 @@
       "Cvss": 7.0,
       "Cves": [
         "CVE-2026-68820"
-      ]
-    },
-    {
-      "Title": "Cisco warns of ASA and FTD VPN flaw exploited to crash devices",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-11T19:45:31Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Microsoft August 2026 Patch Tuesday fixes 400 flaws, 3 zero-days",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-11T18:08:50Z",
-      "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-august-2026-patch-tuesday-fixes-400-flaws-3-zero-days/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
