@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-08-21T03:55:02Z",
-  "TotalArticles": 708,
+  "GeneratedAt": "2026-08-22T03:48:18Z",
+  "TotalArticles": 728,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 407
+      "Count": 414
     },
     {
       "Source": "BleepingComputer",
-      "Count": 125
+      "Count": 134
     },
     {
       "Source": "Dark Reading",
-      "Count": 100
+      "Count": 103
     },
     {
       "Source": "CISA Advisories",
-      "Count": 63
+      "Count": 64
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 31
+      "Count": 32
     },
     {
       "Severity": "High",
-      "Count": 50
+      "Count": 51
     },
     {
       "Severity": "Medium",
-      "Count": 327
+      "Count": 336
     },
     {
       "Severity": "Low",
-      "Count": 300
+      "Count": 309
     }
   ],
   "DailyTrend": {
@@ -145,7 +145,7 @@
           9,
           9,
           16,
-          0
+          7
         ]
       },
       {
@@ -199,7 +199,7 @@
           7,
           11,
           9,
-          0
+          9
         ]
       },
       {
@@ -253,7 +253,7 @@
           6,
           4,
           6,
-          1
+          4
         ]
       },
       {
@@ -307,7 +307,7 @@
           3,
           2,
           2,
-          0
+          1
         ]
       },
       {
@@ -374,28 +374,10 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-63077",
+      "Cve": "CVE-2026-68820",
       "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
-      "Cve": "CVE-2026-8037",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
-    },
-    {
-      "Cve": "CVE-2026-55040",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-65400",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     },
     {
       "Cve": "CVE-2026-18577",
@@ -404,38 +386,56 @@
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-68820",
+      "Cve": "CVE-2026-65400",
       "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
+    },
+    {
+      "Cve": "CVE-2026-8037",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
       "Cve": "CVE-2026-19478",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+    },
+    {
+      "Cve": "CVE-2026-55040",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-63077",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+    },
+    {
+      "Cve": "CVE-2026-20316",
       "Count": 2,
       "Severity": "Medium",
-      "Url": "https://www.darkreading.com/application-security/critical-gitlab-zero-click-flaw-mitigation-challenges"
+      "Url": "http://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html"
     },
     {
-      "Cve": "CVE-2026-16232",
+      "Cve": "CVE-2026-20349",
       "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
-    },
-    {
-      "Cve": "CVE-2026-16812",
-      "Count": 2,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 93
+      "Count": 97
     },
     {
       "Keyword": "malware",
-      "Count": 43
+      "Count": 46
     },
     {
       "Keyword": "ransomware",
@@ -451,26 +451,48 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 22
+      "Count": 23
     },
     {
       "Keyword": "vulnerability",
-      "Count": 14
+      "Count": 15
     },
     {
       "Keyword": "leak",
-      "Count": 11
+      "Count": 12
     },
     {
       "Keyword": "code execution",
-      "Count": 7
+      "Count": 8
     },
     {
-      "Keyword": "takeover",
-      "Count": 6
+      "Keyword": "cvss",
+      "Count": 7
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "CISA orders feds to patch actively exploited TrueConf Server flaws",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-08-21T12:25:33Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-21T07:04:25Z",
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
+      "Severity": "Critical",
+      "Cvss": 9.4,
+      "Cves": [
+        "CVE-2026-19478"
+      ]
+    },
     {
       "Title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
       "Source": "The Hacker News",
@@ -667,28 +689,6 @@
       "Cvss": 9.8,
       "Cves": [
         "CVE-2026-59310"
-      ]
-    },
-    {
-      "Title": "ShieldBreak Zero-Day PoC Claims Microsoft Defender Patch Bypass With SYSTEM Access",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-12T06:41:38Z",
-      "Url": "http://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html",
-      "Severity": "High",
-      "Cvss": 7.8,
-      "Cves": [
-        "CVE-2026-50656"
-      ]
-    },
-    {
-      "Title": "Cisco ASA and FTD Flaw Exploited in the Wild Can Trigger Remote DoS",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-12T06:15:58Z",
-      "Url": "http://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html",
-      "Severity": "High",
-      "Cvss": 8.6,
-      "Cves": [
-        "CVE-2026-20349"
       ]
     }
   ]
