@@ -1,6 +1,6 @@
 {
-  "GeneratedAt": "2026-08-23T03:55:21Z",
-  "TotalArticles": 731,
+  "GeneratedAt": "2026-08-24T03:59:48Z",
+  "TotalArticles": 734,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
@@ -8,11 +8,11 @@
     },
     {
       "Source": "BleepingComputer",
-      "Count": 136
+      "Count": 137
     },
     {
       "Source": "Dark Reading",
-      "Count": 103
+      "Count": 105
     },
     {
       "Source": "CISA Advisories",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 337
+      "Count": 338
     },
     {
       "Severity": "Low",
-      "Count": 311
+      "Count": 313
     }
   ],
   "DailyTrend": {
@@ -92,7 +92,8 @@
       "2026-08-19",
       "2026-08-20",
       "2026-08-21",
-      "2026-08-22"
+      "2026-08-22",
+      "2026-08-23"
     ],
     "Datasets": [
       {
@@ -147,7 +148,8 @@
           9,
           16,
           7,
-          1
+          1,
+          0
         ]
       },
       {
@@ -202,7 +204,8 @@
           11,
           9,
           9,
-          2
+          2,
+          1
         ]
       },
       {
@@ -256,7 +259,8 @@
           6,
           4,
           6,
-          4,
+          6,
+          0,
           0
         ]
       },
@@ -312,6 +316,7 @@
           2,
           2,
           1,
+          0,
           0
         ]
       },
@@ -360,6 +365,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -441,7 +447,7 @@
     },
     {
       "Keyword": "malware",
-      "Count": 47
+      "Count": 48
     },
     {
       "Keyword": "ransomware",
