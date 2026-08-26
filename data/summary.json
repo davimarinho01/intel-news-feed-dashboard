@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-08-25T03:53:57Z",
-  "TotalArticles": 757,
+  "GeneratedAt": "2026-08-26T03:57:59Z",
+  "TotalArticles": 789,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 423
+      "Count": 433
     },
     {
       "Source": "BleepingComputer",
-      "Count": 146
+      "Count": 156
     },
     {
       "Source": "Dark Reading",
-      "Count": 110
+      "Count": 113
     },
     {
       "Source": "CISA Advisories",
-      "Count": 65
+      "Count": 74
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 32
+      "Count": 33
     },
     {
       "Severity": "High",
-      "Count": 52
+      "Count": 53
     },
     {
       "Severity": "Medium",
-      "Count": 351
+      "Count": 371
     },
     {
       "Severity": "Low",
-      "Count": 322
+      "Count": 332
     }
   ],
   "DailyTrend": {
@@ -94,7 +94,8 @@
       "2026-08-21",
       "2026-08-22",
       "2026-08-23",
-      "2026-08-24"
+      "2026-08-24",
+      "2026-08-25"
     ],
     "Datasets": [
       {
@@ -151,7 +152,8 @@
           7,
           1,
           0,
-          8
+          8,
+          10
         ]
       },
       {
@@ -208,7 +210,8 @@
           9,
           2,
           1,
-          9
+          9,
+          10
         ]
       },
       {
@@ -265,7 +268,8 @@
           6,
           0,
           0,
-          5
+          5,
+          3
         ]
       },
       {
@@ -322,7 +326,8 @@
           1,
           0,
           0,
-          1
+          1,
+          9
         ]
       },
       {
@@ -379,6 +384,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -392,10 +398,10 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-68820",
+      "Cve": "CVE-2026-55040",
       "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-65400",
@@ -404,10 +410,10 @@
       "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
     },
     {
-      "Cve": "CVE-2026-19478",
+      "Cve": "CVE-2026-63077",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
     },
     {
       "Cve": "CVE-2026-8037",
@@ -416,44 +422,44 @@
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
-      "Cve": "CVE-2026-73570",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
-    },
-    {
-      "Cve": "CVE-2026-55040",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
       "Cve": "CVE-2026-18577",
       "Count": 3,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-43284",
-      "Count": 2,
+      "Cve": "CVE-2026-19478",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 3,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-04"
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+    },
+    {
+      "Cve": "CVE-2026-68820",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+    },
+    {
+      "Cve": "CVE-2026-16812",
+      "Count": 2,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 100
+      "Count": 102
     },
     {
       "Keyword": "malware",
-      "Count": 50
+      "Count": 51
     },
     {
       "Keyword": "ransomware",
@@ -461,19 +467,19 @@
     },
     {
       "Keyword": "critical",
-      "Count": 34
+      "Count": 36
+    },
+    {
+      "Keyword": "phishing",
+      "Count": 25
     },
     {
       "Keyword": "zero-day",
       "Count": 25
     },
     {
-      "Keyword": "phishing",
-      "Count": 23
-    },
-    {
       "Keyword": "vulnerability",
-      "Count": 17
+      "Count": 19
     },
     {
       "Keyword": "leak",
@@ -489,6 +495,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-25T08:34:07Z",
+      "Url": "http://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
+      "Severity": "High",
+      "Cvss": 8.1,
+      "Cves": [
+        "CVE-2026-61979"
+      ]
+    },
+    {
+      "Title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-25T06:12:35Z",
+      "Url": "http://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-21962"
+      ]
+    },
     {
       "Title": "CISA orders urgent patching of actively exploited Zimbra flaw",
       "Source": "BleepingComputer",
@@ -685,28 +713,6 @@
       "Cvss": null,
       "Cves": [
         "CVE-2026-68820"
-      ]
-    },
-    {
-      "Title": "Adobe Patches Three CVSS 10.0 ColdFusion and Campaign Classic Flaws",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-12T11:13:03Z",
-      "Url": "http://thehackernews.com/2026/08/adobe-patches-three-cvss-100-coldfusion.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-48362"
-      ]
-    },
-    {
-      "Title": "New Microsoft Defender 'ShieldBreak' zero-day grants SYSTEM privileges",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-12T10:15:22Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/new-microsoft-defender-shieldbreak-zero-day-grants-system-privileges/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
