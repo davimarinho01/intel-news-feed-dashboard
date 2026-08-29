@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-08-28T15:13:38Z",
-  "TotalArticles": 859,
+  "GeneratedAt": "2026-08-29T09:56:04Z",
+  "TotalArticles": 876,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 456
+      "Count": 469
     },
     {
       "Source": "BleepingComputer",
-      "Count": 179
+      "Count": 183
     },
     {
       "Source": "Dark Reading",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 34
+      "Count": 35
     },
     {
       "Severity": "High",
-      "Count": 56
+      "Count": 59
     },
     {
       "Severity": "Medium",
-      "Count": 406
+      "Count": 412
     },
     {
       "Severity": "Low",
-      "Count": 363
+      "Count": 370
     }
   ],
   "DailyTrend": {
@@ -159,7 +159,7 @@
           10,
           12,
           11,
-          0
+          13
         ]
       },
       {
@@ -220,7 +220,7 @@
           10,
           7,
           11,
-          5
+          9
         ]
       },
       {
@@ -416,46 +416,22 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
-    },
-    {
-      "Cve": "CVE-2026-19478",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
-    },
-    {
-      "Cve": "CVE-2026-8037",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
-    },
-    {
       "Cve": "CVE-2026-68820",
       "Count": 3,
       "Severity": "High",
       "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     },
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 3,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
-      "Cve": "CVE-2026-60004",
+      "Cve": "CVE-2026-63077",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+    },
+    {
+      "Cve": "CVE-2026-55040",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-65400",
@@ -464,16 +440,40 @@
       "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
     },
     {
-      "Cve": "CVE-2026-55040",
+      "Cve": "CVE-2026-18577",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-19478",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+    },
+    {
+      "Cve": "CVE-2026-73570",
       "Count": 3,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+    },
+    {
+      "Cve": "CVE-2026-60004",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+    },
+    {
+      "Cve": "CVE-2026-8037",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 109
+      "Count": 113
     },
     {
       "Keyword": "malware",
@@ -481,7 +481,7 @@
     },
     {
       "Keyword": "critical",
-      "Count": 40
+      "Count": 41
     },
     {
       "Keyword": "ransomware",
@@ -489,7 +489,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 27
+      "Count": 28
     },
     {
       "Keyword": "phishing",
@@ -509,10 +509,55 @@
     },
     {
       "Keyword": "cvss",
-      "Count": 7
+      "Count": 8
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "PaperCut releases second emergency patch for exploited flaws",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-08-28T19:08:26Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "ownCloud Flaw Exploited to Steal Nuclear Records From Philippine Research Body",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-28T15:56:55Z",
+      "Url": "http://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2023-49105"
+      ]
+    },
+    {
+      "Title": "China-Made ZBT Routers Ship With Two Implants Giving Unauthenticated Attackers Root Access",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-28T10:58:29Z",
+      "Url": "http://thehackernews.com/2026/08/china-made-zbt-routers-ship-with-two.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-74232",
+        "CVE-2026-74233"
+      ]
+    },
+    {
+      "Title": "PaperCut Zero-Day Exploited in Attacks, Affecting All NG and MF Versions",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-28T08:25:36Z",
+      "Url": "http://thehackernews.com/2026/08/papercut-zero-day-exploited-in-attacks.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "OpenAI Says Reward Hacking Drove AI Agents to Exploit Zero-Days and Breach Hugging Face",
       "Source": "The Hacker News",
@@ -683,50 +728,6 @@
       "Source": "The Hacker News",
       "PublishedAt": "2026-08-17T13:23:51Z",
       "Url": "http://thehackernews.com/2026/08/weekly-recap-vmware-exploits-windows-0.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Microsoft working on Defender patch for ShieldBreak zero-day",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-17T09:05:33Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-69414"
-      ]
-    },
-    {
-      "Title": "Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-17T07:36:19Z",
-      "Url": "http://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-59310"
-      ]
-    },
-    {
-      "Title": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-15T07:24:04Z",
-      "Url": "http://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-65400"
-      ]
-    },
-    {
-      "Title": "Unpatched GeoServer Zero-Day Targeted in Active Exploitation Attempts, Can Lead to RCE",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-13T18:45:12Z",
-      "Url": "http://thehackernews.com/2026/08/unpatched-geoserver-zero-day-targeted.html",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
