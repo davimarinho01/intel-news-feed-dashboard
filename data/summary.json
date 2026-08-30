@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-08-29T09:56:04Z",
-  "TotalArticles": 876,
+  "GeneratedAt": "2026-08-30T09:07:01Z",
+  "TotalArticles": 879,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 469
+      "Count": 470
     },
     {
       "Source": "BleepingComputer",
-      "Count": 183
+      "Count": 185
     },
     {
       "Source": "Dark Reading",
@@ -26,7 +26,7 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 35
+      "Count": 36
     },
     {
       "Severity": "High",
@@ -38,7 +38,7 @@
     },
     {
       "Severity": "Low",
-      "Count": 370
+      "Count": 372
     }
   ],
   "DailyTrend": {
@@ -98,7 +98,8 @@
       "2026-08-25",
       "2026-08-26",
       "2026-08-27",
-      "2026-08-28"
+      "2026-08-28",
+      "2026-08-29"
     ],
     "Datasets": [
       {
@@ -159,7 +160,8 @@
           10,
           12,
           11,
-          13
+          13,
+          1
         ]
       },
       {
@@ -220,7 +222,8 @@
           10,
           7,
           11,
-          9
+          9,
+          2
         ]
       },
       {
@@ -281,7 +284,8 @@
           3,
           7,
           3,
-          3
+          3,
+          0
         ]
       },
       {
@@ -342,6 +346,7 @@
           9,
           2,
           8,
+          0,
           0
         ]
       },
@@ -403,6 +408,7 @@
           0,
           0,
           1,
+          0,
           0
         ]
       }
@@ -416,46 +422,10 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-68820",
-      "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
-    },
-    {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
-      "Cve": "CVE-2026-55040",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
       "Cve": "CVE-2026-65400",
       "Count": 3,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
-    },
-    {
-      "Cve": "CVE-2026-18577",
-      "Count": 3,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
-      "Cve": "CVE-2026-19478",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
     },
     {
       "Cve": "CVE-2026-60004",
@@ -464,10 +434,46 @@
       "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
+      "Cve": "CVE-2026-68820",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-63077",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+    },
+    {
+      "Cve": "CVE-2026-19478",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+    },
+    {
       "Cve": "CVE-2026-8037",
       "Count": 3,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+    },
+    {
+      "Cve": "CVE-2026-55040",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     }
   ],
   "TopKeywords": [
@@ -481,7 +487,7 @@
     },
     {
       "Keyword": "critical",
-      "Count": 41
+      "Count": 42
     },
     {
       "Keyword": "ransomware",
@@ -513,6 +519,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Five Critical WordPress Plugin and Theme Flaws Enable Site Takeover or RCE",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-08-29T16:25:03Z",
+      "Url": "http://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-76581"
+      ]
+    },
     {
       "Title": "PaperCut releases second emergency patch for exploited flaws",
       "Source": "BleepingComputer",
@@ -717,17 +734,6 @@
       "Source": "The Hacker News",
       "PublishedAt": "2026-08-18T06:34:20Z",
       "Url": "http://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "⚡ Weekly Recap: VMware Exploits, Windows 0-Day, MCP Attacks, Browser Hijacks and More",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-17T13:23:51Z",
-      "Url": "http://thehackernews.com/2026/08/weekly-recap-vmware-exploits-windows-0.html",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
