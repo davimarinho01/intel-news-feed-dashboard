@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-08-30T09:07:01Z",
-  "TotalArticles": 879,
+  "GeneratedAt": "2026-08-31T09:35:37Z",
+  "TotalArticles": 885,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 470
+      "Count": 471
     },
     {
       "Source": "BleepingComputer",
-      "Count": 185
+      "Count": 190
     },
     {
       "Source": "Dark Reading",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 412
+      "Count": 414
     },
     {
       "Severity": "Low",
-      "Count": 372
+      "Count": 376
     }
   ],
   "DailyTrend": {
@@ -99,7 +99,9 @@
       "2026-08-26",
       "2026-08-27",
       "2026-08-28",
-      "2026-08-29"
+      "2026-08-29",
+      "2026-08-30",
+      "2026-08-31"
     ],
     "Datasets": [
       {
@@ -161,7 +163,9 @@
           12,
           11,
           13,
-          1
+          1,
+          1,
+          0
         ]
       },
       {
@@ -223,6 +227,8 @@
           7,
           11,
           9,
+          2,
+          3,
           2
         ]
       },
@@ -285,6 +291,8 @@
           7,
           3,
           3,
+          0,
+          0,
           0
         ]
       },
@@ -347,6 +355,8 @@
           2,
           8,
           0,
+          0,
+          0,
           0
         ]
       },
@@ -408,6 +418,8 @@
           0,
           0,
           1,
+          0,
+          0,
           0,
           0
         ]
@@ -483,7 +495,7 @@
     },
     {
       "Keyword": "malware",
-      "Count": 54
+      "Count": 55
     },
     {
       "Keyword": "critical",
