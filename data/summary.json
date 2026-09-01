@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-08-31T09:35:37Z",
-  "TotalArticles": 885,
+  "GeneratedAt": "2026-09-01T08:31:35Z",
+  "TotalArticles": 916,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 471
+      "Count": 492
     },
     {
       "Source": "BleepingComputer",
-      "Count": 190
+      "Count": 199
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 84
+      "Count": 85
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 59
+      "Count": 60
     },
     {
       "Severity": "Medium",
-      "Count": 414
+      "Count": 427
     },
     {
       "Severity": "Low",
-      "Count": 376
+      "Count": 393
     }
   ],
   "DailyTrend": {
@@ -74,6 +74,7 @@
       "2026-07-29",
       "2026-07-30",
       "2026-07-31",
+      "2026-08-01",
       "2026-08-03",
       "2026-08-04",
       "2026-08-05",
@@ -101,7 +102,8 @@
       "2026-08-28",
       "2026-08-29",
       "2026-08-30",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-01"
     ],
     "Datasets": [
       {
@@ -138,7 +140,8 @@
           14,
           11,
           8,
-          0,
+          4,
+          10,
           8,
           14,
           14,
@@ -165,6 +168,7 @@
           13,
           1,
           1,
+          7,
           0
         ]
       },
@@ -202,6 +206,7 @@
           0,
           0,
           0,
+          0,
           2,
           8,
           7,
@@ -229,7 +234,8 @@
           9,
           2,
           3,
-          2
+          10,
+          1
         ]
       },
       {
@@ -266,6 +272,7 @@
           7,
           5,
           5,
+          0,
           5,
           3,
           7,
@@ -291,6 +298,7 @@
           7,
           3,
           3,
+          0,
           0,
           0,
           0
@@ -330,6 +338,7 @@
           2,
           13,
           0,
+          0,
           1,
           3,
           1,
@@ -357,6 +366,7 @@
           0,
           0,
           0,
+          1,
           0
         ]
       },
@@ -397,17 +407,18 @@
           0,
           0,
           0,
-          1,
-          0,
-          0,
-          0,
-          1,
-          0,
           0,
           1,
           0,
           0,
           0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -418,6 +429,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -428,22 +440,16 @@
   },
   "TopCves": [
     {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-65400",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
-    },
-    {
-      "Cve": "CVE-2026-60004",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
       "Cve": "CVE-2026-68820",
@@ -452,22 +458,10 @@
       "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     },
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 3,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
-      "Cve": "CVE-2026-63077",
+      "Cve": "CVE-2026-65400",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
-      "Cve": "CVE-2026-19478",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
     },
     {
       "Cve": "CVE-2026-8037",
@@ -476,26 +470,44 @@
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
+      "Cve": "CVE-2026-55040",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-19478",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+    },
+    {
+      "Cve": "CVE-2026-63077",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+    },
+    {
       "Cve": "CVE-2026-73570",
       "Count": 3,
       "Severity": "Medium",
       "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
     },
     {
-      "Cve": "CVE-2026-55040",
+      "Cve": "CVE-2026-60004",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 113
+      "Count": 116
     },
     {
       "Keyword": "malware",
-      "Count": 55
+      "Count": 57
     },
     {
       "Keyword": "critical",
@@ -503,11 +515,11 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 39
+      "Count": 42
     },
     {
       "Keyword": "zero-day",
-      "Count": 28
+      "Count": 29
     },
     {
       "Keyword": "phishing",
@@ -519,7 +531,7 @@
     },
     {
       "Keyword": "leak",
-      "Count": 13
+      "Count": 14
     },
     {
       "Keyword": "code execution",
@@ -527,10 +539,21 @@
     },
     {
       "Keyword": "cvss",
-      "Count": 8
+      "Count": 9
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Recently patched PaperCut zero-days used in data theft attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-01T07:48:24Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/recently-patched-papercut-zero-days-used-in-data-theft-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Five Critical WordPress Plugin and Theme Flaws Enable Site Takeover or RCE",
       "Source": "The Hacker News",
@@ -735,17 +758,6 @@
       "Source": "BleepingComputer",
       "PublishedAt": "2026-08-18T10:32:16Z",
       "Url": "https://www.bleepingcomputer.com/news/security/cisa-windows-task-host-flaw-now-exploited-by-ransomware-gangs/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA Flags Actively Exploited Ray Flaw That Can Trigger Browser-Based RCE",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-18T06:34:20Z",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
