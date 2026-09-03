@@ -260,6 +260,15 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [http://thehackernews.com/2026/08/cisa-red-team-compromised-two-critical.html](http://thehackernews.com/2026/08/cisa-red-team-compromised-two-critical.html)
 
 ---
+### CISA Vulnerability Review
+
+*Source:* **CISA Advisories** | *Published (UTC):* 2026-08-26 12:00:00Z | *Severity:* **Medium**
+
+**Introduction:** Most compromises do not rely on advanced techniques or cutting-edge tools. Cyber threat actors scan the internet looking for exposed, well-known software vulnerabilities to exploit. Basic security failures enable most compromises and organizations can reduce their risk by addressing these underlying weaknesses and prioritizing vulnerabilities for action based on the risk they pose. The CISA Vulnerability Review&nbsp;provides organizations with critical insights into the root causes of insecure software and practical steps they can take to address these flaws to prevent exploitation. Analyzing CISA and open source data from fiscal years 2024 and 2025, the review establishes a baseline of today’s vulnerability landscape before AI-enabled vulnerability discovery becomes more widespread. The review demonstrates the importance of&nbsp;Secure by Design principles in shifting cybersecurity efforts from reacting to threat actors to proactively fixing preventable software flaws. The review also identifies common software weaknesses that contribute to exploitable vulnerabilities and details practices software producers can use to prevent these weaknesses from recurring. By examining the patterns across vulnerability data, the review helps organizations focus on systemic improvements that can reduce entire classes of vulnerabilities rather than addressing individual vulnerabilities only after they are discovered. Additionally, the review shows organizations how to prioritize vulnerabilities for action using the framework outlined in&nbsp;Binding Operational Directive 26-04: Prioritizing Security Based on Risk. This framework evaluates vulnerabilities using four key criteria: exposure status,&nbsp;Known Exploited Vulnerability (KEV) Catalog status, potential for automated exploitation, and technical impact...
+
+**Url:** [https://www.cisa.gov/resources-tools/resources/cisa-vulnerability-review](https://www.cisa.gov/resources-tools/resources/cisa-vulnerability-review)
+
+---
 ### CISA Adds Six Known Exploited Vulnerabilities to Catalog
 
 *Source:* **CISA Advisories** | *Published (UTC):* 2026-08-26 12:00:00Z | *Severity:* **Medium**
@@ -269,15 +278,6 @@ The following selection covers the security news matching our monitoring criteri
 **CVEs:** CVE-2015-3246, CVE-2015-5287, CVE-2019-1068, CVE-2021-23758, CVE-2022-0995, CVE-2026-8452
 
 **Url:** [https://www.cisa.gov/news-events/alerts/2026/08/26/cisa-adds-six-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/08/26/cisa-adds-six-known-exploited-vulnerabilities-catalog)
-
----
-### CISA Vulnerability Review
-
-*Source:* **CISA Advisories** | *Published (UTC):* 2026-08-26 12:00:00Z | *Severity:* **Medium**
-
-**Introduction:** Most compromises do not rely on advanced techniques or cutting-edge tools. Cyber threat actors scan the internet looking for exposed, well-known software vulnerabilities to exploit. Basic security failures enable most compromises and organizations can reduce their risk by addressing these underlying weaknesses and prioritizing vulnerabilities for action based on the risk they pose. The CISA Vulnerability Review&nbsp;provides organizations with critical insights into the root causes of insecure software and practical steps they can take to address these flaws to prevent exploitation. Analyzing CISA and open source data from fiscal years 2024 and 2025, the review establishes a baseline of today’s vulnerability landscape before AI-enabled vulnerability discovery becomes more widespread. The review demonstrates the importance of&nbsp;Secure by Design principles in shifting cybersecurity efforts from reacting to threat actors to proactively fixing preventable software flaws. The review also identifies common software weaknesses that contribute to exploitable vulnerabilities and details practices software producers can use to prevent these weaknesses from recurring. By examining the patterns across vulnerability data, the review helps organizations focus on systemic improvements that can reduce entire classes of vulnerabilities rather than addressing individual vulnerabilities only after they are discovered. Additionally, the review shows organizations how to prioritize vulnerabilities for action using the framework outlined in&nbsp;Binding Operational Directive 26-04: Prioritizing Security Based on Risk. This framework evaluates vulnerabilities using four key criteria: exposure status,&nbsp;Known Exploited Vulnerability (KEV) Catalog status, potential for automated exploitation, and technical impact...
-
-**Url:** [https://www.cisa.gov/resources-tools/resources/cisa-vulnerability-review](https://www.cisa.gov/resources-tools/resources/cisa-vulnerability-review)
 
 ---
 ### Critical Gitea RCE Actively Exploited as Reported Attack Drops Miner-Like Payload

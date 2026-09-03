@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-02T07:48:55Z",
-  "TotalArticles": 940,
+  "GeneratedAt": "2026-09-03T07:57:27Z",
+  "TotalArticles": 963,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 500
+      "Count": 513
     },
     {
       "Source": "BleepingComputer",
-      "Count": 208
+      "Count": 216
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 91
+      "Count": 93
     },
     {
       "Source": "Krebs on Security",
@@ -26,7 +26,7 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 38
+      "Count": 40
     },
     {
       "Severity": "High",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 439
+      "Count": 454
     },
     {
       "Severity": "Low",
-      "Count": 402
+      "Count": 408
     }
   ],
   "DailyTrend": {
@@ -171,7 +171,7 @@
           1,
           7,
           8,
-          0
+          13
         ]
       },
       {
@@ -238,7 +238,7 @@
           3,
           10,
           9,
-          1
+          9
         ]
       },
       {
@@ -372,7 +372,7 @@
           0,
           1,
           6,
-          0
+          2
         ]
       },
       {
@@ -446,16 +446,16 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-63077",
@@ -464,28 +464,10 @@
       "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
     },
     {
-      "Cve": "CVE-2026-19478",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
-    },
-    {
-      "Cve": "CVE-2026-55040",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
       "Cve": "CVE-2026-73570",
       "Count": 3,
       "Severity": "Medium",
       "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
-    },
-    {
-      "Cve": "CVE-2026-65400",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
     },
     {
       "Cve": "CVE-2026-8037",
@@ -494,38 +476,56 @@
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
-      "Cve": "CVE-2026-60004",
+      "Cve": "CVE-2026-19478",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-55040",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-68820",
       "Count": 3,
       "Severity": "High",
       "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+    },
+    {
+      "Cve": "CVE-2026-60004",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 120
+      "Count": 126
     },
     {
       "Keyword": "malware",
-      "Count": 58
+      "Count": 61
     },
     {
       "Keyword": "critical",
-      "Count": 45
+      "Count": 47
     },
     {
       "Keyword": "ransomware",
-      "Count": 42
+      "Count": 43
     },
     {
       "Keyword": "zero-day",
-      "Count": 30
+      "Count": 31
     },
     {
       "Keyword": "phishing",
@@ -549,6 +549,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-02T10:53:49Z",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-83548"
+      ]
+    },
+    {
+      "Title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-02T07:08:50Z",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
+      "Severity": "Critical",
+      "Cvss": 9.3,
+      "Cves": [
+        "CVE-2026-9586"
+      ]
+    },
     {
       "Title": "SonicWall warns of actively exploited SMA1000 zero-day flaws",
       "Source": "BleepingComputer",
@@ -747,28 +769,6 @@
       "Cvss": 9.4,
       "Cves": [
         "CVE-2026-19478"
-      ]
-    },
-    {
-      "Title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-20T13:24:28Z",
-      "Url": "http://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html",
-      "Severity": "High",
-      "Cvss": 8.9,
-      "Cves": [
-        "CVE-2026-73570"
-      ]
-    },
-    {
-      "Title": "Critical Zimbra RCE flaw now actively exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-20T09:46:54Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
