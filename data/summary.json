@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-03T07:57:27Z",
-  "TotalArticles": 963,
+  "GeneratedAt": "2026-09-04T07:53:09Z",
+  "TotalArticles": 995,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 513
+      "Count": 523
     },
     {
       "Source": "BleepingComputer",
-      "Count": 216
+      "Count": 227
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 93
+      "Count": 104
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 40
+      "Count": 42
     },
     {
       "Severity": "High",
-      "Count": 61
+      "Count": 62
     },
     {
       "Severity": "Medium",
-      "Count": 454
+      "Count": 473
     },
     {
       "Severity": "Low",
-      "Count": 408
+      "Count": 418
     }
   ],
   "DailyTrend": {
@@ -104,7 +104,8 @@
       "2026-08-30",
       "2026-08-31",
       "2026-09-01",
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-03"
     ],
     "Datasets": [
       {
@@ -171,7 +172,8 @@
           1,
           7,
           8,
-          13
+          13,
+          10
         ]
       },
       {
@@ -238,7 +240,8 @@
           3,
           10,
           9,
-          9
+          9,
+          11
         ]
       },
       {
@@ -301,6 +304,7 @@
           7,
           3,
           3,
+          0,
           0,
           0,
           0,
@@ -372,7 +376,8 @@
           0,
           1,
           6,
-          2
+          2,
+          11
         ]
       },
       {
@@ -439,6 +444,7 @@
           0,
           0,
           1,
+          0,
           0
         ]
       }
@@ -446,28 +452,22 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+      "Cve": "CVE-2026-59310",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-73570",
+      "Cve": "CVE-2026-65400",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
     },
     {
       "Cve": "CVE-2026-8037",
@@ -476,16 +476,10 @@
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
-      "Cve": "CVE-2026-19478",
+      "Cve": "CVE-2026-60004",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
-    },
-    {
-      "Cve": "CVE-2026-82329",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
       "Cve": "CVE-2026-55040",
@@ -494,30 +488,42 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-68820",
+      "Cve": "CVE-2026-82329",
       "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-60004",
+      "Cve": "CVE-2026-9586",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
+    },
+    {
+      "Cve": "CVE-2026-83548",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
+    },
+    {
+      "Cve": "CVE-2026-63077",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 126
+      "Count": 129
     },
     {
       "Keyword": "malware",
-      "Count": 61
+      "Count": 63
     },
     {
       "Keyword": "critical",
-      "Count": 47
+      "Count": 50
     },
     {
       "Keyword": "ransomware",
@@ -529,7 +535,7 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 25
+      "Count": 27
     },
     {
       "Keyword": "vulnerability",
@@ -541,7 +547,7 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 9
+      "Count": 10
     },
     {
       "Keyword": "cvss",
@@ -549,6 +555,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-03T15:52:07Z",
+      "Url": "http://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-20212"
+      ]
+    },
+    {
+      "Title": "Researcher Releases FalconFlank PoC Showing Privilege Escalation in CrowdStrike Falcon",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-03T06:26:59Z",
+      "Url": "http://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA Adds Seven Exploited Flaws as Attackers Deploy Reverse Shells and Crypto Miners",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-03T05:19:04Z",
+      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-83548"
+      ]
+    },
     {
       "Title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
       "Source": "The Hacker News",
@@ -736,39 +775,6 @@
       "Cvss": 10.0,
       "Cves": [
         "CVE-2026-21962"
-      ]
-    },
-    {
-      "Title": "CISA orders urgent patching of actively exploited Zimbra flaw",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-24T10:45:12Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-orders-urgent-patching-of-actively-exploited-zimbra-flaw/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA orders feds to patch actively exploited TrueConf Server flaws",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-21T12:25:33Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-21T07:04:25Z",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
-      "Severity": "Critical",
-      "Cvss": 9.4,
-      "Cves": [
-        "CVE-2026-19478"
       ]
     }
   ]
