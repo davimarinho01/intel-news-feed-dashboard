@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-04T07:53:09Z",
-  "TotalArticles": 995,
+  "GeneratedAt": "2026-09-05T07:34:33Z",
+  "TotalArticles": 1010,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 523
+      "Count": 530
     },
     {
       "Source": "BleepingComputer",
-      "Count": 227
+      "Count": 234
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 104
+      "Count": 105
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 42
+      "Count": 43
     },
     {
       "Severity": "High",
-      "Count": 62
+      "Count": 66
     },
     {
       "Severity": "Medium",
-      "Count": 473
+      "Count": 479
     },
     {
       "Severity": "Low",
-      "Count": 418
+      "Count": 422
     }
   ],
   "DailyTrend": {
@@ -105,7 +105,8 @@
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-04"
     ],
     "Datasets": [
       {
@@ -173,7 +174,8 @@
           7,
           8,
           13,
-          10
+          10,
+          7
         ]
       },
       {
@@ -241,7 +243,8 @@
           10,
           9,
           9,
-          11
+          11,
+          7
         ]
       },
       {
@@ -304,6 +307,7 @@
           7,
           3,
           3,
+          0,
           0,
           0,
           0,
@@ -377,7 +381,8 @@
           1,
           6,
           2,
-          11
+          11,
+          1
         ]
       },
       {
@@ -445,6 +450,7 @@
           0,
           1,
           0,
+          0,
           0
         ]
       }
@@ -464,28 +470,22 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-65400",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
-    },
-    {
       "Cve": "CVE-2026-8037",
       "Count": 3,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
-      "Cve": "CVE-2026-60004",
+      "Cve": "CVE-2026-63077",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
     },
     {
-      "Cve": "CVE-2026-55040",
+      "Cve": "CVE-2026-65400",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
     },
     {
       "Cve": "CVE-2026-82329",
@@ -494,10 +494,16 @@
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-9586",
+      "Cve": "CVE-2026-73570",
       "Count": 3,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+    },
+    {
+      "Cve": "CVE-2026-60004",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
       "Cve": "CVE-2026-83548",
@@ -506,16 +512,16 @@
       "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
     },
     {
-      "Cve": "CVE-2026-63077",
+      "Cve": "CVE-2026-9586",
       "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 129
+      "Count": 134
     },
     {
       "Keyword": "malware",
@@ -523,7 +529,7 @@
     },
     {
       "Keyword": "critical",
-      "Count": 50
+      "Count": 51
     },
     {
       "Keyword": "ransomware",
@@ -531,15 +537,15 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 31
+      "Count": 34
     },
     {
       "Keyword": "phishing",
-      "Count": 27
+      "Count": 28
     },
     {
       "Keyword": "vulnerability",
-      "Count": 21
+      "Count": 22
     },
     {
       "Keyword": "leak",
@@ -547,7 +553,7 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 10
+      "Count": 11
     },
     {
       "Keyword": "cvss",
@@ -555,6 +561,61 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "PostgreSQL Fixes 12-Year-Old Logical Decoding Flaw Enabling Replication-Role Code Execution",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-04T15:20:19Z",
+      "Url": "http://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
+      "Severity": "High",
+      "Cvss": 7.2,
+      "Cves": [
+        "CVE-2026-6471"
+      ]
+    },
+    {
+      "Title": "New CrowdStrike 'FalconFlank' zero-day grants SYSTEM privileges",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-04T13:22:01Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/new-crowdstrike-falconflank-zero-day-grants-system-privileges/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Google warns of new Chrome zero-day flaw exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-04T11:48:17Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/google-warns-of-new-chrome-zero-day-flaw-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Over 440,000 Exploit Attempts Target Super Forms and Elementor Pro RCE Flaws",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-04T08:48:45Z",
+      "Url": "http://thehackernews.com/2026/09/over-440000-exploit-attempts-target.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-14894"
+      ]
+    },
+    {
+      "Title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-04T07:18:47Z",
+      "Url": "http://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
+      "Severity": "High",
+      "Cvss": 8.8,
+      "Cves": [
+        "CVE-2026-85046"
+      ]
+    },
     {
       "Title": "Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root",
       "Source": "The Hacker News",
@@ -720,61 +781,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "PaperCut warns of NG, MF flaw exploited in zero-day attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-27T16:31:53Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/papercut-warns-of-ng-mf-flaw-exploited-in-zero-day-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA orders feds to patch Citrix NetScaler RCE flaw by Saturday",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-27T09:16:50Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploiting-citrix-netscaler-rce-flaw-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Critical Gitea RCE Actively Exploited as Reported Attack Drops Miner-Like Payload",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-26T06:27:07Z",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-60004"
-      ]
-    },
-    {
-      "Title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-25T08:34:07Z",
-      "Url": "http://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
-      "Severity": "High",
-      "Cvss": 8.1,
-      "Cves": [
-        "CVE-2026-61979"
-      ]
-    },
-    {
-      "Title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-25T06:12:35Z",
-      "Url": "http://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-21962"
       ]
     }
   ]
