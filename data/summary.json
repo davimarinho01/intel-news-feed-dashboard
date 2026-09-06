@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-05T07:34:33Z",
-  "TotalArticles": 1010,
+  "GeneratedAt": "2026-09-06T07:48:31Z",
+  "TotalArticles": 1018,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 530
+      "Count": 536
     },
     {
       "Source": "BleepingComputer",
-      "Count": 234
+      "Count": 236
     },
     {
       "Source": "Dark Reading",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 43
+      "Count": 44
     },
     {
       "Severity": "High",
-      "Count": 66
+      "Count": 67
     },
     {
       "Severity": "Medium",
-      "Count": 479
+      "Count": 481
     },
     {
       "Severity": "Low",
-      "Count": 422
+      "Count": 426
     }
   ],
   "DailyTrend": {
@@ -106,7 +106,8 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
-      "2026-09-04"
+      "2026-09-04",
+      "2026-09-05"
     ],
     "Datasets": [
       {
@@ -175,7 +176,8 @@
           8,
           13,
           10,
-          7
+          7,
+          6
         ]
       },
       {
@@ -244,7 +246,8 @@
           9,
           9,
           11,
-          7
+          7,
+          2
         ]
       },
       {
@@ -307,6 +310,7 @@
           7,
           3,
           3,
+          0,
           0,
           0,
           0,
@@ -382,7 +386,8 @@
           6,
           2,
           11,
-          1
+          1,
+          0
         ]
       },
       {
@@ -451,6 +456,7 @@
           1,
           0,
           0,
+          0,
           0
         ]
       }
@@ -470,34 +476,10 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-8037",
+      "Cve": "CVE-2026-19478",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
-    },
-    {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
-      "Cve": "CVE-2026-65400",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
-    },
-    {
-      "Cve": "CVE-2026-82329",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
     },
     {
       "Cve": "CVE-2026-60004",
@@ -506,22 +488,46 @@
       "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
+      "Cve": "CVE-2026-68820",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+    },
+    {
+      "Cve": "CVE-2026-63077",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+    },
+    {
       "Cve": "CVE-2026-83548",
       "Count": 3,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
     },
     {
+      "Cve": "CVE-2026-73570",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+    },
+    {
       "Cve": "CVE-2026-9586",
       "Count": 3,
       "Severity": "Medium",
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 134
+      "Count": 136
     },
     {
       "Keyword": "malware",
@@ -529,7 +535,7 @@
     },
     {
       "Keyword": "critical",
-      "Count": 51
+      "Count": 52
     },
     {
       "Keyword": "ransomware",
@@ -537,7 +543,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 34
+      "Count": 35
     },
     {
       "Keyword": "phishing",
@@ -561,6 +567,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Unpatched Magento and Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-05T20:14:47Z",
+      "Url": "http://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Critical VMware Workstation and Fusion Flaw Lets VM Admins Execute Host Code",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-05T16:05:08Z",
+      "Url": "http://thehackernews.com/2026/09/critical-vmware-workstation-and-fusion.html",
+      "Severity": "Critical",
+      "Cvss": 9.3,
+      "Cves": [
+        "CVE-2026-59346"
+      ]
+    },
     {
       "Title": "PostgreSQL Fixes 12-Year-Old Logical Decoding Flaw Enabling Replication-Role Code Execution",
       "Source": "The Hacker News",
@@ -759,28 +787,6 @@
       "Cves": [
         "CVE-2026-74232",
         "CVE-2026-74233"
-      ]
-    },
-    {
-      "Title": "PaperCut Zero-Day Exploited in Attacks, Affecting All NG and MF Versions",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-28T08:25:36Z",
-      "Url": "http://thehackernews.com/2026/08/papercut-zero-day-exploited-in-attacks.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "OpenAI Says Reward Hacking Drove AI Agents to Exploit Zero-Days and Breach Hugging Face",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-27T18:36:19Z",
-      "Url": "http://thehackernews.com/2026/08/openai-says-reward-hacking-drove-ai.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
