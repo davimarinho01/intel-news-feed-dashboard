@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-06T07:48:31Z",
-  "TotalArticles": 1018,
+  "GeneratedAt": "2026-09-07T08:09:42Z",
+  "TotalArticles": 1023,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 536
+      "Count": 538
     },
     {
       "Source": "BleepingComputer",
-      "Count": 236
+      "Count": 239
     },
     {
       "Source": "Dark Reading",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 481
+      "Count": 484
     },
     {
       "Severity": "Low",
-      "Count": 426
+      "Count": 428
     }
   ],
   "DailyTrend": {
@@ -107,7 +107,9 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-06",
+      "2026-09-07"
     ],
     "Datasets": [
       {
@@ -177,7 +179,9 @@
           13,
           10,
           7,
-          6
+          6,
+          2,
+          0
         ]
       },
       {
@@ -247,6 +251,8 @@
           9,
           11,
           7,
+          2,
+          1,
           2
         ]
       },
@@ -310,6 +316,8 @@
           7,
           3,
           3,
+          0,
+          0,
           0,
           0,
           0,
@@ -387,6 +395,8 @@
           2,
           11,
           1,
+          0,
+          0,
           0
         ]
       },
@@ -454,6 +464,8 @@
           0,
           0,
           1,
+          0,
+          0,
           0,
           0,
           0,
@@ -547,7 +559,7 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 28
+      "Count": 29
     },
     {
       "Keyword": "vulnerability",
