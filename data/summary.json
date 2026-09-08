@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-07T08:09:42Z",
-  "TotalArticles": 1023,
+  "GeneratedAt": "2026-09-08T07:58:40Z",
+  "TotalArticles": 1039,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 538
+      "Count": 546
     },
     {
       "Source": "BleepingComputer",
-      "Count": 239
+      "Count": 247
     },
     {
       "Source": "Dark Reading",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 67
+      "Count": 70
     },
     {
       "Severity": "Medium",
-      "Count": 484
+      "Count": 492
     },
     {
       "Severity": "Low",
-      "Count": 428
+      "Count": 433
     }
   ],
   "DailyTrend": {
@@ -109,7 +109,8 @@
       "2026-09-04",
       "2026-09-05",
       "2026-09-06",
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-08"
     ],
     "Datasets": [
       {
@@ -181,6 +182,7 @@
           7,
           6,
           2,
+          8,
           0
         ]
       },
@@ -253,7 +255,8 @@
           7,
           2,
           1,
-          2
+          9,
+          1
         ]
       },
       {
@@ -316,6 +319,7 @@
           7,
           3,
           3,
+          0,
           0,
           0,
           0,
@@ -397,6 +401,7 @@
           1,
           0,
           0,
+          0,
           0
         ]
       },
@@ -464,6 +469,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -539,11 +545,11 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 136
+      "Count": 139
     },
     {
       "Keyword": "malware",
-      "Count": 63
+      "Count": 64
     },
     {
       "Keyword": "critical",
@@ -555,11 +561,11 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 35
+      "Count": 36
     },
     {
       "Keyword": "phishing",
-      "Count": 29
+      "Count": 30
     },
     {
       "Keyword": "vulnerability",
@@ -567,7 +573,7 @@
     },
     {
       "Keyword": "leak",
-      "Count": 14
+      "Count": 15
     },
     {
       "Keyword": "code execution",
@@ -579,6 +585,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Magento StyleSmuggler zero-day exploited to deploy Linux backdoor",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-07T16:50:29Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/magento-stylesmuggler-zero-day-exploited-to-deploy-linux-backdoor/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "⚡ Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-07T14:36:07Z",
+      "Url": "http://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-07T08:31:12Z",
+      "Url": "http://thehackernews.com/2026/09/n-able-issues-fourth-n-central-hotfix.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Unpatched Magento and Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
       "Source": "The Hacker News",
@@ -765,40 +804,6 @@
       "Cvss": 9.8,
       "Cves": [
         "CVE-2026-76581"
-      ]
-    },
-    {
-      "Title": "PaperCut releases second emergency patch for exploited flaws",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-08-28T19:08:26Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "ownCloud Flaw Exploited to Steal Nuclear Records From Philippine Research Body",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-28T15:56:55Z",
-      "Url": "http://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2023-49105"
-      ]
-    },
-    {
-      "Title": "China-Made ZBT Routers Ship With Two Implants Giving Unauthenticated Attackers Root Access",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-28T10:58:29Z",
-      "Url": "http://thehackernews.com/2026/08/china-made-zbt-routers-ship-with-two.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-74232",
-        "CVE-2026-74233"
       ]
     }
   ]
