@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-08T07:58:40Z",
-  "TotalArticles": 1039,
+  "GeneratedAt": "2026-09-09T08:02:12Z",
+  "TotalArticles": 1068,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 546
+      "Count": 556
     },
     {
       "Source": "BleepingComputer",
-      "Count": 247
+      "Count": 262
     },
     {
       "Source": "Dark Reading",
@@ -16,29 +16,29 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 105
+      "Count": 108
     },
     {
       "Source": "Krebs on Security",
-      "Count": 15
+      "Count": 16
     }
   ],
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 44
+      "Count": 45
     },
     {
       "Severity": "High",
-      "Count": 70
+      "Count": 76
     },
     {
       "Severity": "Medium",
-      "Count": 492
+      "Count": 497
     },
     {
       "Severity": "Low",
-      "Count": 433
+      "Count": 450
     }
   ],
   "DailyTrend": {
@@ -110,7 +110,8 @@
       "2026-09-05",
       "2026-09-06",
       "2026-09-07",
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-09"
     ],
     "Datasets": [
       {
@@ -183,6 +184,7 @@
           6,
           2,
           8,
+          10,
           0
         ]
       },
@@ -256,7 +258,8 @@
           2,
           1,
           9,
-          1
+          13,
+          3
         ]
       },
       {
@@ -319,6 +322,7 @@
           7,
           3,
           3,
+          0,
           0,
           0,
           0,
@@ -402,6 +406,7 @@
           0,
           0,
           0,
+          3,
           0
         ]
       },
@@ -475,6 +480,7 @@
           0,
           0,
           0,
+          1,
           0
         ]
       }
@@ -482,14 +488,38 @@
   },
   "TopCves": [
     {
+      "Cve": "CVE-2026-59310",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
+      "Cve": "CVE-2026-65400",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
+    },
+    {
+      "Cve": "CVE-2026-63077",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+    },
+    {
+      "Cve": "CVE-2026-75650",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
+    },
+    {
+      "Cve": "CVE-2026-55040",
+      "Count": 3,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
@@ -500,34 +530,10 @@
       "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
     },
     {
-      "Cve": "CVE-2026-60004",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
-    },
-    {
-      "Cve": "CVE-2026-68820",
-      "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
-    },
-    {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
       "Cve": "CVE-2026-83548",
       "Count": 3,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
     },
     {
       "Cve": "CVE-2026-9586",
@@ -536,16 +542,16 @@
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
     },
     {
-      "Cve": "CVE-2026-82329",
+      "Cve": "CVE-2026-73570",
       "Count": 3,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 139
+      "Count": 143
     },
     {
       "Keyword": "malware",
@@ -553,7 +559,7 @@
     },
     {
       "Keyword": "critical",
-      "Count": 52
+      "Count": 53
     },
     {
       "Keyword": "ransomware",
@@ -561,7 +567,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 36
+      "Count": 42
     },
     {
       "Keyword": "phishing",
@@ -569,7 +575,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 22
+      "Count": 23
     },
     {
       "Keyword": "leak",
@@ -585,6 +591,83 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "New Microsoft Defender 'ShieldCrash' zero-day grants SYSTEM access",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-09T07:30:15Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/new-microsoft-defender-shieldcrash-zero-day-grants-system-access/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Google warns of new Chrome zero-day bug exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-09T06:25:48Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/google-patches-seventh-chrome-zero-day-exploited-in-attacks-this-year/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "The EU CRA's Real Question: What Shipped, and When Did You Know?",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-08T20:24:16Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/the-eu-cras-real-question-what-shipped-and-when-did-you-know/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Microsoft September 2026 Patch Tuesday fixes 966 flaws, 2 zero-days",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-08T18:18:05Z",
+      "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-patch-tuesday-fixes-966-flaws-2-zero-days/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "OpenAI says GPT-6 Astra can find zero-days, but is also harder to monitor",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-08T14:40:32Z",
+      "Url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-6-astra-can-find-zero-days-but-is-also-harder-to-monitor/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Adobe fixes critical Magento zero-day exploited to backdoor servers",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-08T13:34:47Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-75650"
+      ]
+    },
+    {
+      "Title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-08T09:13:47Z",
+      "Url": "http://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-75650"
+      ]
+    },
     {
       "Title": "Magento StyleSmuggler zero-day exploited to deploy Linux backdoor",
       "Source": "BleepingComputer",
@@ -726,84 +809,6 @@
       "Cvss": 10.0,
       "Cves": [
         "CVE-2026-83548"
-      ]
-    },
-    {
-      "Title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-02T10:53:49Z",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-83548"
-      ]
-    },
-    {
-      "Title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-02T07:08:50Z",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
-      "Severity": "Critical",
-      "Cvss": 9.3,
-      "Cves": [
-        "CVE-2026-9586"
-      ]
-    },
-    {
-      "Title": "SonicWall warns of actively exploited SMA1000 zero-day flaws",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-02T06:39:29Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-01T17:53:11Z",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-82329"
-      ]
-    },
-    {
-      "Title": "Recently patched PaperCut zero-days used in data theft attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-01T07:48:24Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/recently-patched-papercut-zero-days-used-in-data-theft-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Attackers Exploit Critical Langflow and Rails Flaws in Credential-Probing and C2 Activity",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-01T07:22:30Z",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-0768",
-        "CVE-2026-66066"
-      ]
-    },
-    {
-      "Title": "Five Critical WordPress Plugin and Theme Flaws Enable Site Takeover or RCE",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-08-29T16:25:03Z",
-      "Url": "http://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-76581"
       ]
     }
   ]
