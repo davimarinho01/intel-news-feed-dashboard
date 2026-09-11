@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-10T08:01:12Z",
-  "TotalArticles": 1092,
+  "GeneratedAt": "2026-09-11T07:57:26Z",
+  "TotalArticles": 1118,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 570
+      "Count": 578
     },
     {
       "Source": "BleepingComputer",
-      "Count": 271
+      "Count": 284
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 109
+      "Count": 114
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 47
+      "Count": 48
     },
     {
       "Severity": "High",
-      "Count": 80
+      "Count": 82
     },
     {
       "Severity": "Medium",
-      "Count": 505
+      "Count": 519
     },
     {
       "Severity": "Low",
-      "Count": 460
+      "Count": 469
     }
   ],
   "DailyTrend": {
@@ -112,7 +112,8 @@
       "2026-09-07",
       "2026-09-08",
       "2026-09-09",
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-11"
     ],
     "Datasets": [
       {
@@ -187,6 +188,7 @@
           8,
           10,
           14,
+          8,
           0
         ]
       },
@@ -262,6 +264,7 @@
           9,
           13,
           11,
+          13,
           1
         ]
       },
@@ -325,6 +328,7 @@
           7,
           3,
           3,
+          0,
           0,
           0,
           0,
@@ -412,6 +416,7 @@
           0,
           3,
           1,
+          5,
           0
         ]
       },
@@ -487,6 +492,7 @@
           0,
           1,
           0,
+          0,
           0
         ]
       }
@@ -494,28 +500,16 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-83548",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-8037",
@@ -524,16 +518,10 @@
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
-      "Cve": "CVE-2026-68820",
+      "Cve": "CVE-2026-82329",
       "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
-    },
-    {
-      "Cve": "CVE-2026-19478",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
       "Cve": "CVE-2026-75650",
@@ -542,26 +530,44 @@
       "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
     },
     {
-      "Cve": "CVE-2026-82329",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-60004",
+      "Cve": "CVE-2026-65400",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+    },
+    {
+      "Cve": "CVE-2026-83548",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
+    },
+    {
+      "Cve": "CVE-2026-9586",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
+    },
+    {
+      "Cve": "CVE-2026-68820",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 149
+      "Count": 155
     },
     {
       "Keyword": "malware",
-      "Count": 65
+      "Count": 67
     },
     {
       "Keyword": "critical",
@@ -569,15 +575,15 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 44
+      "Count": 47
     },
     {
       "Keyword": "zero-day",
-      "Count": 44
+      "Count": 45
     },
     {
       "Keyword": "phishing",
-      "Count": 31
+      "Count": 32
     },
     {
       "Keyword": "vulnerability",
@@ -597,6 +603,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "New 'BlueMoon' kit exploited Windows and Chrome zero-day flaws",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-10T14:11:34Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/new-bluemoon-kit-exploited-windows-and-chrome-zero-day-flaws/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA Flags Exploited Cisco, Citrix, Fortinet Flaws, Sets Sept. 12 Federal Patch Deadline",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-10T10:36:46Z",
+      "Url": "http://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-20079"
+      ]
+    },
+    {
+      "Title": "CISA: WatchGuard RCE flaw now exploited in ransomware attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-10T09:10:20Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-watchguard-rce-flaw-now-exploited-in-ransomware-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks",
       "Source": "BleepingComputer",
@@ -778,39 +817,6 @@
       "Source": "The Hacker News",
       "PublishedAt": "2026-09-05T20:14:47Z",
       "Url": "http://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Critical VMware Workstation and Fusion Flaw Lets VM Admins Execute Host Code",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-05T16:05:08Z",
-      "Url": "http://thehackernews.com/2026/09/critical-vmware-workstation-and-fusion.html",
-      "Severity": "Critical",
-      "Cvss": 9.3,
-      "Cves": [
-        "CVE-2026-59346"
-      ]
-    },
-    {
-      "Title": "PostgreSQL Fixes 12-Year-Old Logical Decoding Flaw Enabling Replication-Role Code Execution",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-04T15:20:19Z",
-      "Url": "http://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
-      "Severity": "High",
-      "Cvss": 7.2,
-      "Cves": [
-        "CVE-2026-6471"
-      ]
-    },
-    {
-      "Title": "New CrowdStrike 'FalconFlank' zero-day grants SYSTEM privileges",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-04T13:22:01Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/new-crowdstrike-falconflank-zero-day-grants-system-privileges/",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
