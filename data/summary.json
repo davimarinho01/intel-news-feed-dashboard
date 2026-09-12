@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-11T07:57:26Z",
-  "TotalArticles": 1118,
+  "GeneratedAt": "2026-09-12T07:50:03Z",
+  "TotalArticles": 1137,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 578
+      "Count": 587
     },
     {
       "Source": "BleepingComputer",
-      "Count": 284
+      "Count": 292
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 114
+      "Count": 116
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 48
+      "Count": 50
     },
     {
       "Severity": "High",
-      "Count": 82
+      "Count": 83
     },
     {
       "Severity": "Medium",
-      "Count": 519
+      "Count": 531
     },
     {
       "Severity": "Low",
-      "Count": 469
+      "Count": 473
     }
   ],
   "DailyTrend": {
@@ -189,7 +189,7 @@
           10,
           14,
           8,
-          0
+          9
         ]
       },
       {
@@ -265,7 +265,7 @@
           13,
           11,
           13,
-          1
+          9
         ]
       },
       {
@@ -417,7 +417,7 @@
           3,
           1,
           5,
-          0
+          2
         ]
       },
       {
@@ -500,28 +500,22 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-8037",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
+      "Cve": "CVE-2026-59310",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-82329",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
       "Cve": "CVE-2026-75650",
@@ -530,52 +524,58 @@
       "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
     },
     {
-      "Cve": "CVE-2026-65400",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
-    },
-    {
       "Cve": "CVE-2026-73570",
       "Count": 3,
       "Severity": "Medium",
       "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
     },
     {
-      "Cve": "CVE-2026-83548",
+      "Cve": "CVE-2026-60004",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
+      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
-      "Cve": "CVE-2026-9586",
+      "Cve": "CVE-2026-19478",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
     },
     {
       "Cve": "CVE-2026-68820",
       "Count": 3,
       "Severity": "High",
       "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+    },
+    {
+      "Cve": "CVE-2026-55040",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-8037",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 155
+      "Count": 161
     },
     {
       "Keyword": "malware",
-      "Count": 67
+      "Count": 69
     },
     {
       "Keyword": "critical",
-      "Count": 54
+      "Count": 55
     },
     {
       "Keyword": "ransomware",
-      "Count": 47
+      "Count": 48
     },
     {
       "Keyword": "zero-day",
@@ -583,11 +583,11 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 32
+      "Count": 34
     },
     {
       "Keyword": "vulnerability",
-      "Count": 23
+      "Count": 24
     },
     {
       "Keyword": "leak",
@@ -599,10 +599,43 @@
     },
     {
       "Keyword": "cvss",
-      "Count": 10
+      "Count": 11
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-11T16:30:18Z",
+      "Url": "http://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-85706"
+      ]
+    },
+    {
+      "Title": "PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-11T06:46:18Z",
+      "Url": "http://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-11T06:19:59Z",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-20079"
+      ]
+    },
     {
       "Title": "New 'BlueMoon' kit exploited Windows and Chrome zero-day flaws",
       "Source": "BleepingComputer",
@@ -784,39 +817,6 @@
       "Source": "BleepingComputer",
       "PublishedAt": "2026-09-07T16:50:29Z",
       "Url": "https://www.bleepingcomputer.com/news/security/magento-stylesmuggler-zero-day-exploited-to-deploy-linux-backdoor/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "⚡ Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-07T14:36:07Z",
-      "Url": "http://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-07T08:31:12Z",
-      "Url": "http://thehackernews.com/2026/09/n-able-issues-fourth-n-central-hotfix.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Unpatched Magento and Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-05T20:14:47Z",
-      "Url": "http://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
