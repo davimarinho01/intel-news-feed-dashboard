@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-13T08:11:59Z",
-  "TotalArticles": 1141,
+  "GeneratedAt": "2026-09-14T08:47:09Z",
+  "TotalArticles": 1145,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 590
+      "Count": 591
     },
     {
       "Source": "BleepingComputer",
-      "Count": 293
+      "Count": 296
     },
     {
       "Source": "Dark Reading",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 532
+      "Count": 535
     },
     {
       "Severity": "Low",
-      "Count": 475
+      "Count": 476
     }
   ],
   "DailyTrend": {
@@ -114,7 +114,9 @@
       "2026-09-09",
       "2026-09-10",
       "2026-09-11",
-      "2026-09-12"
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-14"
     ],
     "Datasets": [
       {
@@ -191,7 +193,9 @@
           14,
           8,
           9,
-          3
+          3,
+          1,
+          0
         ]
       },
       {
@@ -268,7 +272,9 @@
           11,
           13,
           9,
-          1
+          1,
+          1,
+          2
         ]
       },
       {
@@ -331,6 +337,8 @@
           7,
           3,
           3,
+          0,
+          0,
           0,
           0,
           0,
@@ -422,6 +430,8 @@
           1,
           5,
           2,
+          0,
+          0,
           0
         ]
       },
@@ -499,6 +509,8 @@
           0,
           0,
           0,
+          0,
+          0,
           0
         ]
       }
@@ -512,16 +524,16 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
       "Cve": "CVE-2026-19478",
@@ -569,11 +581,11 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 163
+      "Count": 165
     },
     {
       "Keyword": "malware",
-      "Count": 69
+      "Count": 70
     },
     {
       "Keyword": "critical",
@@ -589,7 +601,7 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 34
+      "Count": 35
     },
     {
       "Keyword": "vulnerability",
