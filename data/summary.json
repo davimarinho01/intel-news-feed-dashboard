@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-14T08:47:09Z",
-  "TotalArticles": 1145,
+  "GeneratedAt": "2026-09-15T08:34:05Z",
+  "TotalArticles": 1165,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 591
+      "Count": 599
     },
     {
       "Source": "BleepingComputer",
-      "Count": 296
+      "Count": 307
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 116
+      "Count": 117
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 84
+      "Count": 85
     },
     {
       "Severity": "Medium",
-      "Count": 535
+      "Count": 542
     },
     {
       "Severity": "Low",
-      "Count": 476
+      "Count": 488
     }
   ],
   "DailyTrend": {
@@ -116,7 +116,8 @@
       "2026-09-11",
       "2026-09-12",
       "2026-09-13",
-      "2026-09-14"
+      "2026-09-14",
+      "2026-09-15"
     ],
     "Datasets": [
       {
@@ -195,6 +196,7 @@
           9,
           3,
           1,
+          8,
           0
         ]
       },
@@ -274,7 +276,8 @@
           9,
           1,
           1,
-          2
+          12,
+          1
         ]
       },
       {
@@ -337,6 +340,7 @@
           7,
           3,
           3,
+          0,
           0,
           0,
           0,
@@ -432,6 +436,7 @@
           2,
           0,
           0,
+          1,
           0
         ]
       },
@@ -511,6 +516,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -518,22 +524,34 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
+      "Cve": "CVE-2026-59310",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
       "Cve": "CVE-2026-20079",
       "Count": 4,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html"
+    },
+    {
+      "Cve": "CVE-2026-55040",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-19478",
@@ -548,16 +566,10 @@
       "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
-      "Cve": "CVE-2026-68820",
+      "Cve": "CVE-2026-83548",
       "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
-    },
-    {
-      "Cve": "CVE-2026-55040",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
     },
     {
       "Cve": "CVE-2026-63077",
@@ -570,22 +582,16 @@
       "Count": 3,
       "Severity": "Medium",
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 165
+      "Count": 168
     },
     {
       "Keyword": "malware",
-      "Count": 70
+      "Count": 71
     },
     {
       "Keyword": "critical",
@@ -597,7 +603,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 45
+      "Count": 46
     },
     {
       "Keyword": "phishing",
@@ -605,11 +611,11 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 24
+      "Count": 25
     },
     {
       "Keyword": "leak",
-      "Count": 15
+      "Count": 16
     },
     {
       "Keyword": "code execution",
@@ -621,6 +627,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Cisco patches Secure Email Gateway zero-day exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-15T07:31:09Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/new-cisco-secure-email-zero-day-exploited-to-execute-commands-as-root/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
       "Source": "The Hacker News",
@@ -826,17 +843,6 @@
       "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/",
       "Severity": "High",
       "Cvss": null,
-      "Cves": [
-        "CVE-2026-75650"
-      ]
-    },
-    {
-      "Title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-08T09:13:47Z",
-      "Url": "http://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
       "Cves": [
         "CVE-2026-75650"
       ]
