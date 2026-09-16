@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-09-15T08:34:05Z",
-  "TotalArticles": 1165,
+  "GeneratedAt": "2026-09-16T08:28:20Z",
+  "TotalArticles": 1193,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 599
+      "Count": 608
     },
     {
       "Source": "BleepingComputer",
-      "Count": 307
+      "Count": 317
+    },
+    {
+      "Source": "CISA Advisories",
+      "Count": 126
     },
     {
       "Source": "Dark Reading",
       "Count": 126
-    },
-    {
-      "Source": "CISA Advisories",
-      "Count": 117
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 85
+      "Count": 90
     },
     {
       "Severity": "Medium",
-      "Count": 542
+      "Count": 561
     },
     {
       "Severity": "Low",
-      "Count": 488
+      "Count": 492
     }
   ],
   "DailyTrend": {
@@ -117,7 +117,8 @@
       "2026-09-12",
       "2026-09-13",
       "2026-09-14",
-      "2026-09-15"
+      "2026-09-15",
+      "2026-09-16"
     ],
     "Datasets": [
       {
@@ -197,6 +198,7 @@
           3,
           1,
           8,
+          9,
           0
         ]
       },
@@ -277,87 +279,8 @@
           1,
           1,
           12,
+          10,
           1
-        ]
-      },
-      {
-        "Source": "Dark Reading",
-        "Data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          4,
-          5,
-          0,
-          5,
-          7,
-          7,
-          5,
-          5,
-          0,
-          5,
-          3,
-          7,
-          4,
-          1,
-          0,
-          7,
-          2,
-          4,
-          3,
-          5,
-          0,
-          0,
-          4,
-          6,
-          4,
-          6,
-          6,
-          0,
-          0,
-          5,
-          3,
-          7,
-          3,
-          3,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
         ]
       },
       {
@@ -437,6 +360,88 @@
           0,
           0,
           1,
+          9,
+          0
+        ]
+      },
+      {
+        "Source": "Dark Reading",
+        "Data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          5,
+          0,
+          5,
+          7,
+          7,
+          5,
+          5,
+          0,
+          5,
+          3,
+          7,
+          4,
+          1,
+          0,
+          7,
+          2,
+          4,
+          3,
+          5,
+          0,
+          0,
+          4,
+          6,
+          4,
+          6,
+          6,
+          0,
+          0,
+          5,
+          3,
+          7,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ]
       },
@@ -517,6 +522,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -524,16 +530,16 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-20079",
@@ -542,68 +548,68 @@
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
-      "Cve": "CVE-2026-85706",
+      "Cve": "CVE-2026-60004",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html"
-    },
-    {
-      "Cve": "CVE-2026-55040",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-19478",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
-    },
-    {
-      "Cve": "CVE-2026-8037",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
-    },
-    {
-      "Cve": "CVE-2026-83548",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
-    },
-    {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
       "Cve": "CVE-2026-82329",
       "Count": 3,
       "Severity": "Medium",
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+    },
+    {
+      "Cve": "CVE-2026-65400",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
+    },
+    {
+      "Cve": "CVE-2026-75650",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
+    },
+    {
+      "Cve": "CVE-2026-63077",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 168
+      "Count": 175
     },
     {
       "Keyword": "malware",
-      "Count": 71
+      "Count": 75
     },
     {
       "Keyword": "critical",
-      "Count": 56
+      "Count": 57
     },
     {
       "Keyword": "ransomware",
-      "Count": 48
+      "Count": 49
     },
     {
       "Keyword": "zero-day",
-      "Count": 46
+      "Count": 49
     },
     {
       "Keyword": "phishing",
@@ -628,10 +634,65 @@
   ],
   "RecentCritical": [
     {
+      "Title": "Google fixes actively exploited Android zero-day on Pixel devices",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-16T07:00:19Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/google-fixes-actively-exploited-android-zero-day-on-pixel-devices/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Acronis warns of actively exploited flaw in its cPanel backup plugin",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-15T21:37:35Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/acronis-warns-of-actively-exploited-flaw-in-its-cpanel-backup-plugin/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "What Zero-Day Response Should Be in the Post-Mythos Era",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-15T13:45:54Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/what-zero-day-response-should-be-in-the-post-mythos-era/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
       "Title": "Cisco patches Secure Email Gateway zero-day exploited in attacks",
       "Source": "BleepingComputer",
       "PublishedAt": "2026-09-15T07:31:09Z",
       "Url": "https://www.bleepingcomputer.com/news/security/new-cisco-secure-email-zero-day-exploited-to-execute-commands-as-root/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-15T06:11:11Z",
+      "Url": "http://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-76461"
+      ]
+    },
+    {
+      "Title": "China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-15T05:31:05Z",
+      "Url": "http://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
@@ -790,61 +851,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "N-able N-central Pre-Auth RCE Flaw Exploited in the Wild",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-09T04:27:51Z",
-      "Url": "http://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-86218"
-      ]
-    },
-    {
-      "Title": "The EU CRA's Real Question: What Shipped, and When Did You Know?",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-08T20:24:16Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/the-eu-cras-real-question-what-shipped-and-when-did-you-know/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Microsoft September 2026 Patch Tuesday fixes 966 flaws, 2 zero-days",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-08T18:18:05Z",
-      "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-patch-tuesday-fixes-966-flaws-2-zero-days/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "OpenAI says GPT-6 Astra can find zero-days, but is also harder to monitor",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-08T14:40:32Z",
-      "Url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-6-astra-can-find-zero-days-but-is-also-harder-to-monitor/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Adobe fixes critical Magento zero-day exploited to backdoor servers",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-08T13:34:47Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-75650"
       ]
     }
   ]
