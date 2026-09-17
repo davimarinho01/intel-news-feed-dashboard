@@ -1,44 +1,44 @@
 {
-  "GeneratedAt": "2026-09-16T08:28:20Z",
-  "TotalArticles": 1193,
+  "GeneratedAt": "2026-09-17T08:33:29Z",
+  "TotalArticles": 1270,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 608
+      "Count": 619
     },
     {
       "Source": "BleepingComputer",
-      "Count": 317
-    },
-    {
-      "Source": "CISA Advisories",
-      "Count": 126
+      "Count": 329
     },
     {
       "Source": "Dark Reading",
-      "Count": 126
+      "Count": 176
+    },
+    {
+      "Source": "CISA Advisories",
+      "Count": 129
     },
     {
       "Source": "Krebs on Security",
-      "Count": 16
+      "Count": 17
     }
   ],
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 50
+      "Count": 52
     },
     {
       "Severity": "High",
-      "Count": 90
+      "Count": 97
     },
     {
       "Severity": "Medium",
-      "Count": 561
+      "Count": 589
     },
     {
       "Severity": "Low",
-      "Count": 492
+      "Count": 532
     }
   ],
   "DailyTrend": {
@@ -118,7 +118,8 @@
       "2026-09-13",
       "2026-09-14",
       "2026-09-15",
-      "2026-09-16"
+      "2026-09-16",
+      "2026-09-17"
     ],
     "Datasets": [
       {
@@ -199,6 +200,7 @@
           1,
           8,
           9,
+          11,
           0
         ]
       },
@@ -280,7 +282,90 @@
           1,
           12,
           10,
-          1
+          10,
+          3
+        ]
+      },
+      {
+        "Source": "Dark Reading",
+        "Data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          5,
+          0,
+          5,
+          7,
+          7,
+          5,
+          5,
+          0,
+          5,
+          3,
+          7,
+          4,
+          1,
+          0,
+          7,
+          2,
+          4,
+          3,
+          5,
+          0,
+          0,
+          4,
+          6,
+          4,
+          6,
+          6,
+          0,
+          0,
+          5,
+          3,
+          7,
+          3,
+          3,
+          0,
+          0,
+          4,
+          5,
+          5,
+          5,
+          3,
+          0,
+          0,
+          0,
+          5,
+          3,
+          3,
+          7,
+          0,
+          0,
+          3,
+          3,
+          4,
+          0
         ]
       },
       {
@@ -361,87 +446,7 @@
           0,
           1,
           9,
-          0
-        ]
-      },
-      {
-        "Source": "Dark Reading",
-        "Data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          4,
-          5,
-          0,
-          5,
-          7,
-          7,
-          5,
-          5,
-          0,
-          5,
           3,
-          7,
-          4,
-          1,
-          0,
-          7,
-          2,
-          4,
-          3,
-          5,
-          0,
-          0,
-          4,
-          6,
-          4,
-          6,
-          6,
-          0,
-          0,
-          5,
-          3,
-          7,
-          3,
-          3,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           0
         ]
       },
@@ -523,6 +528,7 @@
           0,
           0,
           0,
+          1,
           0
         ]
       }
@@ -530,16 +536,16 @@
   },
   "TopCves": [
     {
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-20079",
@@ -548,76 +554,76 @@
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-68820",
+      "Count": 3,
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+    },
+    {
       "Cve": "CVE-2026-60004",
       "Count": 3,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
-      "Cve": "CVE-2026-82329",
+      "Cve": "CVE-2026-19478",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+    },
+    {
+      "Cve": "CVE-2026-9586",
       "Count": 3,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
     },
     {
-      "Cve": "CVE-2026-85706",
+      "Cve": "CVE-2026-8037",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
-    },
-    {
-      "Cve": "CVE-2026-65400",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
-    },
-    {
-      "Cve": "CVE-2026-75650",
-      "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
-    },
-    {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 175
+      "Count": 188
     },
     {
       "Keyword": "malware",
-      "Count": 75
+      "Count": 77
     },
     {
       "Keyword": "critical",
-      "Count": 57
+      "Count": 60
     },
     {
       "Keyword": "ransomware",
-      "Count": 49
+      "Count": 52
     },
     {
       "Keyword": "zero-day",
-      "Count": 49
+      "Count": 51
     },
     {
       "Keyword": "phishing",
-      "Count": 35
+      "Count": 37
     },
     {
       "Keyword": "vulnerability",
-      "Count": 25
+      "Count": 30
     },
     {
       "Keyword": "leak",
@@ -634,6 +640,61 @@
   ],
   "RecentCritical": [
     {
+      "Title": "Cisco warns of max severity ISE zero-day exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-17T07:20:54Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-16T15:50:59Z",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-89026"
+      ]
+    },
+    {
+      "Title": "Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-16T11:15:58Z",
+      "Url": "http://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
+      "Severity": "High",
+      "Cvss": 8.0,
+      "Cves": [
+        "CVE-2026-58704"
+      ]
+    },
+    {
+      "Title": "Critical ScreenConnect flaw now actively exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-16T11:14:28Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-screenconnect-flaw/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Acronis cPanel Backup Plugin Vulnerability Exploited in Targeted Attacks",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-16T11:08:54Z",
+      "Url": "http://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
+      "Severity": "High",
+      "Cvss": 7.8,
+      "Cves": [
+        "CVE-2026-87886"
+      ]
+    },
+    {
       "Title": "Google fixes actively exploited Android zero-day on Pixel devices",
       "Source": "BleepingComputer",
       "PublishedAt": "2026-09-16T07:00:19Z",
@@ -642,6 +703,17 @@
       "Cvss": null,
       "Cves": [
         null
+      ]
+    },
+    {
+      "Title": "Active Exploitation Attempts Target WSO2 API Manager JWT Bypass With Forged Admin Tokens",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-16T05:18:06Z",
+      "Url": "http://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-5430"
       ]
     },
     {
@@ -711,6 +783,17 @@
       ]
     },
     {
+      "Title": "SpiderSilk Hunts External Threats With AI-Based Scanner",
+      "Source": "Dark Reading",
+      "PublishedAt": "2026-09-11T18:27:28Z",
+      "Url": "https://www.darkreading.com/endpoint-security/spidersilk-hunts-external-threats-ai-scanning",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
       "Title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
       "Source": "The Hacker News",
       "PublishedAt": "2026-09-11T16:30:18Z",
@@ -744,6 +827,17 @@
       ]
     },
     {
+      "Title": "Nightmare-Eclipse Strikes Again With 'ShieldCrash' Windows Exploit",
+      "Source": "Dark Reading",
+      "PublishedAt": "2026-09-10T15:29:12Z",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/nightmare-eclipse-strikes-again-shieldcrash-windows-exploit",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
       "Title": "New 'BlueMoon' kit exploited Windows and Chrome zero-day flaws",
       "Source": "BleepingComputer",
       "PublishedAt": "2026-09-10T14:11:34Z",
@@ -763,94 +857,6 @@
       "Cvss": 10.0,
       "Cves": [
         "CVE-2026-20079"
-      ]
-    },
-    {
-      "Title": "CISA: WatchGuard RCE flaw now exploited in ransomware attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-10T09:10:20Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-watchguard-rce-flaw-now-exploited-in-ransomware-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-09T21:40:44Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisco-confirms-cve-2026-20079-secure-fmc-flaw-exploited-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-20079"
-      ]
-    },
-    {
-      "Title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-09T09:11:03Z",
-      "Url": "http://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-87491"
-      ]
-    },
-    {
-      "Title": "New Microsoft Defender 'ShieldCrash' zero-day grants SYSTEM access",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-09T07:30:15Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/new-microsoft-defender-shieldcrash-zero-day-grants-system-access/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-09T06:47:27Z",
-      "Url": "http://thehackernews.com/2026/09/researcher-drops-new-microsoft-defender.html",
-      "Severity": "High",
-      "Cvss": 7.8,
-      "Cves": [
-        "CVE-2026-69414"
-      ]
-    },
-    {
-      "Title": "Google warns of new Chrome zero-day bug exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-09T06:25:48Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/google-patches-seventh-chrome-zero-day-exploited-in-attacks-this-year/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "SAP Patches CVSS 10.0 Kernel Flaw Enabling Unauthenticated Remote Code Execution",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-09T06:25:45Z",
-      "Url": "http://thehackernews.com/2026/09/sap-patches-cvss-100-kernel-flaw.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-44756"
-      ]
-    },
-    {
-      "Title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-09T04:41:29Z",
-      "Url": "http://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
