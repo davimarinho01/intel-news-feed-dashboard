@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-17T08:33:29Z",
-  "TotalArticles": 1270,
+  "GeneratedAt": "2026-09-18T08:08:18Z",
+  "TotalArticles": 1298,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 619
+      "Count": 632
     },
     {
       "Source": "BleepingComputer",
-      "Count": 329
+      "Count": 337
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 129
+      "Count": 136
     },
     {
       "Source": "Krebs on Security",
@@ -26,7 +26,7 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 52
+      "Count": 53
     },
     {
       "Severity": "High",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 589
+      "Count": 605
     },
     {
       "Severity": "Low",
-      "Count": 532
+      "Count": 543
     }
   ],
   "DailyTrend": {
@@ -119,7 +119,8 @@
       "2026-09-14",
       "2026-09-15",
       "2026-09-16",
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-18"
     ],
     "Datasets": [
       {
@@ -201,6 +202,7 @@
           8,
           9,
           11,
+          13,
           0
         ]
       },
@@ -283,7 +285,8 @@
           12,
           10,
           10,
-          3
+          10,
+          1
         ]
       },
       {
@@ -365,6 +368,7 @@
           3,
           3,
           4,
+          0,
           0
         ]
       },
@@ -447,6 +451,7 @@
           1,
           9,
           3,
+          7,
           0
         ]
       },
@@ -529,6 +534,7 @@
           0,
           0,
           1,
+          0,
           0
         ]
       }
@@ -536,16 +542,16 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-85706",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
-    },
-    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
       "Cve": "CVE-2026-20079",
@@ -554,16 +560,22 @@
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
       "Cve": "CVE-2026-82329",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
+      "Cve": "CVE-2026-75650",
+      "Count": 3,
       "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+      "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
     },
     {
       "Cve": "CVE-2026-68820",
@@ -572,42 +584,36 @@
       "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     },
     {
-      "Cve": "CVE-2026-60004",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
-    },
-    {
-      "Cve": "CVE-2026-19478",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
-    },
-    {
-      "Cve": "CVE-2026-9586",
+      "Cve": "CVE-2026-55040",
       "Count": 3,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-8037",
+      "Cve": "CVE-2026-0768",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise"
+    },
+    {
+      "Cve": "CVE-2026-65400",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 188
+      "Count": 190
     },
     {
       "Keyword": "malware",
-      "Count": 77
+      "Count": 79
     },
     {
       "Keyword": "critical",
-      "Count": 60
+      "Count": 63
     },
     {
       "Keyword": "ransomware",
@@ -615,7 +621,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 51
+      "Count": 52
     },
     {
       "Keyword": "phishing",
@@ -635,7 +641,7 @@
     },
     {
       "Keyword": "cvss",
-      "Count": 11
+      "Count": 12
     }
   ],
   "RecentCritical": [
@@ -648,6 +654,17 @@
       "Cvss": null,
       "Cves": [
         null
+      ]
+    },
+    {
+      "Title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-17T06:39:40Z",
+      "Url": "http://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-76460"
       ]
     },
     {
@@ -846,17 +863,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "CISA Flags Exploited Cisco, Citrix, Fortinet Flaws, Sets Sept. 12 Federal Patch Deadline",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-10T10:36:46Z",
-      "Url": "http://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-20079"
       ]
     }
   ]
