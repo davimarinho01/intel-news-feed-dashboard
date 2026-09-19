@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-18T08:08:18Z",
-  "TotalArticles": 1298,
+  "GeneratedAt": "2026-09-19T07:57:26Z",
+  "TotalArticles": 1316,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 632
+      "Count": 641
     },
     {
       "Source": "BleepingComputer",
-      "Count": 337
+      "Count": 344
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 136
+      "Count": 138
     },
     {
       "Source": "Krebs on Security",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 605
+      "Count": 616
     },
     {
       "Severity": "Low",
-      "Count": 543
+      "Count": 550
     }
   ],
   "DailyTrend": {
@@ -203,7 +203,7 @@
           9,
           11,
           13,
-          0
+          9
         ]
       },
       {
@@ -286,7 +286,7 @@
           10,
           10,
           10,
-          1
+          8
         ]
       },
       {
@@ -452,7 +452,7 @@
           9,
           3,
           7,
-          0
+          2
         ]
       },
       {
@@ -542,6 +542,18 @@
   },
   "TopCves": [
     {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
@@ -554,46 +566,34 @@
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Cve": "CVE-2026-60004",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+    },
+    {
+      "Cve": "CVE-2026-63077",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+    },
+    {
+      "Cve": "CVE-2026-8037",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
       "Cve": "CVE-2026-75650",
       "Count": 3,
       "Severity": "High",
       "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
-    },
-    {
-      "Cve": "CVE-2026-68820",
-      "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
-    },
-    {
-      "Cve": "CVE-2026-55040",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-0768",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise"
     },
     {
       "Cve": "CVE-2026-65400",
@@ -605,11 +605,11 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 190
+      "Count": 194
     },
     {
       "Keyword": "malware",
-      "Count": 79
+      "Count": 80
     },
     {
       "Keyword": "critical",
@@ -629,7 +629,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 30
+      "Count": 31
     },
     {
       "Keyword": "leak",
@@ -637,11 +637,11 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 13
+      "Count": 14
     },
     {
       "Keyword": "cvss",
-      "Count": 12
+      "Count": 13
     }
   ],
   "RecentCritical": [
