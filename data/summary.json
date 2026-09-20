@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-19T07:57:26Z",
-  "TotalArticles": 1316,
+  "GeneratedAt": "2026-09-20T08:28:36Z",
+  "TotalArticles": 1327,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 641
+      "Count": 648
     },
     {
       "Source": "BleepingComputer",
-      "Count": 344
+      "Count": 348
     },
     {
       "Source": "Dark Reading",
@@ -26,7 +26,7 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 53
+      "Count": 55
     },
     {
       "Severity": "High",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 616
+      "Count": 618
     },
     {
       "Severity": "Low",
-      "Count": 550
+      "Count": 557
     }
   ],
   "DailyTrend": {
@@ -120,7 +120,8 @@
       "2026-09-15",
       "2026-09-16",
       "2026-09-17",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-19"
     ],
     "Datasets": [
       {
@@ -203,7 +204,8 @@
           9,
           11,
           13,
-          9
+          9,
+          7
         ]
       },
       {
@@ -286,7 +288,8 @@
           10,
           10,
           10,
-          8
+          8,
+          4
         ]
       },
       {
@@ -368,6 +371,7 @@
           3,
           3,
           4,
+          0,
           0,
           0
         ]
@@ -452,7 +456,8 @@
           9,
           3,
           7,
-          2
+          2,
+          0
         ]
       },
       {
@@ -535,18 +540,13 @@
           0,
           1,
           0,
+          0,
           0
         ]
       }
     ]
   },
   "TopCves": [
-    {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
     {
       "Cve": "CVE-2026-82329",
       "Count": 4,
@@ -566,6 +566,12 @@
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
@@ -578,22 +584,22 @@
       "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
-      "Cve": "CVE-2026-63077",
+      "Cve": "CVE-2026-0768",
       "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise"
     },
     {
-      "Cve": "CVE-2026-8037",
+      "Cve": "CVE-2026-83548",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
+      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
     },
     {
-      "Cve": "CVE-2026-75650",
+      "Cve": "CVE-2026-73570",
       "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
     },
     {
       "Cve": "CVE-2026-65400",
@@ -605,7 +611,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 194
+      "Count": 196
     },
     {
       "Keyword": "malware",
@@ -613,11 +619,11 @@
     },
     {
       "Keyword": "critical",
-      "Count": 63
+      "Count": 64
     },
     {
       "Keyword": "ransomware",
-      "Count": 52
+      "Count": 53
     },
     {
       "Keyword": "zero-day",
@@ -633,7 +639,7 @@
     },
     {
       "Keyword": "leak",
-      "Count": 16
+      "Count": 17
     },
     {
       "Keyword": "code execution",
@@ -645,6 +651,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-19T08:18:54Z",
+      "Url": "http://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-58138"
+      ]
+    },
+    {
+      "Title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-19T06:24:10Z",
+      "Url": "http://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2025-39682"
+      ]
+    },
     {
       "Title": "Cisco warns of max severity ISE zero-day exploited in attacks",
       "Source": "BleepingComputer",
@@ -841,28 +869,6 @@
       "Cvss": 10.0,
       "Cves": [
         "CVE-2026-20079"
-      ]
-    },
-    {
-      "Title": "Nightmare-Eclipse Strikes Again With 'ShieldCrash' Windows Exploit",
-      "Source": "Dark Reading",
-      "PublishedAt": "2026-09-10T15:29:12Z",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/nightmare-eclipse-strikes-again-shieldcrash-windows-exploit",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "New 'BlueMoon' kit exploited Windows and Chrome zero-day flaws",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-10T14:11:34Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/new-bluemoon-kit-exploited-windows-and-chrome-zero-day-flaws/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
