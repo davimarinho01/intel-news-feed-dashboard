@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-21T08:48:14Z",
-  "TotalArticles": 1329,
+  "GeneratedAt": "2026-09-22T08:25:43Z",
+  "TotalArticles": 1346,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 648
+      "Count": 655
     },
     {
       "Source": "BleepingComputer",
-      "Count": 350
+      "Count": 359
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 138
+      "Count": 139
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 97
+      "Count": 98
     },
     {
       "Severity": "Medium",
-      "Count": 619
+      "Count": 624
     },
     {
       "Severity": "Low",
-      "Count": 558
+      "Count": 569
     }
   ],
   "DailyTrend": {
@@ -122,7 +122,8 @@
       "2026-09-17",
       "2026-09-18",
       "2026-09-19",
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-21"
     ],
     "Datasets": [
       {
@@ -207,7 +208,8 @@
           13,
           9,
           7,
-          0
+          0,
+          7
         ]
       },
       {
@@ -292,7 +294,8 @@
           10,
           8,
           4,
-          2
+          2,
+          9
         ]
       },
       {
@@ -374,6 +377,7 @@
           3,
           3,
           4,
+          0,
           0,
           0,
           0,
@@ -462,7 +466,8 @@
           7,
           2,
           0,
-          0
+          0,
+          1
         ]
       },
       {
@@ -547,6 +552,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -554,28 +560,16 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-85706",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
-    },
-    {
       "Cve": "CVE-2026-20079",
       "Count": 4,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
       "Cve": "CVE-2026-18577",
@@ -584,10 +578,22 @@
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-60004",
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
+      "Cve": "CVE-2026-59310",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-55040",
       "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-0768",
@@ -596,16 +602,16 @@
       "Url": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise"
     },
     {
-      "Cve": "CVE-2026-83548",
+      "Cve": "CVE-2026-63077",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
     },
     {
-      "Cve": "CVE-2026-73570",
+      "Cve": "CVE-2026-8037",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
       "Cve": "CVE-2026-65400",
@@ -617,7 +623,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 196
+      "Count": 198
     },
     {
       "Keyword": "malware",
@@ -641,7 +647,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 31
+      "Count": 32
     },
     {
       "Keyword": "leak",
@@ -657,6 +663,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-21T14:24:13Z",
+      "Url": "http://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
       "Source": "The Hacker News",
@@ -864,17 +881,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-11T06:19:59Z",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-20079"
       ]
     }
   ]
