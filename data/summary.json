@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-22T08:25:43Z",
-  "TotalArticles": 1346,
+  "GeneratedAt": "2026-09-23T08:27:38Z",
+  "TotalArticles": 1386,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 655
+      "Count": 671
     },
     {
       "Source": "BleepingComputer",
-      "Count": 359
+      "Count": 373
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 139
+      "Count": 149
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 55
+      "Count": 56
     },
     {
       "Severity": "High",
-      "Count": 98
+      "Count": 107
     },
     {
       "Severity": "Medium",
-      "Count": 624
+      "Count": 644
     },
     {
       "Severity": "Low",
-      "Count": 569
+      "Count": 579
     }
   ],
   "DailyTrend": {
@@ -123,7 +123,9 @@
       "2026-09-18",
       "2026-09-19",
       "2026-09-20",
-      "2026-09-21"
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23"
     ],
     "Datasets": [
       {
@@ -209,7 +211,9 @@
           9,
           7,
           0,
-          7
+          7,
+          16,
+          0
         ]
       },
       {
@@ -295,7 +299,9 @@
           8,
           4,
           2,
-          9
+          9,
+          12,
+          2
         ]
       },
       {
@@ -377,6 +383,8 @@
           3,
           3,
           4,
+          0,
+          0,
           0,
           0,
           0,
@@ -467,7 +475,9 @@
           2,
           0,
           0,
-          1
+          1,
+          10,
+          0
         ]
       },
       {
@@ -553,6 +563,8 @@
           0,
           0,
           0,
+          0,
+          0,
           0
         ]
       }
@@ -572,16 +584,16 @@
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
       "Cve": "CVE-2026-85706",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-59310",
@@ -590,10 +602,16 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-55040",
+      "Cve": "CVE-2026-83548",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
+    },
+    {
+      "Cve": "CVE-2026-19478",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
     },
     {
       "Cve": "CVE-2026-0768",
@@ -602,48 +620,42 @@
       "Url": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise"
     },
     {
-      "Cve": "CVE-2026-63077",
+      "Cve": "CVE-2026-55040",
       "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-8037",
+      "Cve": "CVE-2026-9586",
       "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
-    },
-    {
-      "Cve": "CVE-2026-65400",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 198
+      "Count": 206
     },
     {
       "Keyword": "malware",
-      "Count": 80
+      "Count": 81
     },
     {
       "Keyword": "critical",
-      "Count": 64
-    },
-    {
-      "Keyword": "ransomware",
-      "Count": 53
+      "Count": 66
     },
     {
       "Keyword": "zero-day",
-      "Count": 52
+      "Count": 59
+    },
+    {
+      "Keyword": "ransomware",
+      "Count": 54
     },
     {
       "Keyword": "phishing",
-      "Count": 37
+      "Count": 39
     },
     {
       "Keyword": "vulnerability",
@@ -655,14 +667,124 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 14
+      "Count": 15
     },
     {
       "Keyword": "cvss",
-      "Count": 13
+      "Count": 14
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-23T07:17:23Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/f5-warns-of-big-ip-apm-remote-code-execution-zero-day-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "ShinyHunters claims FBI hack, data theft in PeopleSoft zero-day breach",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-22T19:13:29Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-fbi-hack-data-theft-in-peoplesoft-zero-day-breach/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Check Point Warns of Management Server Zero-Day Exploited in Targeted Attacks",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-22T18:29:39Z",
+      "Url": "http://thehackernews.com/2026/09/check-point-warns-of-management-server.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-93616"
+      ]
+    },
+    {
+      "Title": "Critical Bifrost AI Gateway Flaw Lets Attackers Run Commands Without Credentials",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-22T16:41:12Z",
+      "Url": "http://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-90898"
+      ]
+    },
+    {
+      "Title": "Check Point warns of Management Server zero-day exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-22T16:32:47Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/check-point-patches-management-server-zero-day-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Researcher Drops BigDiskBuster Zero-Day PoC That Blocks Microsoft Defender Updates",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-22T16:14:04Z",
+      "Url": "http://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "D-Link warns of max severity zero-day bug in DIR-822A routers",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-22T12:48:06Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-max-severity-zero-day-bug-in-dir-822a-routers/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-86296"
+      ]
+    },
+    {
+      "Title": "New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-22T12:29:00Z",
+      "Url": "http://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-93952"
+      ]
+    },
+    {
+      "Title": "New Windows Defender zero-day blocks Microsoft antivirus updates",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-22T09:55:11Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-22T05:31:59Z",
+      "Url": "http://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
+      "Severity": "High",
+      "Cvss": 8.8,
+      "Cves": [
+        "CVE-2026-7273"
+      ]
+    },
     {
       "Title": "⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks",
       "Source": "The Hacker News",
@@ -767,116 +889,6 @@
       "Source": "BleepingComputer",
       "PublishedAt": "2026-09-16T07:00:19Z",
       "Url": "https://www.bleepingcomputer.com/news/security/google-fixes-actively-exploited-android-zero-day-on-pixel-devices/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Active Exploitation Attempts Target WSO2 API Manager JWT Bypass With Forged Admin Tokens",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-16T05:18:06Z",
-      "Url": "http://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-5430"
-      ]
-    },
-    {
-      "Title": "Acronis warns of actively exploited flaw in its cPanel backup plugin",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-15T21:37:35Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/acronis-warns-of-actively-exploited-flaw-in-its-cpanel-backup-plugin/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "What Zero-Day Response Should Be in the Post-Mythos Era",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-15T13:45:54Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/what-zero-day-response-should-be-in-the-post-mythos-era/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Cisco patches Secure Email Gateway zero-day exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-15T07:31:09Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/new-cisco-secure-email-zero-day-exploited-to-execute-commands-as-root/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-15T06:11:11Z",
-      "Url": "http://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-76461"
-      ]
-    },
-    {
-      "Title": "China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-15T05:31:05Z",
-      "Url": "http://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-12T15:54:45Z",
-      "Url": "http://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
-      "Severity": "High",
-      "Cvss": 8.1,
-      "Cves": [
-        "CVE-2026-42016"
-      ]
-    },
-    {
-      "Title": "SpiderSilk Hunts External Threats With AI-Based Scanner",
-      "Source": "Dark Reading",
-      "PublishedAt": "2026-09-11T18:27:28Z",
-      "Url": "https://www.darkreading.com/endpoint-security/spidersilk-hunts-external-threats-ai-scanning",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-11T16:30:18Z",
-      "Url": "http://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-85706"
-      ]
-    },
-    {
-      "Title": "PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-11T06:46:18Z",
-      "Url": "http://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
