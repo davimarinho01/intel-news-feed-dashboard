@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-23T08:27:38Z",
-  "TotalArticles": 1386,
+  "GeneratedAt": "2026-09-24T08:20:00Z",
+  "TotalArticles": 1410,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 671
+      "Count": 684
     },
     {
       "Source": "BleepingComputer",
-      "Count": 373
+      "Count": 383
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 149
+      "Count": 150
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 107
+      "Count": 112
     },
     {
       "Severity": "Medium",
-      "Count": 644
+      "Count": 653
     },
     {
       "Severity": "Low",
-      "Count": 579
+      "Count": 589
     }
   ],
   "DailyTrend": {
@@ -125,7 +125,8 @@
       "2026-09-20",
       "2026-09-21",
       "2026-09-22",
-      "2026-09-23"
+      "2026-09-23",
+      "2026-09-24"
     ],
     "Datasets": [
       {
@@ -213,6 +214,7 @@
           0,
           7,
           16,
+          13,
           0
         ]
       },
@@ -301,7 +303,8 @@
           2,
           9,
           12,
-          2
+          11,
+          1
         ]
       },
       {
@@ -383,6 +386,7 @@
           3,
           3,
           4,
+          0,
           0,
           0,
           0,
@@ -477,6 +481,7 @@
           0,
           1,
           10,
+          1,
           0
         ]
       },
@@ -565,6 +570,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -572,10 +578,10 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-18577",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-82329",
@@ -590,10 +596,10 @@
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
-      "Cve": "CVE-2026-18577",
+      "Cve": "CVE-2026-20079",
       "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
       "Cve": "CVE-2026-59310",
@@ -608,46 +614,46 @@
       "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
     },
     {
-      "Cve": "CVE-2026-19478",
+      "Cve": "CVE-2026-60004",
       "Count": 3,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
     },
     {
-      "Cve": "CVE-2026-0768",
+      "Cve": "CVE-2026-87491",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html"
     },
     {
-      "Cve": "CVE-2026-55040",
+      "Cve": "CVE-2026-63077",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
     },
     {
-      "Cve": "CVE-2026-9586",
+      "Cve": "CVE-2026-75650",
       "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/"
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 206
+      "Count": 212
     },
     {
       "Keyword": "malware",
-      "Count": 81
+      "Count": 85
     },
     {
       "Keyword": "critical",
-      "Count": 66
+      "Count": 70
     },
     {
       "Keyword": "zero-day",
-      "Count": 59
+      "Count": 62
     },
     {
       "Keyword": "ransomware",
@@ -663,11 +669,11 @@
     },
     {
       "Keyword": "leak",
-      "Count": 17
+      "Count": 18
     },
     {
       "Keyword": "code execution",
-      "Count": 15
+      "Count": 17
     },
     {
       "Keyword": "cvss",
@@ -675,6 +681,63 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "InfraTrust report warns network management systems under attack",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-23T14:35:26Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-network-management-systems-under-attack/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Arista patches actively exploited VeloCloud Orchestrator zero-day",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-23T12:29:53Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/arista-patches-actively-exploited-velocloud-orchestrator-zero-day/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Exploit Released for Unpatched Ubuntu Linux Flaw Enabling Host-Root Container Escape",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-23T11:12:18Z",
+      "Url": "http://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html",
+      "Severity": "High",
+      "Cvss": 7.8,
+      "Cves": [
+        "CVE-2026-80521"
+      ]
+    },
+    {
+      "Title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-23T08:29:48Z",
+      "Url": "http://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-94127"
+      ]
+    },
+    {
+      "Title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-23T08:29:24Z",
+      "Url": "http://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-85046",
+        "CVE-2026-87491",
+        "CVE-2026-85880"
+      ]
+    },
     {
       "Title": "F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks",
       "Source": "BleepingComputer",
@@ -838,61 +901,6 @@
       "Cvss": 10.0,
       "Cves": [
         "CVE-2026-76460"
-      ]
-    },
-    {
-      "Title": "Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-16T15:50:59Z",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-89026"
-      ]
-    },
-    {
-      "Title": "Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-16T11:15:58Z",
-      "Url": "http://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
-      "Severity": "High",
-      "Cvss": 8.0,
-      "Cves": [
-        "CVE-2026-58704"
-      ]
-    },
-    {
-      "Title": "Critical ScreenConnect flaw now actively exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-16T11:14:28Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-screenconnect-flaw/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Acronis cPanel Backup Plugin Vulnerability Exploited in Targeted Attacks",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-16T11:08:54Z",
-      "Url": "http://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
-      "Severity": "High",
-      "Cvss": 7.8,
-      "Cves": [
-        "CVE-2026-87886"
-      ]
-    },
-    {
-      "Title": "Google fixes actively exploited Android zero-day on Pixel devices",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-16T07:00:19Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/google-fixes-actively-exploited-android-zero-day-on-pixel-devices/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
