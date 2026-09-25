@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-24T08:20:00Z",
-  "TotalArticles": 1410,
+  "GeneratedAt": "2026-09-25T08:42:27Z",
+  "TotalArticles": 1432,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 684
+      "Count": 694
     },
     {
       "Source": "BleepingComputer",
-      "Count": 383
+      "Count": 392
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 150
+      "Count": 153
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 56
+      "Count": 57
     },
     {
       "Severity": "High",
-      "Count": 112
+      "Count": 113
     },
     {
       "Severity": "Medium",
-      "Count": 653
+      "Count": 664
     },
     {
       "Severity": "Low",
-      "Count": 589
+      "Count": 598
     }
   ],
   "DailyTrend": {
@@ -126,7 +126,8 @@
       "2026-09-21",
       "2026-09-22",
       "2026-09-23",
-      "2026-09-24"
+      "2026-09-24",
+      "2026-09-25"
     ],
     "Datasets": [
       {
@@ -215,6 +216,7 @@
           7,
           16,
           13,
+          10,
           0
         ]
       },
@@ -304,6 +306,7 @@
           9,
           12,
           11,
+          9,
           1
         ]
       },
@@ -386,6 +389,7 @@
           3,
           3,
           4,
+          0,
           0,
           0,
           0,
@@ -482,6 +486,7 @@
           1,
           10,
           1,
+          3,
           0
         ]
       },
@@ -571,6 +576,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -584,10 +590,10 @@
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-82329",
+      "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-85706",
@@ -596,16 +602,16 @@
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
       "Cve": "CVE-2026-20079",
       "Count": 4,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-83548",
@@ -614,42 +620,42 @@
       "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
     },
     {
-      "Cve": "CVE-2026-60004",
+      "Cve": "CVE-2026-85102",
       "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/"
     },
     {
-      "Cve": "CVE-2026-87491",
+      "Cve": "CVE-2026-65400",
       "Count": 3,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
+    },
+    {
+      "Cve": "CVE-2026-8037",
+      "Count": 3,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
     },
     {
       "Cve": "CVE-2026-63077",
       "Count": 3,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
-    },
-    {
-      "Cve": "CVE-2026-75650",
-      "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 212
+      "Count": 216
     },
     {
       "Keyword": "malware",
-      "Count": 85
+      "Count": 88
     },
     {
       "Keyword": "critical",
-      "Count": 70
+      "Count": 72
     },
     {
       "Keyword": "zero-day",
@@ -657,7 +663,7 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 54
+      "Count": 55
     },
     {
       "Keyword": "phishing",
@@ -669,11 +675,11 @@
     },
     {
       "Keyword": "leak",
-      "Count": 18
+      "Count": 19
     },
     {
       "Keyword": "code execution",
-      "Count": 17
+      "Count": 18
     },
     {
       "Keyword": "cvss",
@@ -681,6 +687,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Hackers now exploit critical Roundcube flaw in code injection attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-24T13:27:57Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/critical-roundcube-flaw-now-actively-exploited-in-code-injection-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-24T05:36:18Z",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html",
+      "Severity": "Critical",
+      "Cvss": 9.2,
+      "Cves": [
+        "CVE-2026-87902"
+      ]
+    },
     {
       "Title": "InfraTrust report warns network management systems under attack",
       "Source": "BleepingComputer",
@@ -879,28 +907,6 @@
       "Cvss": 9.8,
       "Cves": [
         "CVE-2025-39682"
-      ]
-    },
-    {
-      "Title": "Cisco warns of max severity ISE zero-day exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-17T07:20:54Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-17T06:39:40Z",
-      "Url": "http://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-76460"
       ]
     }
   ]
