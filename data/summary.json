@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-25T08:42:27Z",
-  "TotalArticles": 1432,
+  "GeneratedAt": "2026-09-26T08:29:32Z",
+  "TotalArticles": 1452,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 694
+      "Count": 701
     },
     {
       "Source": "BleepingComputer",
-      "Count": 392
+      "Count": 402
     },
     {
       "Source": "Dark Reading",
@@ -16,11 +16,11 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 153
+      "Count": 155
     },
     {
       "Source": "Krebs on Security",
-      "Count": 17
+      "Count": 18
     }
   ],
   "SeverityBreakdown": [
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 113
+      "Count": 115
     },
     {
       "Severity": "Medium",
-      "Count": 664
+      "Count": 672
     },
     {
       "Severity": "Low",
-      "Count": 598
+      "Count": 608
     }
   ],
   "DailyTrend": {
@@ -217,7 +217,7 @@
           16,
           13,
           10,
-          0
+          7
         ]
       },
       {
@@ -307,7 +307,7 @@
           12,
           11,
           9,
-          1
+          11
         ]
       },
       {
@@ -487,7 +487,7 @@
           10,
           1,
           3,
-          0
+          2
         ]
       },
       {
@@ -577,7 +577,7 @@
           0,
           0,
           0,
-          0
+          1
         ]
       }
     ]
@@ -596,16 +596,22 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
       "Cve": "CVE-2026-85706",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
-      "Cve": "CVE-2026-82329",
+      "Cve": "CVE-2026-5430",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     },
     {
       "Cve": "CVE-2026-20079",
@@ -620,38 +626,32 @@
       "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
     },
     {
-      "Cve": "CVE-2026-85102",
+      "Cve": "CVE-2026-87902",
       "Count": 3,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-65400",
+      "Cve": "CVE-2026-87491",
       "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html"
     },
     {
-      "Cve": "CVE-2026-8037",
+      "Cve": "CVE-2026-68820",
       "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
-    },
-    {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 216
+      "Count": 221
     },
     {
       "Keyword": "malware",
-      "Count": 88
+      "Count": 90
     },
     {
       "Keyword": "critical",
@@ -659,7 +659,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 62
+      "Count": 63
     },
     {
       "Keyword": "ransomware",
@@ -671,11 +671,11 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 32
+      "Count": 33
     },
     {
       "Keyword": "leak",
-      "Count": 19
+      "Count": 20
     },
     {
       "Keyword": "code execution",
@@ -687,6 +687,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-25T21:41:07Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-25T10:14:02Z",
+      "Url": "http://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
+      "Severity": "High",
+      "Cvss": 8.1,
+      "Cves": [
+        "CVE-2026-48842"
+      ]
+    },
     {
       "Title": "Hackers now exploit critical Roundcube flaw in code injection attacks",
       "Source": "BleepingComputer",
@@ -885,28 +907,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-19T08:18:54Z",
-      "Url": "http://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-58138"
-      ]
-    },
-    {
-      "Title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-19T06:24:10Z",
-      "Url": "http://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2025-39682"
       ]
     }
   ]
