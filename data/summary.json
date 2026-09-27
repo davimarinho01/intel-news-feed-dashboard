@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-26T08:29:32Z",
-  "TotalArticles": 1452,
+  "GeneratedAt": "2026-09-27T09:08:01Z",
+  "TotalArticles": 1463,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 701
+      "Count": 707
     },
     {
       "Source": "BleepingComputer",
-      "Count": 402
+      "Count": 407
     },
     {
       "Source": "Dark Reading",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 57
+      "Count": 58
     },
     {
       "Severity": "High",
-      "Count": 115
+      "Count": 116
     },
     {
       "Severity": "Medium",
-      "Count": 672
+      "Count": 675
     },
     {
       "Severity": "Low",
-      "Count": 608
+      "Count": 614
     }
   ],
   "DailyTrend": {
@@ -127,7 +127,8 @@
       "2026-09-22",
       "2026-09-23",
       "2026-09-24",
-      "2026-09-25"
+      "2026-09-25",
+      "2026-09-26"
     ],
     "Datasets": [
       {
@@ -217,7 +218,8 @@
           16,
           13,
           10,
-          7
+          7,
+          6
         ]
       },
       {
@@ -307,7 +309,8 @@
           12,
           11,
           9,
-          11
+          11,
+          5
         ]
       },
       {
@@ -389,6 +392,7 @@
           3,
           3,
           4,
+          0,
           0,
           0,
           0,
@@ -487,7 +491,8 @@
           10,
           1,
           3,
-          2
+          2,
+          0
         ]
       },
       {
@@ -577,35 +582,18 @@
           0,
           0,
           0,
-          1
+          1,
+          0
         ]
       }
     ]
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-85706",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
       "Cve": "CVE-2026-5430",
@@ -614,10 +602,28 @@
       "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     },
     {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
       "Cve": "CVE-2026-20079",
       "Count": 4,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
       "Cve": "CVE-2026-83548",
@@ -626,28 +632,28 @@
       "Url": "http://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
     },
     {
-      "Cve": "CVE-2026-87902",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-one-known-exploited-vulnerability-catalog"
-    },
-    {
       "Cve": "CVE-2026-87491",
       "Count": 3,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html"
     },
     {
-      "Cve": "CVE-2026-68820",
+      "Cve": "CVE-2026-87902",
       "Count": 3,
-      "Severity": "High",
-      "Url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-one-known-exploited-vulnerability-catalog"
+    },
+    {
+      "Cve": "CVE-2026-0768",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 221
+      "Count": 223
     },
     {
       "Keyword": "malware",
@@ -687,6 +693,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-26T11:46:40Z",
+      "Url": "http://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-35273"
+      ]
+    },
+    {
+      "Title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-09-26T08:49:53Z",
+      "Url": "http://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
+      "Severity": "High",
+      "Cvss": 8.8,
+      "Cves": [
+        "CVE-2026-65660"
+      ]
+    },
     {
       "Title": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
       "Source": "BleepingComputer",
@@ -881,28 +909,6 @@
       "Source": "BleepingComputer",
       "PublishedAt": "2026-09-22T09:55:11Z",
       "Url": "https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-22T05:31:59Z",
-      "Url": "http://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
-      "Severity": "High",
-      "Cvss": 8.8,
-      "Cves": [
-        "CVE-2026-7273"
-      ]
-    },
-    {
-      "Title": "⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-21T14:24:13Z",
-      "Url": "http://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
