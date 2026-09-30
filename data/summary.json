@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-09-29T09:41:34Z",
-  "TotalArticles": 1492,
+  "GeneratedAt": "2026-09-30T09:33:05Z",
+  "TotalArticles": 1520,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 718
+      "Count": 727
     },
     {
       "Source": "BleepingComputer",
-      "Count": 422
+      "Count": 433
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 157
+      "Count": 165
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 120
+      "Count": 121
     },
     {
       "Severity": "Medium",
-      "Count": 688
+      "Count": 703
     },
     {
       "Severity": "Low",
-      "Count": 625
+      "Count": 637
     }
   ],
   "DailyTrend": {
@@ -131,7 +131,8 @@
       "2026-09-26",
       "2026-09-27",
       "2026-09-28",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-09-30"
     ],
     "Datasets": [
       {
@@ -225,6 +226,7 @@
           6,
           1,
           10,
+          9,
           0
         ]
       },
@@ -319,7 +321,8 @@
           5,
           4,
           9,
-          2
+          12,
+          1
         ]
       },
       {
@@ -401,6 +404,7 @@
           3,
           3,
           4,
+          0,
           0,
           0,
           0,
@@ -507,6 +511,7 @@
           0,
           2,
           0,
+          8,
           0
         ]
       },
@@ -601,6 +606,7 @@
           0,
           0,
           1,
+          0,
           0
         ]
       }
@@ -608,16 +614,10 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
-      "Cve": "CVE-2026-5430",
+      "Cve": "CVE-2026-85706",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
       "Cve": "CVE-2026-82329",
@@ -626,16 +626,10 @@
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-85706",
+      "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
-    },
-    {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-88771",
@@ -644,46 +638,58 @@
       "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
-      "Cve": "CVE-2026-59310",
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "Cve": "CVE-2026-88772",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-5430",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-65400",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html"
-    },
-    {
-      "Cve": "CVE-2026-63077",
-      "Count": 3,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     },
     {
       "Cve": "CVE-2026-85046",
       "Count": 3,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html"
+    },
+    {
+      "Cve": "CVE-2026-85102",
+      "Count": 3,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 233
+      "Count": 235
     },
     {
       "Keyword": "malware",
-      "Count": 91
+      "Count": 92
     },
     {
       "Keyword": "critical",
-      "Count": 75
+      "Count": 76
     },
     {
       "Keyword": "zero-day",
-      "Count": 67
+      "Count": 68
     },
     {
       "Keyword": "ransomware",
@@ -695,11 +701,11 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 33
+      "Count": 34
     },
     {
       "Keyword": "leak",
-      "Count": 20
+      "Count": 22
     },
     {
       "Keyword": "code execution",
@@ -711,6 +717,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Hackers exploit Citrix NetScaler zero-day to deploy web shells",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-09-29T18:37:12Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-88772"
+      ]
+    },
     {
       "Title": "Apple patches CoreGraphics zero-day flaw exploited in attacks",
       "Source": "BleepingComputer",
@@ -928,17 +945,6 @@
       "Cvss": null,
       "Cves": [
         "CVE-2026-93616"
-      ]
-    },
-    {
-      "Title": "Critical Bifrost AI Gateway Flaw Lets Attackers Run Commands Without Credentials",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-22T16:41:12Z",
-      "Url": "http://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-90898"
       ]
     }
   ]
