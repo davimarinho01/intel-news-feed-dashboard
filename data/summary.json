@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-01T09:59:37Z",
-  "TotalArticles": 1592,
+  "GeneratedAt": "2026-10-02T09:35:41Z",
+  "TotalArticles": 1621,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 737
+      "Count": 748
     },
     {
       "Source": "BleepingComputer",
-      "Count": 444
+      "Count": 452
     },
     {
       "Source": "Dark Reading",
-      "Count": 226
+      "Count": 228
     },
     {
       "Source": "CISA Advisories",
-      "Count": 166
+      "Count": 174
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 60
+      "Count": 61
     },
     {
       "Severity": "High",
-      "Count": 129
+      "Count": 132
     },
     {
       "Severity": "Medium",
-      "Count": 723
+      "Count": 739
     },
     {
       "Severity": "Low",
-      "Count": 680
+      "Count": 689
     }
   ],
   "DailyTrend": {
@@ -133,7 +133,8 @@
       "2026-09-28",
       "2026-09-29",
       "2026-09-30",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-02"
     ],
     "Datasets": [
       {
@@ -229,6 +230,7 @@
           10,
           9,
           10,
+          11,
           0
         ]
       },
@@ -325,7 +327,8 @@
           9,
           12,
           10,
-          2
+          9,
+          1
         ]
       },
       {
@@ -421,6 +424,7 @@
           6,
           5,
           5,
+          2,
           0
         ]
       },
@@ -517,6 +521,7 @@
           0,
           8,
           1,
+          8,
           0
         ]
       },
@@ -613,6 +618,7 @@
           1,
           0,
           0,
+          0,
           0
         ]
       }
@@ -626,34 +632,34 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-85706",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
-    },
-    {
-      "Cve": "CVE-2026-88771",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
-    },
-    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-5430",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     },
     {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-76504",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
       "Cve": "CVE-2026-82329",
@@ -668,22 +674,22 @@
       "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
-      "Cve": "CVE-2026-5430",
+      "Cve": "CVE-2026-85706",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
-      "Cve": "CVE-2026-55040",
-      "Count": 3,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Cve": "CVE-2026-88771",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 242
+      "Count": 246
     },
     {
       "Keyword": "malware",
@@ -691,15 +697,15 @@
     },
     {
       "Keyword": "critical",
-      "Count": 78
+      "Count": 79
     },
     {
       "Keyword": "zero-day",
-      "Count": 74
+      "Count": 77
     },
     {
       "Keyword": "ransomware",
-      "Count": 56
+      "Count": 60
     },
     {
       "Keyword": "phishing",
@@ -707,11 +713,11 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 37
+      "Count": 39
     },
     {
       "Keyword": "leak",
-      "Count": 23
+      "Count": 24
     },
     {
       "Keyword": "code execution",
@@ -723,6 +729,50 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-01T22:42:49Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-104286"
+      ]
+    },
+    {
+      "Title": "ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-01T16:45:38Z",
+      "Url": "http://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-01T10:33:16Z",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-76504"
+      ]
+    },
+    {
+      "Title": "Bitget Confirms Third-Party Zero-Day Behind $387.5 Million Cryptocurrency Theft",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-01T05:21:10Z",
+      "Url": "http://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "DIVD says Zammad zero-days enabled AI-driven network breach",
       "Source": "BleepingComputer",
@@ -905,50 +955,6 @@
       "Cvss": 8.8,
       "Cves": [
         "CVE-2026-65660"
-      ]
-    },
-    {
-      "Title": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-25T21:41:07Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-25T10:14:02Z",
-      "Url": "http://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
-      "Severity": "High",
-      "Cvss": 8.1,
-      "Cves": [
-        "CVE-2026-48842"
-      ]
-    },
-    {
-      "Title": "Hackers now exploit critical Roundcube flaw in code injection attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-24T13:27:57Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/critical-roundcube-flaw-now-actively-exploited-in-code-injection-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-24T05:36:18Z",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html",
-      "Severity": "Critical",
-      "Cvss": 9.2,
-      "Cves": [
-        "CVE-2026-87902"
       ]
     }
   ]
