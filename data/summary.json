@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-02T09:35:41Z",
-  "TotalArticles": 1621,
+  "GeneratedAt": "2026-10-03T09:01:51Z",
+  "TotalArticles": 1642,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 748
+      "Count": 755
     },
     {
       "Source": "BleepingComputer",
-      "Count": 452
+      "Count": 458
     },
     {
       "Source": "Dark Reading",
-      "Count": 228
+      "Count": 235
     },
     {
       "Source": "CISA Advisories",
-      "Count": 174
+      "Count": 175
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 61
+      "Count": 63
     },
     {
       "Severity": "High",
-      "Count": 132
+      "Count": 133
     },
     {
       "Severity": "Medium",
-      "Count": 739
+      "Count": 749
     },
     {
       "Severity": "Low",
-      "Count": 689
+      "Count": 697
     }
   ],
   "DailyTrend": {
@@ -231,7 +231,7 @@
           9,
           10,
           11,
-          0
+          7
         ]
       },
       {
@@ -328,7 +328,7 @@
           12,
           10,
           9,
-          1
+          7
         ]
       },
       {
@@ -425,7 +425,7 @@
           5,
           5,
           2,
-          0
+          7
         ]
       },
       {
@@ -522,7 +522,7 @@
           8,
           1,
           8,
-          0
+          1
         ]
       },
       {
@@ -632,22 +632,16 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-5430",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
-    },
-    {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-76504",
@@ -656,10 +650,10 @@
       "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
     },
     {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-18577",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-82329",
@@ -668,28 +662,34 @@
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
+      "Cve": "CVE-2026-88771",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+    },
+    {
+      "Cve": "CVE-2026-5430",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+    },
+    {
       "Cve": "CVE-2026-73570",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
-      "Cve": "CVE-2026-85706",
+      "Cve": "CVE-2026-86950",
       "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
-    },
-    {
-      "Cve": "CVE-2026-88771",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+      "Severity": "Low",
+      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 246
+      "Count": 248
     },
     {
       "Keyword": "malware",
@@ -697,15 +697,15 @@
     },
     {
       "Keyword": "critical",
-      "Count": 79
+      "Count": 82
     },
     {
       "Keyword": "zero-day",
-      "Count": 77
+      "Count": 79
     },
     {
       "Keyword": "ransomware",
-      "Count": 60
+      "Count": 61
     },
     {
       "Keyword": "phishing",
@@ -713,7 +713,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 39
+      "Count": 41
     },
     {
       "Keyword": "leak",
@@ -729,6 +729,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-02T17:02:12Z",
+      "Url": "http://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-63688"
+      ]
+    },
+    {
+      "Title": "Kiteworks &amp; Citrix Incidents Show Challenges of Zero-Day Response",
+      "Source": "Dark Reading",
+      "PublishedAt": "2026-10-02T16:56:30Z",
+      "Url": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-02T05:49:50Z",
+      "Url": "http://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-104286"
+      ]
+    },
     {
       "Title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
       "Source": "BleepingComputer",
@@ -922,39 +955,6 @@
         "CVE-2026-88776",
         "CVE-2026-88777",
         "CVE-2026-88778"
-      ]
-    },
-    {
-      "Title": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-27T07:47:57Z",
-      "Url": "http://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-26T11:46:40Z",
-      "Url": "http://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-35273"
-      ]
-    },
-    {
-      "Title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-26T08:49:53Z",
-      "Url": "http://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
-      "Severity": "High",
-      "Cvss": 8.8,
-      "Cves": [
-        "CVE-2026-65660"
       ]
     }
   ]
