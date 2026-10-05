@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-10-04T09:34:45Z",
-  "TotalArticles": 1648,
+  "GeneratedAt": "2026-10-05T10:16:21Z",
+  "TotalArticles": 1655,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 758
+      "Count": 760
     },
     {
       "Source": "BleepingComputer",
-      "Count": 461
+      "Count": 465
     },
     {
       "Source": "Dark Reading",
@@ -16,7 +16,7 @@
     },
     {
       "Source": "CISA Advisories",
-      "Count": 175
+      "Count": 176
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 133
+      "Count": 134
     },
     {
       "Severity": "Medium",
-      "Count": 750
+      "Count": 753
     },
     {
       "Severity": "Low",
-      "Count": 702
+      "Count": 705
     }
   ],
   "DailyTrend": {
@@ -135,7 +135,9 @@
       "2026-09-30",
       "2026-10-01",
       "2026-10-02",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-10-04",
+      "2026-10-05"
     ],
     "Datasets": [
       {
@@ -233,7 +235,9 @@
           10,
           11,
           7,
-          3
+          3,
+          2,
+          0
         ]
       },
       {
@@ -331,7 +335,9 @@
           10,
           9,
           7,
-          3
+          3,
+          2,
+          2
         ]
       },
       {
@@ -429,6 +435,8 @@
           5,
           2,
           7,
+          0,
+          0,
           0
         ]
       },
@@ -526,6 +534,8 @@
           8,
           1,
           8,
+          1,
+          0,
           1,
           0
         ]
@@ -625,6 +635,8 @@
           0,
           0,
           0,
+          0,
+          0,
           0
         ]
       }
@@ -638,40 +650,10 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
       "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-76504",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
-    },
-    {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-88771",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
       "Cve": "CVE-2026-5430",
@@ -680,10 +662,40 @@
       "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     },
     {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-76504",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
       "Cve": "CVE-2026-73570",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
       "Cve": "CVE-2026-86950",
@@ -695,7 +707,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 249
+      "Count": 251
     },
     {
       "Keyword": "malware",
@@ -707,7 +719,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 79
+      "Count": 80
     },
     {
       "Keyword": "ransomware",
@@ -715,11 +727,11 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 45
+      "Count": 46
     },
     {
       "Keyword": "vulnerability",
-      "Count": 41
+      "Count": 42
     },
     {
       "Keyword": "leak",
@@ -735,6 +747,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Citrix patches NetScaler SAML zero-day exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-04T21:58:01Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-88779"
+      ]
+    },
     {
       "Title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
       "Source": "The Hacker News",
@@ -943,24 +966,6 @@
       "Cves": [
         "CVE-2026-88771",
         "CVE-2026-88772"
-      ]
-    },
-    {
-      "Title": "Critical Zero-Day Vulnerabilities Exploited in Citrix NetScaler ADC, Gateway",
-      "Source": "CISA Advisories",
-      "PublishedAt": "2026-09-27T12:00:00Z",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-88771",
-        "CVE-2026-88772",
-        "CVE-2026-88773",
-        "CVE-2026-88774",
-        "CVE-2026-88775",
-        "CVE-2026-88776",
-        "CVE-2026-88777",
-        "CVE-2026-88778"
       ]
     }
   ]

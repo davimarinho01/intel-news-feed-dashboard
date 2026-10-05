@@ -979,17 +979,6 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [http://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html](http://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html)
 
 ---
-### CISA Adds Two Known Exploited Vulnerabilities to Catalog    
-
-*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-18 12:00:00Z | *Severity:* **Medium**
-
-**Introduction:** CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-39964 Linux Kernel Race Condition Vulnerability CVE-2026-53266 Linux Kernel Out-of-Bounds Write Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria.&nbsp; Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.&nbsp;...
-
-**CVEs:** CVE-2025-39964, CVE-2026-53266
-
-**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog)
-
----
 ### CISA Adds One Known Exploited Vulnerability to Catalog
 
 *Source:* **CISA Advisories** | *Published (UTC):* 2026-09-18 12:00:00Z | *Severity:* **Medium**
@@ -999,6 +988,17 @@ The following selection covers the security news matching our monitoring criteri
 **CVEs:** CVE-2025-39682
 
 **Url:** [https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-one-known-exploited-vulnerability-catalog](https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-one-known-exploited-vulnerability-catalog)
+
+---
+### CISA Adds Two Known Exploited Vulnerabilities to Catalog    
+
+*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-18 12:00:00Z | *Severity:* **Medium**
+
+**Introduction:** CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-39964 Linux Kernel Race Condition Vulnerability CVE-2026-53266 Linux Kernel Out-of-Bounds Write Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria.&nbsp; Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.&nbsp;...
+
+**CVEs:** CVE-2025-39964, CVE-2026-53266
+
+**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog)
 
 ---
 ### RatHat Android Malware Abuses ADB to Retain Shell Access After Uninstall
@@ -1135,17 +1135,6 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [https://www.bleepingcomputer.com/news/security/the-true-cost-of-a-ransomware-attack-with-and-without-bcdr/](https://www.bleepingcomputer.com/news/security/the-true-cost-of-a-ransomware-attack-with-and-without-bcdr/)
 
 ---
-### CISA Adds Two Known Exploited Vulnerabilities to Catalog
-
-*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-16 12:00:00Z | *Severity:* **Medium**
-
-**Introduction:** CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-76460 Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability CVE-2026-87886 Acronis Backup Incorrect Default Permissions Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria.&nbsp; Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.&nbsp;...
-
-**CVEs:** CVE-2026-76460, CVE-2026-87886
-
-**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/16/cisa-adds-two-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/16/cisa-adds-two-known-exploited-vulnerabilities-catalog)
-
----
 ### CISA Adds One Known Exploited Vulnerability to Catalog
 
 *Source:* **CISA Advisories** | *Published (UTC):* 2026-09-16 12:00:00Z | *Severity:* **Medium**
@@ -1155,6 +1144,17 @@ The following selection covers the security news matching our monitoring criteri
 **CVEs:** CVE-2026-58704
 
 **Url:** [https://www.cisa.gov/news-events/alerts/2026/09/16/cisa-adds-one-known-exploited-vulnerability-catalog](https://www.cisa.gov/news-events/alerts/2026/09/16/cisa-adds-one-known-exploited-vulnerability-catalog)
+
+---
+### CISA Adds Two Known Exploited Vulnerabilities to Catalog
+
+*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-16 12:00:00Z | *Severity:* **Medium**
+
+**Introduction:** CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-76460 Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability CVE-2026-87886 Acronis Backup Incorrect Default Permissions Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria.&nbsp; Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.&nbsp;...
+
+**CVEs:** CVE-2026-76460, CVE-2026-87886
+
+**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/16/cisa-adds-two-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/16/cisa-adds-two-known-exploited-vulnerabilities-catalog)
 
 ---
 ### Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation
@@ -1481,17 +1481,6 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [http://thehackernews.com/2026/09/russian-state-sponsored-hackers-use.html](http://thehackernews.com/2026/09/russian-state-sponsored-hackers-use.html)
 
 ---
-### CISA Adds One Known Exploited Vulnerability to Catalog   
-
-*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-11 12:00:00Z | *Severity:* **Medium**
-
-**Introduction:** CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-85706 GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance...
-
-**CVEs:** CVE-2026-85706
-
-**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-one-known-exploited-vulnerability-catalog](https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-one-known-exploited-vulnerability-catalog)
-
----
 ### CISA Adds Three Known Exploited Vulnerabilities to Catalog   
 
 *Source:* **CISA Advisories** | *Published (UTC):* 2026-09-11 12:00:00Z | *Severity:* **Medium**
@@ -1501,6 +1490,17 @@ The following selection covers the security news matching our monitoring criteri
 **CVEs:** CVE-2026-42016, CVE-2026-42018, CVE-2026-84869
 
 **Url:** [https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-three-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-three-known-exploited-vulnerabilities-catalog)
+
+---
+### CISA Adds One Known Exploited Vulnerability to Catalog   
+
+*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-11 12:00:00Z | *Severity:* **Medium**
+
+**Introduction:** CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-85706 GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance...
+
+**CVEs:** CVE-2026-85706
+
+**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-one-known-exploited-vulnerability-catalog](https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-one-known-exploited-vulnerability-catalog)
 
 ---
 ### Your Critical Vulnerabilities Might Not Be Your Biggest Risk
@@ -1854,6 +1854,15 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/](https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/)
 
 ---
+### Cybercriminals Hack Brazilian Government Servers to Host Phishing Sites
+
+*Source:* **Dark Reading** | *Published (UTC):* 2026-09-08 12:00:00Z | *Severity:* **Medium**
+
+**Introduction:** A Chinese-language group is compromising government and education sites to create a reverse-proxy network with gambling-themed sites...
+
+**Url:** [https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites](https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites)
+
+---
 ### CISA Adds Four Known Exploited Vulnerabilities to Catalog    
 
 *Source:* **CISA Advisories** | *Published (UTC):* 2026-09-08 12:00:00Z | *Severity:* **Medium**
@@ -1863,15 +1872,6 @@ The following selection covers the security news matching our monitoring criteri
 **CVEs:** CVE-2026-75650, CVE-2026-81963, CVE-2026-85880, CVE-2026-86218
 
 **Url:** [https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog)
-
----
-### Cybercriminals Hack Brazilian Government Servers to Host Phishing Sites
-
-*Source:* **Dark Reading** | *Published (UTC):* 2026-09-08 12:00:00Z | *Severity:* **Medium**
-
-**Introduction:** A Chinese-language group is compromising government and education sites to create a reverse-proxy network with gambling-themed sites...
-
-**Url:** [https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites](https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites)
 
 ---
 ### Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell
