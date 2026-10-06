@@ -1,18 +1,18 @@
 {
-  "GeneratedAt": "2026-10-05T10:16:21Z",
-  "TotalArticles": 1655,
+  "GeneratedAt": "2026-10-06T10:01:31Z",
+  "TotalArticles": 1676,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 760
+      "Count": 767
     },
     {
       "Source": "BleepingComputer",
-      "Count": 465
+      "Count": 476
     },
     {
       "Source": "Dark Reading",
-      "Count": 235
+      "Count": 238
     },
     {
       "Source": "CISA Advisories",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 63
+      "Count": 64
     },
     {
       "Severity": "High",
-      "Count": 134
+      "Count": 136
     },
     {
       "Severity": "Medium",
-      "Count": 753
+      "Count": 761
     },
     {
       "Severity": "Low",
-      "Count": 705
+      "Count": 715
     }
   ],
   "DailyTrend": {
@@ -137,7 +137,8 @@
       "2026-10-02",
       "2026-10-03",
       "2026-10-04",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-10-06"
     ],
     "Datasets": [
       {
@@ -237,6 +238,7 @@
           7,
           3,
           2,
+          7,
           0
         ]
       },
@@ -337,6 +339,7 @@
           7,
           3,
           2,
+          11,
           2
         ]
       },
@@ -437,6 +440,7 @@
           7,
           0,
           0,
+          3,
           0
         ]
       },
@@ -537,6 +541,7 @@
           1,
           0,
           1,
+          0,
           0
         ]
       },
@@ -637,6 +642,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -650,28 +656,10 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-5430",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
-    },
-    {
-      "Cve": "CVE-2026-18577",
+      "Cve": "CVE-2026-73570",
       "Count": 4,
       "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
-      "Cve": "CVE-2026-76504",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
       "Cve": "CVE-2026-20079",
@@ -680,22 +668,40 @@
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
+      "Cve": "CVE-2026-59310",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-76504",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
       "Cve": "CVE-2026-82329",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-73570",
+      "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-85706",
+      "Cve": "CVE-2026-5430",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+    },
+    {
+      "Cve": "CVE-2026-88771",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
       "Cve": "CVE-2026-86950",
@@ -707,23 +713,23 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 251
+      "Count": 253
     },
     {
       "Keyword": "malware",
-      "Count": 94
+      "Count": 95
     },
     {
       "Keyword": "critical",
-      "Count": 82
+      "Count": 83
     },
     {
       "Keyword": "zero-day",
-      "Count": 80
+      "Count": 81
     },
     {
       "Keyword": "ransomware",
-      "Count": 62
+      "Count": 63
     },
     {
       "Keyword": "phishing",
@@ -735,7 +741,7 @@
     },
     {
       "Keyword": "leak",
-      "Count": 24
+      "Count": 25
     },
     {
       "Keyword": "code execution",
@@ -747,6 +753,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-05T14:20:43Z",
+      "Url": "http://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-05T08:09:23Z",
+      "Url": "http://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
+      "Severity": "Critical",
+      "Cvss": 9.3,
+      "Cves": [
+        "CVE-2026-61500"
+      ]
+    },
+    {
+      "Title": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-05T06:40:19Z",
+      "Url": "http://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-88779"
+      ]
+    },
     {
       "Title": "Citrix patches NetScaler SAML zero-day exploited in attacks",
       "Source": "BleepingComputer",
@@ -932,40 +971,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Apple patches CoreGraphics zero-day flaw exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-29T07:33:12Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA Says Attackers Are Exploiting Two Critical Citrix NetScaler Flaws Globally",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-28T07:21:49Z",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html",
-      "Severity": "Critical",
-      "Cvss": 9.5,
-      "Cves": [
-        "CVE-2026-88771"
-      ]
-    },
-    {
-      "Title": "Citrix confirms two NetScaler RCE zero-days exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-27T16:02:37Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-88771",
-        "CVE-2026-88772"
       ]
     }
   ]
