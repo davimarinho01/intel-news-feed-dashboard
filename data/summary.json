@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-06T10:01:31Z",
-  "TotalArticles": 1676,
+  "GeneratedAt": "2026-10-07T10:05:58Z",
+  "TotalArticles": 1704,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 767
+      "Count": 777
     },
     {
       "Source": "BleepingComputer",
-      "Count": 476
+      "Count": 483
     },
     {
       "Source": "Dark Reading",
-      "Count": 238
+      "Count": 243
     },
     {
       "Source": "CISA Advisories",
-      "Count": 176
+      "Count": 182
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 136
+      "Count": 137
     },
     {
       "Severity": "Medium",
-      "Count": 761
+      "Count": 778
     },
     {
       "Severity": "Low",
-      "Count": 715
+      "Count": 725
     }
   ],
   "DailyTrend": {
@@ -239,7 +239,7 @@
           3,
           2,
           7,
-          0
+          10
         ]
       },
       {
@@ -340,7 +340,7 @@
           3,
           2,
           11,
-          2
+          9
         ]
       },
       {
@@ -441,7 +441,7 @@
           0,
           0,
           3,
-          0
+          5
         ]
       },
       {
@@ -542,7 +542,7 @@
           0,
           1,
           0,
-          0
+          6
         ]
       },
       {
@@ -656,22 +656,10 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-73570",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
-    },
-    {
       "Cve": "CVE-2026-20079",
       "Count": 4,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-76504",
@@ -680,16 +668,22 @@
       "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
     },
     {
-      "Cve": "CVE-2026-82329",
+      "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
       "Cve": "CVE-2026-5430",
@@ -704,6 +698,12 @@
       "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
+      "Cve": "CVE-2026-73570",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+    },
+    {
       "Cve": "CVE-2026-86950",
       "Count": 4,
       "Severity": "Low",
@@ -713,7 +713,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 253
+      "Count": 255
     },
     {
       "Keyword": "malware",
@@ -721,11 +721,11 @@
     },
     {
       "Keyword": "critical",
-      "Count": 83
+      "Count": 86
     },
     {
       "Keyword": "zero-day",
-      "Count": 81
+      "Count": 82
     },
     {
       "Keyword": "ransomware",
@@ -753,6 +753,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Hackers exploit 32 zero-days on first day of Pwn2Own Ireland",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-06T19:21:53Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests",
       "Source": "The Hacker News",
@@ -960,17 +971,6 @@
       "Cvss": null,
       "Cves": [
         "CVE-2026-88772"
-      ]
-    },
-    {
-      "Title": "Dual NetScaler Zero-Days Trigger Chaos for Citrix Customers",
-      "Source": "Dark Reading",
-      "PublishedAt": "2026-09-29T14:19:43Z",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/netscaler-zero-days-chaos-citrix",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
