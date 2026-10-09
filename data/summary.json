@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-08T10:20:13Z",
-  "TotalArticles": 1731,
+  "GeneratedAt": "2026-10-09T10:20:41Z",
+  "TotalArticles": 1762,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 788
+      "Count": 798
     },
     {
       "Source": "BleepingComputer",
-      "Count": 494
+      "Count": 507
     },
     {
       "Source": "Dark Reading",
-      "Count": 247
+      "Count": 251
     },
     {
       "Source": "CISA Advisories",
-      "Count": 182
+      "Count": 186
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 138
+      "Count": 139
     },
     {
       "Severity": "Medium",
-      "Count": 790
+      "Count": 810
     },
     {
       "Severity": "Low",
-      "Count": 738
+      "Count": 748
     }
   ],
   "DailyTrend": {
@@ -140,7 +140,8 @@
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
-      "2026-10-08"
+      "2026-10-08",
+      "2026-10-09"
     ],
     "Datasets": [
       {
@@ -243,6 +244,7 @@
           7,
           10,
           11,
+          10,
           0
         ]
       },
@@ -346,7 +348,8 @@
           11,
           9,
           10,
-          1
+          11,
+          3
         ]
       },
       {
@@ -448,6 +451,7 @@
           0,
           3,
           5,
+          4,
           4,
           0
         ]
@@ -552,6 +556,7 @@
           0,
           6,
           0,
+          4,
           0
         ]
       },
@@ -655,6 +660,7 @@
           0,
           0,
           1,
+          0,
           0
         ]
       }
@@ -668,46 +674,10 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-88771",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
-    },
-    {
-      "Cve": "CVE-2026-86950",
-      "Count": 4,
-      "Severity": "Low",
-      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
-    },
-    {
-      "Cve": "CVE-2026-85706",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
-    },
-    {
       "Cve": "CVE-2026-5430",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
       "Cve": "CVE-2026-76504",
@@ -716,10 +686,46 @@
       "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
     },
     {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-59310",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+    },
+    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-88771",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+    },
+    {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "Cve": "CVE-2026-21589",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/"
     }
   ],
   "TopKeywords": [
@@ -729,19 +735,19 @@
     },
     {
       "Keyword": "malware",
-      "Count": 97
+      "Count": 101
     },
     {
       "Keyword": "critical",
-      "Count": 88
+      "Count": 90
     },
     {
       "Keyword": "zero-day",
-      "Count": 82
+      "Count": 83
     },
     {
       "Keyword": "ransomware",
-      "Count": 66
+      "Count": 68
     },
     {
       "Keyword": "phishing",
@@ -753,7 +759,7 @@
     },
     {
       "Keyword": "leak",
-      "Count": 25
+      "Count": 26
     },
     {
       "Keyword": "code execution",
@@ -765,6 +771,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Hackers get $1,262,000 for 98 zero-days at Pwn2Own Ireland",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-09T05:41:04Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Samsung Galaxy S26 hacked three more times at Pwn2Own Ireland",
       "Source": "BleepingComputer",
@@ -972,17 +989,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-30T05:30:30Z",
-      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
-      "Severity": "Critical",
-      "Cvss": 9.5,
-      "Cves": [
-        "CVE-2026-88772"
       ]
     }
   ]
