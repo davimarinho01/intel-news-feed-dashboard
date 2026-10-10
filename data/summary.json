@@ -1,18 +1,18 @@
 {
-  "GeneratedAt": "2026-10-09T10:20:41Z",
-  "TotalArticles": 1762,
+  "GeneratedAt": "2026-10-10T09:40:34Z",
+  "TotalArticles": 1788,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 798
+      "Count": 811
     },
     {
       "Source": "BleepingComputer",
-      "Count": 507
+      "Count": 514
     },
     {
       "Source": "Dark Reading",
-      "Count": 251
+      "Count": 256
     },
     {
       "Source": "CISA Advisories",
@@ -20,13 +20,13 @@
     },
     {
       "Source": "Krebs on Security",
-      "Count": 20
+      "Count": 21
     }
   ],
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 65
+      "Count": 66
     },
     {
       "Severity": "High",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 810
+      "Count": 822
     },
     {
       "Severity": "Low",
-      "Count": 748
+      "Count": 761
     }
   ],
   "DailyTrend": {
@@ -141,7 +141,8 @@
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
-      "2026-10-09"
+      "2026-10-09",
+      "2026-10-10"
     ],
     "Datasets": [
       {
@@ -245,6 +246,7 @@
           10,
           11,
           10,
+          13,
           0
         ]
       },
@@ -349,7 +351,8 @@
           9,
           10,
           11,
-          3
+          10,
+          0
         ]
       },
       {
@@ -453,6 +456,7 @@
           5,
           4,
           4,
+          5,
           0
         ]
       },
@@ -557,6 +561,7 @@
           6,
           0,
           4,
+          0,
           0
         ]
       },
@@ -661,7 +666,8 @@
           0,
           1,
           0,
-          0
+          0,
+          1
         ]
       }
     ]
@@ -674,28 +680,10 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-5430",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
-    },
-    {
-      "Cve": "CVE-2026-76504",
+      "Cve": "CVE-2026-88771",
       "Count": 4,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
-    },
-    {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
       "Cve": "CVE-2026-73570",
@@ -704,34 +692,52 @@
       "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
-      "Cve": "CVE-2026-18577",
+      "Cve": "CVE-2026-59310",
       "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-88771",
+      "Cve": "CVE-2026-82329",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-85706",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
+      "Cve": "CVE-2026-86950",
+      "Count": 4,
+      "Severity": "Low",
+      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
     },
     {
       "Cve": "CVE-2026-21589",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/"
+    },
+    {
+      "Cve": "CVE-2026-76504",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
+      "Cve": "CVE-2026-5430",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 257
+      "Count": 263
     },
     {
       "Keyword": "malware",
@@ -739,7 +745,7 @@
     },
     {
       "Keyword": "critical",
-      "Count": 90
+      "Count": 92
     },
     {
       "Keyword": "zero-day",
@@ -747,7 +753,7 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 68
+      "Count": 70
     },
     {
       "Keyword": "phishing",
@@ -755,7 +761,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 42
+      "Count": 43
     },
     {
       "Keyword": "leak",
@@ -771,6 +777,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-09T12:21:51Z",
+      "Url": "http://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2015-3306"
+      ]
+    },
     {
       "Title": "Hackers get $1,262,000 for 98 zero-days at Pwn2Own Ireland",
       "Source": "BleepingComputer",
@@ -978,17 +995,6 @@
       "Cvss": null,
       "Cves": [
         "CVE-2026-76504"
-      ]
-    },
-    {
-      "Title": "Bitget hacked via zero-day in third-party security products",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-30T11:11:46Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
