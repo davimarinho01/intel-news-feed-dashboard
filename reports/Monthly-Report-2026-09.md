@@ -331,17 +331,6 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/](https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/)
 
 ---
-### Critical Zero-Day Vulnerabilities Exploited in Citrix NetScaler ADC, Gateway
-
-*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-27 12:00:00Z | *Severity:* **High**
-
-**Introduction:** CISA is amplifying Citrix’s disclosure of eight new vulnerabilities affecting Citrix NetScaler ADC and Citrix NetScaler Gateway products: CVE-2026-88771, CVE-2026-88772, CVE-2026-88773, CVE-2026-88774, CVE-2026-88775, CVE-2026-88776, CVE-2026-88777, and CVE-2026-88778.&nbsp; CISA has added CVE-2026-88771 and CVE-2026-88772 to its Known Exploited Vulnerabilities (KEV) Catalog. Both are critical, zero-day vulnerabilities that can independently enable remote code execution. CISA has received reports and partner threat intelligence confirming that threat actors are actively exploiting these vulnerabilities globally. Because updating Citrix NetScaler appliances can be complex and may require downtime, CISA is issuing this Alert to help organizations assess exposure, prioritize mitigation, and account for these vulnerabilities into their risk-management activities.&nbsp; Given the potential consequences of successful exploitation and the fact that malicious actors are exploiting at least some of these vulnerabilities, CISA urges users and administrators to review Citrix’s advisories. If possible, users are encouraged to check for indication of compromise prior to patching. Citrix has made indicators of compromise available through NetScaler Console and published additional guidance in their recent publication, Security Bulletin for CVE-2026-88771 through CVE-2026-88778, to support organizations in assessing potential compromise. Should your organization suspect compromise, it is important to preserve forensic evidence prior to applying updates, as updates may result in loss of forensic visibility.&nbsp; Citrix NetScaler ADC and Citrix NetScaler Gateway Security Bulletin for CVE-2026-88771 through CVE-2026-88778 - Security Updates - Citrix Community Citrix NetScaler ADC and Citrix NetScaler Gateway Security Bulletin for CVE-2026-88771, CVE-2026-88772, CVE-2026-88773, CVE-2026-88774, CVE-2026-88775, CVE-2026-88776, CVE-2026-88777, and CVE-2026-88778 Steps to Take if NetScaler ADC is Suspected to be Compromised Disclaimer The information in this report is being provided “as is” for informational purposes only. CISA does not endorse any commercial entity, product, company, or service, including any entities, products, or services linked within this document. Any reference to specific commercial entities, products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply endorsement, recommendation, or favoring by CISA...
-
-**CVEs:** CVE-2026-88771, CVE-2026-88772, CVE-2026-88773, CVE-2026-88774, CVE-2026-88775, CVE-2026-88776, CVE-2026-88777, CVE-2026-88778
-
-**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway](https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway)
-
----
 ### CISA Adds Two Known Exploited Vulnerabilities to Catalog
 
 *Source:* **CISA Advisories** | *Published (UTC):* 2026-09-27 12:00:00Z | *Severity:* **Medium**
@@ -351,6 +340,17 @@ The following selection covers the security news matching our monitoring criteri
 **CVEs:** CVE-2026-88771, CVE-2026-88772
 
 **Url:** [https://www.cisa.gov/news-events/alerts/2026/09/27/cisa-adds-two-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/27/cisa-adds-two-known-exploited-vulnerabilities-catalog)
+
+---
+### Critical Zero-Day Vulnerabilities Exploited in Citrix NetScaler ADC, Gateway
+
+*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-27 12:00:00Z | *Severity:* **High**
+
+**Introduction:** CISA is amplifying Citrix’s disclosure of eight new vulnerabilities affecting Citrix NetScaler ADC and Citrix NetScaler Gateway products: CVE-2026-88771, CVE-2026-88772, CVE-2026-88773, CVE-2026-88774, CVE-2026-88775, CVE-2026-88776, CVE-2026-88777, and CVE-2026-88778.&nbsp; CISA has added CVE-2026-88771 and CVE-2026-88772 to its Known Exploited Vulnerabilities (KEV) Catalog. Both are critical, zero-day vulnerabilities that can independently enable remote code execution. CISA has received reports and partner threat intelligence confirming that threat actors are actively exploiting these vulnerabilities globally. Because updating Citrix NetScaler appliances can be complex and may require downtime, CISA is issuing this Alert to help organizations assess exposure, prioritize mitigation, and account for these vulnerabilities into their risk-management activities.&nbsp; Given the potential consequences of successful exploitation and the fact that malicious actors are exploiting at least some of these vulnerabilities, CISA urges users and administrators to review Citrix’s advisories. If possible, users are encouraged to check for indication of compromise prior to patching. Citrix has made indicators of compromise available through NetScaler Console and published additional guidance in their recent publication, Security Bulletin for CVE-2026-88771 through CVE-2026-88778, to support organizations in assessing potential compromise. Should your organization suspect compromise, it is important to preserve forensic evidence prior to applying updates, as updates may result in loss of forensic visibility.&nbsp; Citrix NetScaler ADC and Citrix NetScaler Gateway Security Bulletin for CVE-2026-88771 through CVE-2026-88778 - Security Updates - Citrix Community Citrix NetScaler ADC and Citrix NetScaler Gateway Security Bulletin for CVE-2026-88771, CVE-2026-88772, CVE-2026-88773, CVE-2026-88774, CVE-2026-88775, CVE-2026-88776, CVE-2026-88777, and CVE-2026-88778 Steps to Take if NetScaler ADC is Suspected to be Compromised Disclaimer The information in this report is being provided “as is” for informational purposes only. CISA does not endorse any commercial entity, product, company, or service, including any entities, products, or services linked within this document. Any reference to specific commercial entities, products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply endorsement, recommendation, or favoring by CISA...
+
+**CVEs:** CVE-2026-88771, CVE-2026-88772, CVE-2026-88773, CVE-2026-88774, CVE-2026-88775, CVE-2026-88776, CVE-2026-88777, CVE-2026-88778
+
+**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway](https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway)
 
 ---
 ### Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation
@@ -979,17 +979,6 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [http://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html](http://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html)
 
 ---
-### CISA Adds One Known Exploited Vulnerability to Catalog
-
-*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-18 12:00:00Z | *Severity:* **Medium**
-
-**Introduction:** CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-39682 Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance...
-
-**CVEs:** CVE-2025-39682
-
-**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-one-known-exploited-vulnerability-catalog](https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-one-known-exploited-vulnerability-catalog)
-
----
 ### CISA Adds Two Known Exploited Vulnerabilities to Catalog    
 
 *Source:* **CISA Advisories** | *Published (UTC):* 2026-09-18 12:00:00Z | *Severity:* **Medium**
@@ -999,6 +988,17 @@ The following selection covers the security news matching our monitoring criteri
 **CVEs:** CVE-2025-39964, CVE-2026-53266
 
 **Url:** [https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog)
+
+---
+### CISA Adds One Known Exploited Vulnerability to Catalog
+
+*Source:* **CISA Advisories** | *Published (UTC):* 2026-09-18 12:00:00Z | *Severity:* **Medium**
+
+**Introduction:** CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-39682 Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance...
+
+**CVEs:** CVE-2025-39682
+
+**Url:** [https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-one-known-exploited-vulnerability-catalog](https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-one-known-exploited-vulnerability-catalog)
 
 ---
 ### RatHat Android Malware Abuses ADB to Retain Shell Access After Uninstall
@@ -1854,15 +1854,6 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/](https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/)
 
 ---
-### Cybercriminals Hack Brazilian Government Servers to Host Phishing Sites
-
-*Source:* **Dark Reading** | *Published (UTC):* 2026-09-08 12:00:00Z | *Severity:* **Medium**
-
-**Introduction:** A Chinese-language group is compromising government and education sites to create a reverse-proxy network with gambling-themed sites...
-
-**Url:** [https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites](https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites)
-
----
 ### CISA Adds Four Known Exploited Vulnerabilities to Catalog    
 
 *Source:* **CISA Advisories** | *Published (UTC):* 2026-09-08 12:00:00Z | *Severity:* **Medium**
@@ -1872,6 +1863,15 @@ The following selection covers the security news matching our monitoring criteri
 **CVEs:** CVE-2026-75650, CVE-2026-81963, CVE-2026-85880, CVE-2026-86218
 
 **Url:** [https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog)
+
+---
+### Cybercriminals Hack Brazilian Government Servers to Host Phishing Sites
+
+*Source:* **Dark Reading** | *Published (UTC):* 2026-09-08 12:00:00Z | *Severity:* **Medium**
+
+**Introduction:** A Chinese-language group is compromising government and education sites to create a reverse-proxy network with gambling-themed sites...
+
+**Url:** [https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites](https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites)
 
 ---
 ### Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell
