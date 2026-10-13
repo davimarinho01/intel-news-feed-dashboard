@@ -1,18 +1,18 @@
 {
-  "GeneratedAt": "2026-10-12T10:34:24Z",
-  "TotalArticles": 1794,
+  "GeneratedAt": "2026-10-13T10:22:43Z",
+  "TotalArticles": 1813,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 813
+      "Count": 819
     },
     {
       "Source": "BleepingComputer",
-      "Count": 518
+      "Count": 527
     },
     {
       "Source": "Dark Reading",
-      "Count": 256
+      "Count": 260
     },
     {
       "Source": "CISA Advisories",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 66
+      "Count": 68
     },
     {
       "Severity": "High",
-      "Count": 139
+      "Count": 140
     },
     {
       "Severity": "Medium",
-      "Count": 824
+      "Count": 829
     },
     {
       "Severity": "Low",
-      "Count": 765
+      "Count": 776
     }
   ],
   "DailyTrend": {
@@ -143,7 +143,8 @@
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
-      "2026-10-11"
+      "2026-10-11",
+      "2026-10-12"
     ],
     "Datasets": [
       {
@@ -249,7 +250,8 @@
           10,
           13,
           2,
-          0
+          0,
+          6
         ]
       },
       {
@@ -355,7 +357,8 @@
           11,
           10,
           3,
-          1
+          1,
+          9
         ]
       },
       {
@@ -461,7 +464,8 @@
           4,
           5,
           0,
-          0
+          0,
+          4
         ]
       },
       {
@@ -565,6 +569,7 @@
           6,
           0,
           4,
+          0,
           0,
           0,
           0
@@ -673,6 +678,7 @@
           0,
           0,
           1,
+          0,
           0
         ]
       }
@@ -692,10 +698,28 @@
       "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
-      "Cve": "CVE-2026-73570",
+      "Cve": "CVE-2026-85706",
       "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
+      "Cve": "CVE-2026-86950",
+      "Count": 4,
+      "Severity": "Low",
+      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
+    },
+    {
+      "Cve": "CVE-2026-76504",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
+      "Cve": "CVE-2026-21589",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/"
     },
     {
       "Cve": "CVE-2026-59310",
@@ -710,28 +734,10 @@
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-85706",
+      "Cve": "CVE-2026-18577",
       "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
-    },
-    {
-      "Cve": "CVE-2026-86950",
-      "Count": 4,
-      "Severity": "Low",
-      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
-    },
-    {
-      "Cve": "CVE-2026-21589",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/"
-    },
-    {
-      "Cve": "CVE-2026-76504",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-5430",
@@ -743,15 +749,15 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 264
+      "Count": 266
     },
     {
       "Keyword": "malware",
-      "Count": 102
+      "Count": 104
     },
     {
       "Keyword": "critical",
-      "Count": 92
+      "Count": 93
     },
     {
       "Keyword": "zero-day",
@@ -759,7 +765,7 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 70
+      "Count": 71
     },
     {
       "Keyword": "phishing",
@@ -767,7 +773,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 43
+      "Count": 44
     },
     {
       "Keyword": "leak",
@@ -775,14 +781,47 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 20
+      "Count": 21
     },
     {
       "Keyword": "cvss",
-      "Count": 15
+      "Count": 16
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-12T15:16:26Z",
+      "Url": "http://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-12T10:36:56Z",
+      "Url": "http://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-102255"
+      ]
+    },
+    {
+      "Title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-12T09:02:14Z",
+      "Url": "http://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-85097"
+      ]
+    },
     {
       "Title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
       "Source": "The Hacker News",
@@ -968,39 +1007,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Attackers Exploit Zimbra Flaw to Deploy Web Shells and Harvest Authentication Secrets",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-30T16:46:29Z",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
-      "Severity": "High",
-      "Cvss": 8.9,
-      "Cves": [
-        "CVE-2026-73570"
-      ]
-    },
-    {
-      "Title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-09-30T15:24:54Z",
-      "Url": "http://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-76504"
-      ]
-    },
-    {
-      "Title": "Cisco warns of new SD-WAN zero-day exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-30T14:46:40Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-76504"
       ]
     }
   ]
