@@ -1,26 +1,26 @@
 {
-  "GeneratedAt": "2026-10-13T10:22:43Z",
-  "TotalArticles": 1813,
+  "GeneratedAt": "2026-10-14T08:34:40Z",
+  "TotalArticles": 1848,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 819
+      "Count": 832
     },
     {
       "Source": "BleepingComputer",
-      "Count": 527
+      "Count": 540
     },
     {
       "Source": "Dark Reading",
-      "Count": 260
+      "Count": 264
     },
     {
       "Source": "CISA Advisories",
-      "Count": 186
+      "Count": 190
     },
     {
       "Source": "Krebs on Security",
-      "Count": 21
+      "Count": 22
     }
   ],
   "SeverityBreakdown": [
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 140
+      "Count": 145
     },
     {
       "Severity": "Medium",
-      "Count": 829
+      "Count": 846
     },
     {
       "Severity": "Low",
-      "Count": 776
+      "Count": 789
     }
   ],
   "DailyTrend": {
@@ -144,7 +144,9 @@
       "2026-10-09",
       "2026-10-10",
       "2026-10-11",
-      "2026-10-12"
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14"
     ],
     "Datasets": [
       {
@@ -251,7 +253,9 @@
           13,
           2,
           0,
-          6
+          6,
+          13,
+          0
         ]
       },
       {
@@ -358,7 +362,9 @@
           10,
           3,
           1,
-          9
+          9,
+          13,
+          0
         ]
       },
       {
@@ -465,7 +471,9 @@
           5,
           0,
           0,
-          4
+          4,
+          3,
+          1
         ]
       },
       {
@@ -572,6 +580,8 @@
           0,
           0,
           0,
+          0,
+          4,
           0
         ]
       },
@@ -679,6 +689,8 @@
           0,
           1,
           0,
+          0,
+          1,
           0
         ]
       }
@@ -692,34 +704,10 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-88771",
+      "Cve": "CVE-2026-73570",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
-    },
-    {
-      "Cve": "CVE-2026-85706",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
-    },
-    {
-      "Cve": "CVE-2026-86950",
-      "Count": 4,
-      "Severity": "Low",
-      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
-    },
-    {
-      "Cve": "CVE-2026-76504",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
-    },
-    {
-      "Cve": "CVE-2026-21589",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
       "Cve": "CVE-2026-59310",
@@ -728,44 +716,68 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-82329",
+      "Cve": "CVE-2026-88771",
       "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
-      "Cve": "CVE-2026-18577",
+      "Cve": "CVE-2026-21589",
       "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/"
+    },
+    {
+      "Cve": "CVE-2026-76504",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
       "Cve": "CVE-2026-5430",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+    },
+    {
+      "Cve": "CVE-2026-86950",
+      "Count": 4,
+      "Severity": "Low",
+      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 266
+      "Count": 270
     },
     {
       "Keyword": "malware",
-      "Count": 104
+      "Count": 105
     },
     {
       "Keyword": "critical",
-      "Count": 93
+      "Count": 96
     },
     {
       "Keyword": "zero-day",
-      "Count": 83
+      "Count": 87
     },
     {
       "Keyword": "ransomware",
-      "Count": 71
+      "Count": 72
     },
     {
       "Keyword": "phishing",
@@ -773,7 +785,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 44
+      "Count": 45
     },
     {
       "Keyword": "leak",
@@ -785,10 +797,65 @@
     },
     {
       "Keyword": "cvss",
-      "Count": 16
+      "Count": 18
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Zero-Days Lurk in Microsoft's Overgrown October Patch Tuesday",
+      "Source": "Dark Reading",
+      "PublishedAt": "2026-10-13T22:29:57Z",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-13T19:56:09Z",
+      "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-13T17:33:11Z",
+      "Url": "http://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Ivanti warns of Connect Secure zero-day exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-13T15:45:50Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA Urges Patching Newly Exploited Vulnerability in Ivanti Connect Secure",
+      "Source": "CISA Advisories",
+      "PublishedAt": "2026-10-13T12:00:00Z",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-urges-patching-newly-exploited-vulnerability-ivanti-connect-secure",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-104935"
+      ]
+    },
     {
       "Title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
       "Source": "The Hacker News",
@@ -952,61 +1019,6 @@
       "Cvss": 9.8,
       "Cves": [
         "CVE-2026-104286"
-      ]
-    },
-    {
-      "Title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-01T22:42:49Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-104286"
-      ]
-    },
-    {
-      "Title": "ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-01T16:45:38Z",
-      "Url": "http://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-01T10:33:16Z",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-76504"
-      ]
-    },
-    {
-      "Title": "Bitget Confirms Third-Party Zero-Day Behind $387.5 Million Cryptocurrency Theft",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-01T05:21:10Z",
-      "Url": "http://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "DIVD says Zammad zero-days enabled AI-driven network breach",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-09-30T19:49:15Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
