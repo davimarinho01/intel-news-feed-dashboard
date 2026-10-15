@@ -1,26 +1,26 @@
 {
-  "GeneratedAt": "2026-10-14T08:34:40Z",
-  "TotalArticles": 1848,
+  "GeneratedAt": "2026-10-15T08:09:52Z",
+  "TotalArticles": 1880,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 832
+      "Count": 846
     },
     {
       "Source": "BleepingComputer",
-      "Count": 540
+      "Count": 551
     },
     {
       "Source": "Dark Reading",
-      "Count": 264
+      "Count": 269
     },
     {
       "Source": "CISA Advisories",
-      "Count": 190
+      "Count": 191
     },
     {
       "Source": "Krebs on Security",
-      "Count": 22
+      "Count": 23
     }
   ],
   "SeverityBreakdown": [
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 145
+      "Count": 151
     },
     {
       "Severity": "Medium",
-      "Count": 846
+      "Count": 858
     },
     {
       "Severity": "Low",
-      "Count": 789
+      "Count": 803
     }
   ],
   "DailyTrend": {
@@ -146,7 +146,8 @@
       "2026-10-11",
       "2026-10-12",
       "2026-10-13",
-      "2026-10-14"
+      "2026-10-14",
+      "2026-10-15"
     ],
     "Datasets": [
       {
@@ -255,6 +256,7 @@
           0,
           6,
           13,
+          14,
           0
         ]
       },
@@ -364,7 +366,8 @@
           1,
           9,
           13,
-          0
+          10,
+          1
         ]
       },
       {
@@ -473,6 +476,7 @@
           0,
           4,
           3,
+          5,
           1
         ]
       },
@@ -582,6 +586,7 @@
           0,
           0,
           4,
+          1,
           0
         ]
       },
@@ -691,6 +696,7 @@
           0,
           0,
           1,
+          1,
           0
         ]
       }
@@ -704,28 +710,34 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
       "Cve": "CVE-2026-73570",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
-      "Cve": "CVE-2026-59310",
+      "Cve": "CVE-2026-104935",
       "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Severity": "High",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
     },
     {
-      "Cve": "CVE-2026-88771",
+      "Cve": "CVE-2026-86950",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
-    },
-    {
-      "Cve": "CVE-2026-21589",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/"
+      "Severity": "Low",
+      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
     },
     {
       "Cve": "CVE-2026-76504",
@@ -734,46 +746,40 @@
       "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
     },
     {
+      "Cve": "CVE-2026-21589",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/"
+    },
+    {
+      "Cve": "CVE-2026-88771",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+    },
+    {
       "Cve": "CVE-2026-20079",
       "Count": 4,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
-      "Cve": "CVE-2026-85706",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
-    },
-    {
-      "Cve": "CVE-2026-5430",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
-    },
-    {
-      "Cve": "CVE-2026-86950",
-      "Count": 4,
-      "Severity": "Low",
-      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 270
+      "Count": 278
     },
     {
       "Keyword": "malware",
-      "Count": 105
+      "Count": 106
     },
     {
       "Keyword": "critical",
-      "Count": 96
+      "Count": 99
     },
     {
       "Keyword": "zero-day",
-      "Count": 87
+      "Count": 90
     },
     {
       "Keyword": "ransomware",
@@ -781,11 +787,11 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 46
+      "Count": 49
     },
     {
       "Keyword": "vulnerability",
-      "Count": 45
+      "Count": 46
     },
     {
       "Keyword": "leak",
@@ -793,7 +799,7 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 21
+      "Count": 22
     },
     {
       "Keyword": "cvss",
@@ -801,6 +807,72 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-14T22:56:47Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-0322"
+      ]
+    },
+    {
+      "Title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+      "Source": "Dark Reading",
+      "PublishedAt": "2026-10-14T21:20:13Z",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        "CVE-2026-104935"
+      ]
+    },
+    {
+      "Title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-14T18:38:56Z",
+      "Url": "http://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Cisco patches new Secure Email Gateway zero-day exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-14T17:29:14Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA warns admins to immediately fix Ivanti flaw exploited as zero-day",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-14T12:58:07Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-14T12:30:42Z",
+      "Url": "http://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+      "Severity": "High",
+      "Cvss": 8.6,
+      "Cves": [
+        "CVE-2026-104935"
+      ]
+    },
     {
       "Title": "Zero-Days Lurk in Microsoft's Overgrown October Patch Tuesday",
       "Source": "Dark Reading",
@@ -953,72 +1025,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-05T08:09:23Z",
-      "Url": "http://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
-      "Severity": "Critical",
-      "Cvss": 9.3,
-      "Cves": [
-        "CVE-2026-61500"
-      ]
-    },
-    {
-      "Title": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-05T06:40:19Z",
-      "Url": "http://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-88779"
-      ]
-    },
-    {
-      "Title": "Citrix patches NetScaler SAML zero-day exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-04T21:58:01Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-88779"
-      ]
-    },
-    {
-      "Title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-02T17:02:12Z",
-      "Url": "http://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-63688"
-      ]
-    },
-    {
-      "Title": "Kiteworks &amp; Citrix Incidents Show Challenges of Zero-Day Response",
-      "Source": "Dark Reading",
-      "PublishedAt": "2026-10-02T16:56:30Z",
-      "Url": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-02T05:49:50Z",
-      "Url": "http://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-104286"
       ]
     }
   ]
