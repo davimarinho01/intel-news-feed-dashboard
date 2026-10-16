@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-15T08:09:52Z",
-  "TotalArticles": 1880,
+  "GeneratedAt": "2026-10-16T08:02:54Z",
+  "TotalArticles": 1915,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 846
+      "Count": 861
     },
     {
       "Source": "BleepingComputer",
-      "Count": 551
+      "Count": 561
     },
     {
       "Source": "Dark Reading",
-      "Count": 269
+      "Count": 273
     },
     {
       "Source": "CISA Advisories",
-      "Count": 191
+      "Count": 197
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 68
+      "Count": 69
     },
     {
       "Severity": "High",
-      "Count": 151
+      "Count": 153
     },
     {
       "Severity": "Medium",
-      "Count": 858
+      "Count": 875
     },
     {
       "Severity": "Low",
-      "Count": 803
+      "Count": 818
     }
   ],
   "DailyTrend": {
@@ -147,7 +147,8 @@
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
-      "2026-10-15"
+      "2026-10-15",
+      "2026-10-16"
     ],
     "Datasets": [
       {
@@ -257,6 +258,7 @@
           6,
           13,
           14,
+          15,
           0
         ]
       },
@@ -367,7 +369,8 @@
           9,
           13,
           10,
-          1
+          9,
+          2
         ]
       },
       {
@@ -477,7 +480,8 @@
           4,
           3,
           5,
-          1
+          5,
+          0
         ]
       },
       {
@@ -587,6 +591,7 @@
           0,
           4,
           1,
+          6,
           0
         ]
       },
@@ -697,6 +702,7 @@
           0,
           1,
           1,
+          0,
           0
         ]
       }
@@ -710,22 +716,16 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
+      "Cve": "CVE-2026-21589",
+      "Count": 5,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-18577",
+      "Cve": "CVE-2026-20079",
       "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
       "Cve": "CVE-2026-104935",
@@ -734,22 +734,10 @@
       "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
     },
     {
-      "Cve": "CVE-2026-86950",
-      "Count": 4,
-      "Severity": "Low",
-      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
-    },
-    {
-      "Cve": "CVE-2026-76504",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
-    },
-    {
-      "Cve": "CVE-2026-21589",
+      "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-88771",
@@ -758,28 +746,46 @@
       "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-86950",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Severity": "Low",
+      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+    },
+    {
+      "Cve": "CVE-2026-5430",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 278
+      "Count": 285
     },
     {
       "Keyword": "malware",
-      "Count": 106
+      "Count": 107
     },
     {
       "Keyword": "critical",
-      "Count": 99
+      "Count": 103
     },
     {
       "Keyword": "zero-day",
-      "Count": 90
+      "Count": 91
     },
     {
       "Keyword": "ransomware",
@@ -791,7 +797,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 46
+      "Count": 49
     },
     {
       "Keyword": "leak",
@@ -807,6 +813,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "BeyondTrust patches zero-day exploited in attacks since August",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-16T06:18:08Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-15T11:46:49Z",
+      "Url": "http://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
+      "Severity": "High",
+      "Cvss": 8.6,
+      "Cves": [
+        "CVE-2026-0322"
+      ]
+    },
+    {
+      "Title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-15T07:07:05Z",
+      "Url": "http://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
+      "Severity": "Critical",
+      "Cvss": 9.9,
+      "Cves": [
+        "CVE-2026-105740"
+      ]
+    },
     {
       "Title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
       "Source": "BleepingComputer",
@@ -988,39 +1027,6 @@
       "Source": "BleepingComputer",
       "PublishedAt": "2026-10-08T06:32:16Z",
       "Url": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Atlassian Data Center Flaw Draws Exploitation Attempts Within Two Hours of Public Details",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-07T11:49:26Z",
-      "Url": "http://thehackernews.com/2026/10/atlassian-data-center-flaw-draws.html",
-      "Severity": "Critical",
-      "Cvss": 9.3,
-      "Cves": [
-        "CVE-2026-21589"
-      ]
-    },
-    {
-      "Title": "Hackers exploit 32 zero-days on first day of Pwn2Own Ireland",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-06T19:21:53Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-05T14:20:43Z",
-      "Url": "http://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
