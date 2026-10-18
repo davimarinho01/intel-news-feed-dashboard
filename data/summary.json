@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-10-17T07:40:37Z",
-  "TotalArticles": 1939,
+  "GeneratedAt": "2026-10-18T07:55:45Z",
+  "TotalArticles": 1943,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 869
+      "Count": 871
     },
     {
       "Source": "BleepingComputer",
-      "Count": 566
+      "Count": 568
     },
     {
       "Source": "Dark Reading",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 883
+      "Count": 884
     },
     {
       "Severity": "Low",
-      "Count": 832
+      "Count": 835
     }
   ],
   "DailyTrend": {
@@ -148,7 +148,8 @@
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
-      "2026-10-16"
+      "2026-10-16",
+      "2026-10-17"
     ],
     "Datasets": [
       {
@@ -259,7 +260,8 @@
           13,
           14,
           15,
-          8
+          8,
+          2
         ]
       },
       {
@@ -370,7 +372,8 @@
           13,
           10,
           9,
-          7
+          7,
+          2
         ]
       },
       {
@@ -481,7 +484,8 @@
           3,
           5,
           5,
-          7
+          7,
+          0
         ]
       },
       {
@@ -592,7 +596,8 @@
           4,
           1,
           6,
-          4
+          4,
+          0
         ]
       },
       {
@@ -703,6 +708,7 @@
           1,
           1,
           0,
+          0,
           0
         ]
       }
@@ -773,7 +779,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 289
+      "Count": 290
     },
     {
       "Keyword": "malware",
@@ -781,7 +787,7 @@
     },
     {
       "Keyword": "critical",
-      "Count": 105
+      "Count": 106
     },
     {
       "Keyword": "zero-day",
