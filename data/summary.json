@@ -1,18 +1,18 @@
 {
-  "GeneratedAt": "2026-10-19T08:42:42Z",
-  "TotalArticles": 1945,
+  "GeneratedAt": "2026-10-20T08:23:12Z",
+  "TotalArticles": 1969,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 872
+      "Count": 880
     },
     {
       "Source": "BleepingComputer",
-      "Count": 569
+      "Count": 579
     },
     {
       "Source": "Dark Reading",
-      "Count": 280
+      "Count": 285
     },
     {
       "Source": "CISA Advisories",
@@ -20,7 +20,7 @@
     },
     {
       "Source": "Krebs on Security",
-      "Count": 23
+      "Count": 24
     }
   ],
   "SeverityBreakdown": [
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 154
+      "Count": 155
     },
     {
       "Severity": "Medium",
-      "Count": 885
+      "Count": 896
     },
     {
       "Severity": "Low",
-      "Count": 836
+      "Count": 848
     }
   ],
   "DailyTrend": {
@@ -150,7 +150,8 @@
       "2026-10-15",
       "2026-10-16",
       "2026-10-17",
-      "2026-10-18"
+      "2026-10-18",
+      "2026-10-19"
     ],
     "Datasets": [
       {
@@ -263,7 +264,8 @@
           15,
           8,
           2,
-          1
+          1,
+          8
         ]
       },
       {
@@ -376,7 +378,8 @@
           9,
           7,
           2,
-          1
+          1,
+          10
         ]
       },
       {
@@ -489,7 +492,8 @@
           5,
           7,
           0,
-          0
+          0,
+          5
         ]
       },
       {
@@ -601,6 +605,7 @@
           1,
           6,
           4,
+          0,
           0,
           0
         ]
@@ -715,7 +720,8 @@
           0,
           0,
           0,
-          0
+          0,
+          1
         ]
       }
     ]
@@ -785,30 +791,30 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 291
+      "Count": 292
     },
     {
       "Keyword": "malware",
-      "Count": 108
+      "Count": 110
     },
     {
       "Keyword": "critical",
-      "Count": 106
+      "Count": 107
     },
     {
       "Keyword": "zero-day",
-      "Count": 93
+      "Count": 94
     },
     {
       "Keyword": "ransomware",
       "Count": 73
     },
     {
-      "Keyword": "phishing",
-      "Count": 50
+      "Keyword": "vulnerability",
+      "Count": 51
     },
     {
-      "Keyword": "vulnerability",
+      "Keyword": "phishing",
       "Count": 50
     },
     {
@@ -825,6 +831,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-19T14:14:07Z",
+      "Url": "http://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
       "Source": "Dark Reading",
@@ -1032,17 +1049,6 @@
       "Cvss": 10.0,
       "Cves": [
         "CVE-2026-85097"
-      ]
-    },
-    {
-      "Title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-09T12:21:51Z",
-      "Url": "http://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2015-3306"
       ]
     }
   ]
