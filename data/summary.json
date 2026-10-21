@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-20T08:23:12Z",
-  "TotalArticles": 1969,
+  "GeneratedAt": "2026-10-21T08:26:59Z",
+  "TotalArticles": 2005,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 880
+      "Count": 894
     },
     {
       "Source": "BleepingComputer",
-      "Count": 579
+      "Count": 591
     },
     {
       "Source": "Dark Reading",
-      "Count": 285
+      "Count": 289
     },
     {
       "Source": "CISA Advisories",
-      "Count": 201
+      "Count": 207
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 70
+      "Count": 71
     },
     {
       "Severity": "High",
-      "Count": 155
+      "Count": 157
     },
     {
       "Severity": "Medium",
-      "Count": 896
+      "Count": 909
     },
     {
       "Severity": "Low",
-      "Count": 848
+      "Count": 868
     }
   ],
   "DailyTrend": {
@@ -151,7 +151,9 @@
       "2026-10-16",
       "2026-10-17",
       "2026-10-18",
-      "2026-10-19"
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21"
     ],
     "Datasets": [
       {
@@ -265,7 +267,9 @@
           8,
           2,
           1,
-          8
+          8,
+          14,
+          0
         ]
       },
       {
@@ -379,7 +383,9 @@
           7,
           2,
           1,
-          10
+          10,
+          10,
+          2
         ]
       },
       {
@@ -493,7 +499,9 @@
           7,
           0,
           0,
-          5
+          5,
+          4,
+          0
         ]
       },
       {
@@ -607,6 +615,8 @@
           4,
           0,
           0,
+          0,
+          6,
           0
         ]
       },
@@ -721,18 +731,14 @@
           0,
           0,
           0,
-          1
+          1,
+          0,
+          0
         ]
       }
     ]
   },
   "TopCves": [
-    {
-      "Cve": "CVE-2026-21589",
-      "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
-    },
     {
       "Cve": "CVE-2026-88772",
       "Count": 5,
@@ -740,22 +746,10 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-73570",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
-    },
-    {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
+      "Cve": "CVE-2026-21589",
+      "Count": 5,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
       "Cve": "CVE-2026-20079",
@@ -764,16 +758,16 @@
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
-      "Cve": "CVE-2026-88771",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
-    },
-    {
       "Cve": "CVE-2026-104935",
       "Count": 4,
       "Severity": "High",
       "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+    },
+    {
+      "Cve": "CVE-2026-5430",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     },
     {
       "Cve": "CVE-2026-76504",
@@ -786,20 +780,38 @@
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-86950",
+      "Count": 4,
+      "Severity": "Low",
+      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 292
+      "Count": 296
     },
     {
       "Keyword": "malware",
-      "Count": 110
+      "Count": 112
     },
     {
       "Keyword": "critical",
-      "Count": 107
+      "Count": 109
     },
     {
       "Keyword": "zero-day",
@@ -807,7 +819,7 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 73
+      "Count": 75
     },
     {
       "Keyword": "vulnerability",
@@ -823,7 +835,7 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 22
+      "Count": 23
     },
     {
       "Keyword": "cvss",
@@ -831,6 +843,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-20T15:38:52Z",
+      "Url": "http://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+      "Severity": "Critical",
+      "Cvss": 9.4,
+      "Cves": [
+        "CVE-2026-106173"
+      ]
+    },
+    {
+      "Title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-20T15:32:27Z",
+      "Url": "http://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+      "Severity": "High",
+      "Cvss": 7.8,
+      "Cves": [
+        "CVE-2026-0257"
+      ]
+    },
+    {
+      "Title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-20T07:11:45Z",
+      "Url": "http://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+      "Severity": "High",
+      "Cvss": 8.4,
+      "Cves": [
+        "CVE-2026-110936"
+      ]
+    },
     {
       "Title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
       "Source": "The Hacker News",
@@ -1016,39 +1061,6 @@
       "Cvss": null,
       "Cves": [
         "CVE-2026-104935"
-      ]
-    },
-    {
-      "Title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-12T15:16:26Z",
-      "Url": "http://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-12T10:36:56Z",
-      "Url": "http://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-102255"
-      ]
-    },
-    {
-      "Title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-12T09:02:14Z",
-      "Url": "http://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-85097"
       ]
     }
   ]
