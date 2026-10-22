@@ -1,26 +1,26 @@
 {
-  "GeneratedAt": "2026-10-21T08:26:59Z",
-  "TotalArticles": 2005,
+  "GeneratedAt": "2026-10-22T08:29:17Z",
+  "TotalArticles": 2043,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 894
+      "Count": 910
     },
     {
       "Source": "BleepingComputer",
-      "Count": 591
+      "Count": 602
     },
     {
       "Source": "Dark Reading",
-      "Count": 289
+      "Count": 298
     },
     {
       "Source": "CISA Advisories",
-      "Count": 207
+      "Count": 208
     },
     {
       "Source": "Krebs on Security",
-      "Count": 24
+      "Count": 25
     }
   ],
   "SeverityBreakdown": [
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 157
+      "Count": 158
     },
     {
       "Severity": "Medium",
-      "Count": 909
+      "Count": 925
     },
     {
       "Severity": "Low",
-      "Count": 868
+      "Count": 889
     }
   ],
   "DailyTrend": {
@@ -153,7 +153,8 @@
       "2026-10-18",
       "2026-10-19",
       "2026-10-20",
-      "2026-10-21"
+      "2026-10-21",
+      "2026-10-22"
     ],
     "Datasets": [
       {
@@ -269,6 +270,7 @@
           1,
           8,
           14,
+          16,
           0
         ]
       },
@@ -385,7 +387,8 @@
           1,
           10,
           10,
-          2
+          12,
+          1
         ]
       },
       {
@@ -501,7 +504,8 @@
           0,
           5,
           4,
-          0
+          8,
+          1
         ]
       },
       {
@@ -617,6 +621,7 @@
           0,
           0,
           6,
+          1,
           0
         ]
       },
@@ -733,6 +738,7 @@
           0,
           1,
           0,
+          1,
           0
         ]
       }
@@ -752,12 +758,6 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
       "Cve": "CVE-2026-104935",
       "Count": 4,
       "Severity": "High",
@@ -770,10 +770,22 @@
       "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     },
     {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
       "Cve": "CVE-2026-76504",
       "Count": 4,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
       "Cve": "CVE-2026-85706",
@@ -782,36 +794,30 @@
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-86950",
-      "Count": 4,
-      "Severity": "Low",
-      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 296
-    },
-    {
-      "Keyword": "malware",
-      "Count": 112
+      "Count": 298
     },
     {
       "Keyword": "critical",
-      "Count": 109
+      "Count": 115
+    },
+    {
+      "Keyword": "malware",
+      "Count": 113
     },
     {
       "Keyword": "zero-day",
@@ -819,7 +825,7 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 75
+      "Count": 76
     },
     {
       "Keyword": "vulnerability",
@@ -831,7 +837,7 @@
     },
     {
       "Keyword": "leak",
-      "Count": 26
+      "Count": 27
     },
     {
       "Keyword": "code execution",
@@ -839,10 +845,21 @@
     },
     {
       "Keyword": "cvss",
-      "Count": 18
+      "Count": 20
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+      "Source": "Krebs on Security",
+      "PublishedAt": "2026-10-21T15:26:07Z",
+      "Url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
       "Source": "The Hacker News",
@@ -1050,17 +1067,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "CISA Urges Patching Newly Exploited Vulnerability in Ivanti Connect Secure",
-      "Source": "CISA Advisories",
-      "PublishedAt": "2026-10-13T12:00:00Z",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-urges-patching-newly-exploited-vulnerability-ivanti-connect-secure",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-104935"
       ]
     }
   ]

@@ -1854,15 +1854,6 @@ The following selection covers the security news matching our monitoring criteri
 **Url:** [https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/](https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/)
 
 ---
-### Cybercriminals Hack Brazilian Government Servers to Host Phishing Sites
-
-*Source:* **Dark Reading** | *Published (UTC):* 2026-09-08 12:00:00Z | *Severity:* **Medium**
-
-**Introduction:** A Chinese-language group is compromising government and education sites to create a reverse-proxy network with gambling-themed sites...
-
-**Url:** [https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites](https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites)
-
----
 ### CISA Adds Four Known Exploited Vulnerabilities to Catalog    
 
 *Source:* **CISA Advisories** | *Published (UTC):* 2026-09-08 12:00:00Z | *Severity:* **Medium**
@@ -1872,6 +1863,15 @@ The following selection covers the security news matching our monitoring criteri
 **CVEs:** CVE-2026-75650, CVE-2026-81963, CVE-2026-85880, CVE-2026-86218
 
 **Url:** [https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog](https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog)
+
+---
+### Cybercriminals Hack Brazilian Government Servers to Host Phishing Sites
+
+*Source:* **Dark Reading** | *Published (UTC):* 2026-09-08 12:00:00Z | *Severity:* **Medium**
+
+**Introduction:** A Chinese-language group is compromising government and education sites to create a reverse-proxy network with gambling-themed sites...
+
+**Url:** [https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites](https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites)
 
 ---
 ### Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell
