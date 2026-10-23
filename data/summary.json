@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-22T08:29:17Z",
-  "TotalArticles": 2043,
+  "GeneratedAt": "2026-10-23T08:25:31Z",
+  "TotalArticles": 2089,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 910
+      "Count": 924
     },
     {
       "Source": "BleepingComputer",
-      "Count": 602
+      "Count": 610
     },
     {
       "Source": "Dark Reading",
-      "Count": 298
+      "Count": 302
     },
     {
       "Source": "CISA Advisories",
-      "Count": 208
+      "Count": 228
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 158
+      "Count": 160
     },
     {
       "Severity": "Medium",
-      "Count": 925
+      "Count": 955
     },
     {
       "Severity": "Low",
-      "Count": 889
+      "Count": 903
     }
   ],
   "DailyTrend": {
@@ -154,7 +154,8 @@
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
-      "2026-10-22"
+      "2026-10-22",
+      "2026-10-23"
     ],
     "Datasets": [
       {
@@ -271,6 +272,7 @@
           8,
           14,
           16,
+          14,
           0
         ]
       },
@@ -388,7 +390,8 @@
           10,
           10,
           12,
-          1
+          9,
+          0
         ]
       },
       {
@@ -505,6 +508,7 @@
           5,
           4,
           8,
+          4,
           1
         ]
       },
@@ -622,6 +626,7 @@
           0,
           6,
           1,
+          20,
           0
         ]
       },
@@ -739,6 +744,7 @@
           1,
           0,
           1,
+          0,
           0
         ]
       }
@@ -764,16 +770,16 @@
       "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
     },
     {
-      "Cve": "CVE-2026-5430",
+      "Cve": "CVE-2026-20079",
       "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
-      "Cve": "CVE-2026-82329",
+      "Cve": "CVE-2026-59310",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-76504",
@@ -782,46 +788,46 @@
       "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
     },
     {
-      "Cve": "CVE-2026-73570",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
-    },
-    {
       "Cve": "CVE-2026-85706",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-86950",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Severity": "Low",
+      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
     },
     {
-      "Cve": "CVE-2026-18577",
+      "Cve": "CVE-2026-73570",
       "Count": 4,
       "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+    },
+    {
+      "Cve": "CVE-2026-5430",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 298
+      "Count": 302
     },
     {
       "Keyword": "critical",
-      "Count": 115
+      "Count": 116
     },
     {
       "Keyword": "malware",
-      "Count": 113
+      "Count": 114
     },
     {
       "Keyword": "zero-day",
-      "Count": 94
+      "Count": 96
     },
     {
       "Keyword": "ransomware",
@@ -829,7 +835,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 51
+      "Count": 52
     },
     {
       "Keyword": "phishing",
@@ -837,18 +843,40 @@
     },
     {
       "Keyword": "leak",
-      "Count": 27
+      "Count": 30
     },
     {
       "Keyword": "code execution",
-      "Count": 23
+      "Count": 25
     },
     {
       "Keyword": "cvss",
-      "Count": 20
+      "Count": 21
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-22T19:05:17Z",
+      "Url": "http://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-22T17:18:22Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Widespread PHP Flaw May Cause Many Site Outages Today",
       "Source": "Krebs on Security",
@@ -1041,28 +1069,6 @@
       "Source": "BleepingComputer",
       "PublishedAt": "2026-10-13T19:56:09Z",
       "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-13T17:33:11Z",
-      "Url": "http://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Ivanti warns of Connect Secure zero-day exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-13T15:45:50Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
