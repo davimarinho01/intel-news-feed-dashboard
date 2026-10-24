@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-23T08:25:31Z",
-  "TotalArticles": 2089,
+  "GeneratedAt": "2026-10-24T08:01:04Z",
+  "TotalArticles": 2115,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 924
+      "Count": 934
     },
     {
       "Source": "BleepingComputer",
-      "Count": 610
+      "Count": 617
     },
     {
       "Source": "Dark Reading",
-      "Count": 302
+      "Count": 309
     },
     {
       "Source": "CISA Advisories",
-      "Count": 228
+      "Count": 230
     },
     {
       "Source": "Krebs on Security",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 955
+      "Count": 972
     },
     {
       "Severity": "Low",
-      "Count": 903
+      "Count": 912
     }
   ],
   "DailyTrend": {
@@ -273,7 +273,7 @@
           14,
           16,
           14,
-          0
+          10
         ]
       },
       {
@@ -391,7 +391,7 @@
           10,
           12,
           9,
-          0
+          7
         ]
       },
       {
@@ -508,8 +508,8 @@
           5,
           4,
           8,
-          4,
-          1
+          5,
+          7
         ]
       },
       {
@@ -627,7 +627,7 @@
           6,
           1,
           20,
-          0
+          2
         ]
       },
       {
@@ -752,40 +752,16 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-88772",
-      "Count": 5,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
-    },
-    {
       "Cve": "CVE-2026-21589",
       "Count": 5,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-104935",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
-    },
-    {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
+      "Cve": "CVE-2026-88772",
+      "Count": 5,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-76504",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
       "Cve": "CVE-2026-85706",
@@ -794,10 +770,34 @@
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
-      "Cve": "CVE-2026-86950",
+      "Cve": "CVE-2026-104935",
       "Count": 4,
-      "Severity": "Low",
-      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
+      "Severity": "High",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+    },
+    {
+      "Cve": "CVE-2026-59310",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
       "Cve": "CVE-2026-73570",
@@ -815,15 +815,15 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 302
+      "Count": 306
     },
     {
       "Keyword": "critical",
-      "Count": 116
+      "Count": 119
     },
     {
       "Keyword": "malware",
-      "Count": 114
+      "Count": 115
     },
     {
       "Keyword": "zero-day",
@@ -831,15 +831,15 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 76
+      "Count": 77
     },
     {
       "Keyword": "vulnerability",
-      "Count": 52
+      "Count": 55
     },
     {
       "Keyword": "phishing",
-      "Count": 50
+      "Count": 51
     },
     {
       "Keyword": "leak",
@@ -847,7 +847,7 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 25
+      "Count": 26
     },
     {
       "Keyword": "cvss",
