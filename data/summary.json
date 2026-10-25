@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-10-24T08:01:04Z",
-  "TotalArticles": 2115,
+  "GeneratedAt": "2026-10-25T08:17:28Z",
+  "TotalArticles": 2121,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 934
+      "Count": 939
     },
     {
       "Source": "BleepingComputer",
-      "Count": 617
+      "Count": 618
     },
     {
       "Source": "Dark Reading",
@@ -26,7 +26,7 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 71
+      "Count": 72
     },
     {
       "Severity": "High",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 972
+      "Count": 974
     },
     {
       "Severity": "Low",
-      "Count": 912
+      "Count": 915
     }
   ],
   "DailyTrend": {
@@ -155,7 +155,8 @@
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
-      "2026-10-23"
+      "2026-10-23",
+      "2026-10-24"
     ],
     "Datasets": [
       {
@@ -273,7 +274,8 @@
           14,
           16,
           14,
-          10
+          10,
+          5
         ]
       },
       {
@@ -391,7 +393,8 @@
           10,
           12,
           9,
-          7
+          7,
+          1
         ]
       },
       {
@@ -509,7 +512,8 @@
           4,
           8,
           5,
-          7
+          7,
+          0
         ]
       },
       {
@@ -627,7 +631,8 @@
           6,
           1,
           20,
-          2
+          2,
+          0
         ]
       },
       {
@@ -745,6 +750,7 @@
           0,
           1,
           0,
+          0,
           0
         ]
       }
@@ -764,16 +770,34 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-76504",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
       "Cve": "CVE-2026-85706",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
-      "Cve": "CVE-2026-104935",
+      "Cve": "CVE-2026-88771",
       "Count": 4,
-      "Severity": "High",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
       "Cve": "CVE-2026-59310",
@@ -788,24 +812,6 @@
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
-    },
-    {
       "Cve": "CVE-2026-5430",
       "Count": 4,
       "Severity": "Medium",
@@ -815,11 +821,11 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 306
+      "Count": 308
     },
     {
       "Keyword": "critical",
-      "Count": 119
+      "Count": 120
     },
     {
       "Keyword": "malware",
@@ -843,7 +849,7 @@
     },
     {
       "Keyword": "leak",
-      "Count": 30
+      "Count": 31
     },
     {
       "Keyword": "code execution",
@@ -855,6 +861,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-24T06:25:57Z",
+      "Url": "http://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+      "Severity": "Critical",
+      "Cvss": 9.2,
+      "Cves": [
+        "CVE-2026-110447"
+      ]
+    },
     {
       "Title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
       "Source": "The Hacker News",
@@ -1058,17 +1075,6 @@
       "Source": "Dark Reading",
       "PublishedAt": "2026-10-13T22:29:57Z",
       "Url": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-13T19:56:09Z",
-      "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
