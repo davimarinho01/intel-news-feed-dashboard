@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-10-25T08:17:28Z",
-  "TotalArticles": 2121,
+  "GeneratedAt": "2026-10-26T08:44:49Z",
+  "TotalArticles": 2125,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 939
+      "Count": 942
     },
     {
       "Source": "BleepingComputer",
-      "Count": 618
+      "Count": 619
     },
     {
       "Source": "Dark Reading",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 974
+      "Count": 975
     },
     {
       "Severity": "Low",
-      "Count": 915
+      "Count": 918
     }
   ],
   "DailyTrend": {
@@ -156,7 +156,8 @@
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
-      "2026-10-24"
+      "2026-10-24",
+      "2026-10-25"
     ],
     "Datasets": [
       {
@@ -275,7 +276,8 @@
           16,
           14,
           10,
-          5
+          5,
+          3
         ]
       },
       {
@@ -394,6 +396,7 @@
           12,
           9,
           7,
+          1,
           1
         ]
       },
@@ -513,6 +516,7 @@
           8,
           5,
           7,
+          0,
           0
         ]
       },
@@ -632,6 +636,7 @@
           1,
           20,
           2,
+          0,
           0
         ]
       },
@@ -751,6 +756,7 @@
           1,
           0,
           0,
+          0,
           0
         ]
       }
@@ -821,7 +827,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 308
+      "Count": 309
     },
     {
       "Keyword": "critical",
