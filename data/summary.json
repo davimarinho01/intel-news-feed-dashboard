@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-27T08:50:45Z",
-  "TotalArticles": 2152,
+  "GeneratedAt": "2026-10-28T09:30:16Z",
+  "TotalArticles": 2182,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 952
+      "Count": 963
     },
     {
       "Source": "BleepingComputer",
-      "Count": 630
+      "Count": 640
     },
     {
       "Source": "Dark Reading",
-      "Count": 314
+      "Count": 320
     },
     {
       "Source": "CISA Advisories",
-      "Count": 231
+      "Count": 234
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 162
+      "Count": 164
     },
     {
       "Severity": "Medium",
-      "Count": 984
+      "Count": 996
     },
     {
       "Severity": "Low",
-      "Count": 934
+      "Count": 950
     }
   ],
   "DailyTrend": {
@@ -159,7 +159,8 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-26",
-      "2026-10-27"
+      "2026-10-27",
+      "2026-10-28"
     ],
     "Datasets": [
       {
@@ -281,6 +282,7 @@
           5,
           3,
           10,
+          11,
           0
         ]
       },
@@ -403,7 +405,8 @@
           1,
           1,
           10,
-          1
+          11,
+          0
         ]
       },
       {
@@ -525,6 +528,7 @@
           0,
           0,
           4,
+          6,
           1
         ]
       },
@@ -647,6 +651,7 @@
           0,
           0,
           1,
+          3,
           0
         ]
       },
@@ -769,6 +774,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -776,16 +782,10 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-21589",
-      "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
-    },
-    {
       "Cve": "CVE-2026-109618",
-      "Count": 5,
+      "Count": 6,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+      "Url": "http://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html"
     },
     {
       "Cve": "CVE-2026-109619",
@@ -794,16 +794,22 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
     },
     {
+      "Cve": "CVE-2026-86950",
+      "Count": 5,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
+    },
+    {
       "Cve": "CVE-2026-88772",
       "Count": 5,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Cve": "CVE-2026-21589",
+      "Count": 5,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
       "Cve": "CVE-2026-104935",
@@ -812,34 +818,34 @@
       "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
     },
     {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-86950",
-      "Count": 4,
-      "Severity": "Low",
-      "Url": "http://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
-    },
-    {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-    },
-    {
       "Cve": "CVE-2026-88771",
       "Count": 4,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+    },
+    {
+      "Cve": "CVE-2026-18577",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+    },
+    {
+      "Cve": "CVE-2026-76504",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 312
+      "Count": 315
     },
     {
       "Keyword": "critical",
@@ -847,15 +853,15 @@
     },
     {
       "Keyword": "malware",
-      "Count": 117
+      "Count": 120
     },
     {
       "Keyword": "zero-day",
-      "Count": 96
+      "Count": 97
     },
     {
       "Keyword": "ransomware",
-      "Count": 78
+      "Count": 80
     },
     {
       "Keyword": "vulnerability",
@@ -871,7 +877,7 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 27
+      "Count": 28
     },
     {
       "Keyword": "cvss",
@@ -879,6 +885,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-27T13:59:09Z",
+      "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+      "Severity": "High",
+      "Cvss": 8.8,
+      "Cves": [
+        "CVE-2026-86950"
+      ]
+    },
+    {
+      "Title": "Apple backports CoreGraphics zero-day patches to older iPhones",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-27T10:36:12Z",
+      "Url": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
       "Source": "BleepingComputer",
@@ -1072,28 +1100,6 @@
       "Source": "The Hacker News",
       "PublishedAt": "2026-10-14T18:38:56Z",
       "Url": "http://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Cisco patches new Secure Email Gateway zero-day exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-14T17:29:14Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA warns admins to immediately fix Ivanti flaw exploited as zero-day",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-14T12:58:07Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
