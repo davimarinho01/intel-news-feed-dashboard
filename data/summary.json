@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-10-30T09:50:28Z",
-  "TotalArticles": 2249,
+  "GeneratedAt": "2026-10-31T09:29:13Z",
+  "TotalArticles": 2272,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 991
+      "Count": 1001
     },
     {
       "Source": "BleepingComputer",
-      "Count": 664
+      "Count": 671
     },
     {
       "Source": "Dark Reading",
-      "Count": 330
+      "Count": 335
     },
     {
       "Source": "CISA Advisories",
-      "Count": 239
+      "Count": 240
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 76
+      "Count": 77
     },
     {
       "Severity": "High",
-      "Count": 170
+      "Count": 171
     },
     {
       "Severity": "Medium",
-      "Count": 1022
+      "Count": 1032
     },
     {
       "Severity": "Low",
-      "Count": 981
+      "Count": 992
     }
   ],
   "DailyTrend": {
@@ -287,7 +287,7 @@
           11,
           15,
           13,
-          0
+          10
         ]
       },
       {
@@ -412,7 +412,7 @@
           11,
           10,
           13,
-          1
+          8
         ]
       },
       {
@@ -536,8 +536,8 @@
           4,
           6,
           4,
-          6,
-          1
+          7,
+          5
         ]
       },
       {
@@ -662,7 +662,7 @@
           3,
           1,
           4,
-          0
+          1
         ]
       },
       {
@@ -800,6 +800,18 @@
       "Url": "http://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html"
     },
     {
+      "Cve": "CVE-2026-88772",
+      "Count": 5,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
+    },
+    {
+      "Cve": "CVE-2026-109619",
+      "Count": 5,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    },
+    {
       "Cve": "CVE-2026-21589",
       "Count": 5,
       "Severity": "Medium",
@@ -812,28 +824,10 @@
       "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
     },
     {
-      "Cve": "CVE-2026-109619",
-      "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
-    },
-    {
       "Cve": "CVE-2026-86950",
       "Count": 5,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
-    },
-    {
-      "Cve": "CVE-2026-88772",
-      "Count": 5,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
-    },
-    {
-      "Cve": "CVE-2026-85706",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
       "Cve": "CVE-2026-18577",
@@ -842,26 +836,32 @@
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-5430",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
-    },
-    {
       "Cve": "CVE-2026-104935",
       "Count": 4,
       "Severity": "High",
       "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+    },
+    {
+      "Cve": "CVE-2026-88771",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+    },
+    {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 332
+      "Count": 337
     },
     {
       "Keyword": "critical",
-      "Count": 129
+      "Count": 132
     },
     {
       "Keyword": "malware",
@@ -897,6 +897,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "CISA says max severity GitLab flaw now exploited in the wild",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-10-30T13:00:32Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-30T07:27:05Z",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "Severity": "Critical",
+      "Cvss": 10.0,
+      "Cves": [
+        "CVE-2026-97229"
+      ]
+    },
     {
       "Title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
       "Source": "BleepingComputer",
@@ -1094,28 +1116,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-20T15:38:52Z",
-      "Url": "http://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
-      "Severity": "Critical",
-      "Cvss": 9.4,
-      "Cves": [
-        "CVE-2026-106173"
-      ]
-    },
-    {
-      "Title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-20T15:32:27Z",
-      "Url": "http://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-      "Severity": "High",
-      "Cvss": 7.8,
-      "Cves": [
-        "CVE-2026-0257"
       ]
     }
   ]
