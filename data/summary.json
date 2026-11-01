@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-10-31T09:29:13Z",
-  "TotalArticles": 2272,
+  "GeneratedAt": "2026-11-01T10:18:36Z",
+  "TotalArticles": 2281,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1001
+      "Count": 1005
     },
     {
       "Source": "BleepingComputer",
-      "Count": 671
+      "Count": 676
     },
     {
       "Source": "Dark Reading",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 171
+      "Count": 172
     },
     {
       "Severity": "Medium",
-      "Count": 1032
+      "Count": 1034
     },
     {
       "Severity": "Low",
-      "Count": 992
+      "Count": 998
     }
   ],
   "DailyTrend": {
@@ -162,7 +162,8 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-10-31"
     ],
     "Datasets": [
       {
@@ -287,7 +288,8 @@
           11,
           15,
           13,
-          10
+          10,
+          4
         ]
       },
       {
@@ -412,7 +414,8 @@
           11,
           10,
           13,
-          8
+          8,
+          5
         ]
       },
       {
@@ -537,7 +540,8 @@
           6,
           4,
           7,
-          5
+          5,
+          0
         ]
       },
       {
@@ -662,7 +666,8 @@
           3,
           1,
           4,
-          1
+          1,
+          0
         ]
       },
       {
@@ -787,6 +792,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
@@ -800,16 +806,16 @@
       "Url": "http://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html"
     },
     {
+      "Cve": "CVE-2026-111497",
+      "Count": 5,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
+    },
+    {
       "Cve": "CVE-2026-88772",
       "Count": 5,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
-    },
-    {
-      "Cve": "CVE-2026-109619",
-      "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-21589",
@@ -818,46 +824,46 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-111497",
-      "Count": 5,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
-    },
-    {
       "Cve": "CVE-2026-86950",
       "Count": 5,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
     },
     {
+      "Cve": "CVE-2026-109619",
+      "Count": 5,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-5430",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
       "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
-      "Cve": "CVE-2026-104935",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
-    },
-    {
-      "Cve": "CVE-2026-88771",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
-    },
-    {
-      "Cve": "CVE-2026-20079",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 337
+      "Count": 338
     },
     {
       "Keyword": "critical",
@@ -897,6 +903,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-10-31T08:27:43Z",
+      "Url": "http://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+      "Severity": "High",
+      "Cvss": 8.8,
+      "Cves": [
+        "CVE-2026-111357"
+      ]
+    },
     {
       "Title": "CISA says max severity GitLab flaw now exploited in the wild",
       "Source": "BleepingComputer",
@@ -1101,17 +1118,6 @@
       "Source": "BleepingComputer",
       "PublishedAt": "2026-10-22T17:18:22Z",
       "Url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Widespread PHP Flaw May Cause Many Site Outages Today",
-      "Source": "Krebs on Security",
-      "PublishedAt": "2026-10-21T15:26:07Z",
-      "Url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
