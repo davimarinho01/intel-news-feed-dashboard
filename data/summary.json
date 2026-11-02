@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-11-01T10:18:36Z",
-  "TotalArticles": 2281,
+  "GeneratedAt": "2026-11-02T10:50:51Z",
+  "TotalArticles": 2289,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1005
+      "Count": 1009
     },
     {
       "Source": "BleepingComputer",
-      "Count": 676
+      "Count": 680
     },
     {
       "Source": "Dark Reading",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 172
+      "Count": 173
     },
     {
       "Severity": "Medium",
-      "Count": 1034
+      "Count": 1037
     },
     {
       "Severity": "Low",
-      "Count": 998
+      "Count": 1002
     }
   ],
   "DailyTrend": {
@@ -163,7 +163,9 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01",
+      "2026-11-02"
     ],
     "Datasets": [
       {
@@ -289,7 +291,9 @@
           15,
           13,
           10,
-          4
+          4,
+          4,
+          0
         ]
       },
       {
@@ -415,7 +419,9 @@
           10,
           13,
           8,
-          5
+          5,
+          3,
+          1
         ]
       },
       {
@@ -541,6 +547,8 @@
           4,
           7,
           5,
+          0,
+          0,
           0
         ]
       },
@@ -667,6 +675,8 @@
           1,
           4,
           1,
+          0,
+          0,
           0
         ]
       },
@@ -793,6 +803,8 @@
           0,
           0,
           0,
+          0,
+          0,
           0
         ]
       }
@@ -871,11 +883,11 @@
     },
     {
       "Keyword": "malware",
-      "Count": 123
+      "Count": 124
     },
     {
       "Keyword": "zero-day",
-      "Count": 102
+      "Count": 103
     },
     {
       "Keyword": "ransomware",
@@ -899,10 +911,21 @@
     },
     {
       "Keyword": "cvss",
-      "Count": 24
+      "Count": 25
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-02T09:33:26Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
       "Source": "The Hacker News",
@@ -1107,17 +1130,6 @@
       "Source": "The Hacker News",
       "PublishedAt": "2026-10-22T19:05:17Z",
       "Url": "http://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-22T17:18:22Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
