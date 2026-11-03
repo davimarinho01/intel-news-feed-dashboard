@@ -1,18 +1,18 @@
 {
-  "GeneratedAt": "2026-11-02T10:50:51Z",
-  "TotalArticles": 2289,
+  "GeneratedAt": "2026-11-03T10:41:26Z",
+  "TotalArticles": 2311,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1009
+      "Count": 1017
     },
     {
       "Source": "BleepingComputer",
-      "Count": 680
+      "Count": 689
     },
     {
       "Source": "Dark Reading",
-      "Count": 335
+      "Count": 339
     },
     {
       "Source": "CISA Advisories",
@@ -20,7 +20,7 @@
     },
     {
       "Source": "Krebs on Security",
-      "Count": 25
+      "Count": 26
     }
   ],
   "SeverityBreakdown": [
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 173
+      "Count": 174
     },
     {
       "Severity": "Medium",
-      "Count": 1037
+      "Count": 1042
     },
     {
       "Severity": "Low",
-      "Count": 1002
+      "Count": 1018
     }
   ],
   "DailyTrend": {
@@ -165,7 +165,8 @@
       "2026-10-30",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-03"
     ],
     "Datasets": [
       {
@@ -293,6 +294,7 @@
           10,
           4,
           4,
+          8,
           0
         ]
       },
@@ -421,7 +423,8 @@
           8,
           5,
           3,
-          1
+          10,
+          0
         ]
       },
       {
@@ -546,9 +549,10 @@
           6,
           4,
           7,
-          5,
+          6,
           0,
           0,
+          3,
           0
         ]
       },
@@ -675,6 +679,7 @@
           1,
           4,
           1,
+          0,
           0,
           0,
           0
@@ -805,7 +810,8 @@
           0,
           0,
           0,
-          0
+          0,
+          1
         ]
       }
     ]
@@ -879,11 +885,11 @@
     },
     {
       "Keyword": "critical",
-      "Count": 132
+      "Count": 134
     },
     {
       "Keyword": "malware",
-      "Count": 124
+      "Count": 125
     },
     {
       "Keyword": "zero-day",
@@ -891,7 +897,7 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 81
+      "Count": 82
     },
     {
       "Keyword": "vulnerability",
@@ -899,7 +905,7 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 53
+      "Count": 54
     },
     {
       "Keyword": "leak",
@@ -915,6 +921,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-02T12:47:00Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
       "Source": "BleepingComputer",
@@ -1123,17 +1140,6 @@
       "Cvss": 9.2,
       "Cves": [
         "CVE-2026-110447"
-      ]
-    },
-    {
-      "Title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-22T19:05:17Z",
-      "Url": "http://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
