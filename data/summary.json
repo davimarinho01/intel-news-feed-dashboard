@@ -1,18 +1,18 @@
 {
-  "GeneratedAt": "2026-11-04T10:44:10Z",
-  "TotalArticles": 2344,
+  "GeneratedAt": "2026-11-05T10:39:53Z",
+  "TotalArticles": 2371,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1031
+      "Count": 1042
     },
     {
       "Source": "BleepingComputer",
-      "Count": 700
+      "Count": 711
     },
     {
       "Source": "Dark Reading",
-      "Count": 345
+      "Count": 349
     },
     {
       "Source": "CISA Advisories",
@@ -20,25 +20,25 @@
     },
     {
       "Source": "Krebs on Security",
-      "Count": 26
+      "Count": 27
     }
   ],
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 79
+      "Count": 80
     },
     {
       "Severity": "High",
-      "Count": 174
+      "Count": 177
     },
     {
       "Severity": "Medium",
-      "Count": 1059
+      "Count": 1068
     },
     {
       "Severity": "Low",
-      "Count": 1032
+      "Count": 1046
     }
   ],
   "DailyTrend": {
@@ -167,7 +167,8 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "Datasets": [
       {
@@ -297,6 +298,7 @@
           4,
           8,
           14,
+          11,
           0
         ]
       },
@@ -427,6 +429,7 @@
           3,
           10,
           10,
+          11,
           1
         ]
       },
@@ -557,7 +560,8 @@
           0,
           3,
           5,
-          1
+          5,
+          0
         ]
       },
       {
@@ -687,6 +691,7 @@
           0,
           0,
           2,
+          0,
           0
         ]
       },
@@ -817,7 +822,8 @@
           0,
           0,
           1,
-          0
+          0,
+          1
         ]
       }
     ]
@@ -830,16 +836,16 @@
       "Url": "http://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html"
     },
     {
-      "Cve": "CVE-2026-111497",
-      "Count": 5,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
-    },
-    {
       "Cve": "CVE-2026-109619",
       "Count": 5,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "Cve": "CVE-2026-21589",
+      "Count": 5,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
       "Cve": "CVE-2026-88772",
@@ -854,52 +860,52 @@
       "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
     },
     {
-      "Cve": "CVE-2026-21589",
+      "Cve": "CVE-2026-111497",
       "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
-    },
-    {
-      "Cve": "CVE-2026-76504",
-      "Count": 4,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+      "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
     },
     {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-73570",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
-    },
-    {
-      "Cve": "CVE-2026-85706",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
       "Cve": "CVE-2026-104935",
       "Count": 4,
       "Severity": "High",
       "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+    },
+    {
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 344
+      "Count": 348
     },
     {
       "Keyword": "critical",
-      "Count": 136
+      "Count": 139
     },
     {
       "Keyword": "malware",
-      "Count": 126
+      "Count": 127
     },
     {
       "Keyword": "zero-day",
-      "Count": 103
+      "Count": 104
     },
     {
       "Keyword": "ransomware",
@@ -911,7 +917,7 @@
     },
     {
       "Keyword": "phishing",
-      "Count": 54
+      "Count": 56
     },
     {
       "Keyword": "leak",
@@ -927,6 +933,50 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-04T20:58:19Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-04T17:00:38Z",
+      "Url": "http://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+      "Severity": "Critical",
+      "Cvss": 9.1,
+      "Cves": [
+        "CVE-2026-109593"
+      ]
+    },
+    {
+      "Title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-04T12:11:05Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-04T05:43:11Z",
+      "Url": "http://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+      "Severity": "High",
+      "Cvss": 8.1,
+      "Cves": [
+        "CVE-2026-119977"
+      ]
+    },
     {
       "Title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
       "Source": "The Hacker News",
@@ -1101,50 +1151,6 @@
       "Cvss": null,
       "Cves": [
         "CVE-2026-35273"
-      ]
-    },
-    {
-      "Title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-28T05:42:26Z",
-      "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-      "Severity": "Critical",
-      "Cvss": 9.2,
-      "Cves": [
-        "CVE-2026-111497"
-      ]
-    },
-    {
-      "Title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-27T13:59:09Z",
-      "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
-      "Severity": "High",
-      "Cvss": 8.8,
-      "Cves": [
-        "CVE-2026-86950"
-      ]
-    },
-    {
-      "Title": "Apple backports CoreGraphics zero-day patches to older iPhones",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-27T10:36:12Z",
-      "Url": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-27T08:20:54Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
