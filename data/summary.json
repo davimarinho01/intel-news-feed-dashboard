@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-11-05T10:39:53Z",
-  "TotalArticles": 2371,
+  "GeneratedAt": "2026-11-06T10:40:11Z",
+  "TotalArticles": 2398,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1042
+      "Count": 1052
     },
     {
       "Source": "BleepingComputer",
-      "Count": 711
+      "Count": 720
     },
     {
       "Source": "Dark Reading",
-      "Count": 349
+      "Count": 354
     },
     {
       "Source": "CISA Advisories",
-      "Count": 242
+      "Count": 245
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 177
+      "Count": 178
     },
     {
       "Severity": "Medium",
-      "Count": 1068
+      "Count": 1082
     },
     {
       "Severity": "Low",
-      "Count": 1046
+      "Count": 1058
     }
   ],
   "DailyTrend": {
@@ -168,7 +168,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "Datasets": [
       {
@@ -299,6 +300,7 @@
           8,
           14,
           11,
+          10,
           0
         ]
       },
@@ -430,7 +432,8 @@
           10,
           10,
           11,
-          1
+          8,
+          2
         ]
       },
       {
@@ -561,7 +564,8 @@
           3,
           5,
           5,
-          0
+          4,
+          1
         ]
       },
       {
@@ -691,7 +695,8 @@
           0,
           0,
           2,
-          0,
+          1,
+          2,
           0
         ]
       },
@@ -823,7 +828,8 @@
           0,
           1,
           0,
-          1
+          1,
+          0
         ]
       }
     ]
@@ -842,10 +848,10 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-21589",
+      "Cve": "CVE-2026-86950",
       "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
     },
     {
       "Cve": "CVE-2026-88772",
@@ -854,28 +860,16 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-86950",
-      "Count": 5,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
-    },
-    {
       "Cve": "CVE-2026-111497",
       "Count": 5,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
     },
     {
-      "Cve": "CVE-2026-73570",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
-    },
-    {
-      "Cve": "CVE-2026-104935",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+      "Cve": "CVE-2026-21589",
+      "Count": 5,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
       "Cve": "CVE-2026-82329",
@@ -884,28 +878,40 @@
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-85706",
+      "Cve": "CVE-2026-88771",
       "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+    },
+    {
+      "Cve": "CVE-2026-76504",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 348
+      "Count": 352
     },
     {
       "Keyword": "critical",
-      "Count": 139
+      "Count": 140
     },
     {
       "Keyword": "malware",
-      "Count": 127
+      "Count": 128
     },
     {
       "Keyword": "zero-day",
-      "Count": 104
+      "Count": 105
     },
     {
       "Keyword": "ransomware",
@@ -913,11 +919,11 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 57
+      "Count": 58
     },
     {
       "Keyword": "phishing",
-      "Count": 56
+      "Count": 57
     },
     {
       "Keyword": "leak",
@@ -933,6 +939,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-05T07:06:33Z",
+      "Url": "http://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
       "Source": "BleepingComputer",
@@ -1140,17 +1157,6 @@
       "Cvss": 9.9,
       "Cves": [
         "CVE-2026-104351"
-      ]
-    },
-    {
-      "Title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-28T06:04:58Z",
-      "Url": "http://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-35273"
       ]
     }
   ]
