@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-11-06T10:40:11Z",
-  "TotalArticles": 2398,
+  "GeneratedAt": "2026-11-07T09:52:15Z",
+  "TotalArticles": 2421,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1052
+      "Count": 1061
     },
     {
       "Source": "BleepingComputer",
-      "Count": 720
+      "Count": 729
     },
     {
       "Source": "Dark Reading",
-      "Count": 354
+      "Count": 358
     },
     {
       "Source": "CISA Advisories",
-      "Count": 245
+      "Count": 246
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 178
+      "Count": 181
     },
     {
       "Severity": "Medium",
-      "Count": 1082
+      "Count": 1090
     },
     {
       "Severity": "Low",
-      "Count": 1058
+      "Count": 1070
     }
   ],
   "DailyTrend": {
@@ -169,7 +169,8 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-07"
     ],
     "Datasets": [
       {
@@ -301,6 +302,7 @@
           14,
           11,
           10,
+          9,
           0
         ]
       },
@@ -433,7 +435,8 @@
           10,
           11,
           8,
-          2
+          10,
+          1
         ]
       },
       {
@@ -564,8 +567,9 @@
           3,
           5,
           5,
+          5,
           4,
-          1
+          0
         ]
       },
       {
@@ -697,6 +701,7 @@
           2,
           1,
           2,
+          1,
           0
         ]
       },
@@ -829,6 +834,7 @@
           1,
           0,
           1,
+          0,
           0
         ]
       }
@@ -848,22 +854,10 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-86950",
-      "Count": 5,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
-    },
-    {
       "Cve": "CVE-2026-88772",
       "Count": 5,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
-    },
-    {
-      "Cve": "CVE-2026-111497",
-      "Count": 5,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
     },
     {
       "Cve": "CVE-2026-21589",
@@ -872,34 +866,46 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
+      "Cve": "CVE-2026-111497",
+      "Count": 5,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
+    },
+    {
+      "Cve": "CVE-2026-86950",
+      "Count": 5,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
+    },
+    {
+      "Cve": "CVE-2026-5430",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+    },
+    {
+      "Cve": "CVE-2026-85706",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
+    },
+    {
       "Cve": "CVE-2026-82329",
       "Count": 4,
       "Severity": "Medium",
       "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-88771",
-      "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
-    },
-    {
       "Cve": "CVE-2026-76504",
       "Count": 4,
       "Severity": "Critical",
       "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
-    },
-    {
-      "Cve": "CVE-2026-73570",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 352
+      "Count": 356
     },
     {
       "Keyword": "critical",
@@ -911,7 +917,7 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 105
+      "Count": 106
     },
     {
       "Keyword": "ransomware",
@@ -919,7 +925,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 58
+      "Count": 59
     },
     {
       "Keyword": "phishing",
@@ -939,6 +945,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-06T16:08:38Z",
+      "Url": "http://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-06T15:21:49Z",
+      "Url": "http://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+      "Severity": "High",
+      "Cvss": 8.1,
+      "Cves": [
+        "CVE-2026-123158"
+      ]
+    },
+    {
+      "Title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-06T12:37:22Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
       "Source": "The Hacker News",
@@ -1124,39 +1163,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Volt Typhoon hides zero-day attacks using 'Silent Train' framework",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-28T16:00:00Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-28T12:48:03Z",
-      "Url": "http://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-101767"
-      ]
-    },
-    {
-      "Title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-28T11:15:51Z",
-      "Url": "http://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
-      "Severity": "Critical",
-      "Cvss": 9.9,
-      "Cves": [
-        "CVE-2026-104351"
       ]
     }
   ]
