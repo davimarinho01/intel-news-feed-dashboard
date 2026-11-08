@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-11-07T09:52:15Z",
-  "TotalArticles": 2421,
+  "GeneratedAt": "2026-11-08T10:05:48Z",
+  "TotalArticles": 2424,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1061
+      "Count": 1062
     },
     {
       "Source": "BleepingComputer",
-      "Count": 729
+      "Count": 731
     },
     {
       "Source": "Dark Reading",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 1090
+      "Count": 1091
     },
     {
       "Severity": "Low",
-      "Count": 1070
+      "Count": 1072
     }
   ],
   "DailyTrend": {
@@ -303,7 +303,7 @@
           11,
           10,
           9,
-          0
+          1
         ]
       },
       {
@@ -436,7 +436,7 @@
           11,
           8,
           10,
-          1
+          3
         ]
       },
       {
@@ -905,7 +905,7 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 356
+      "Count": 357
     },
     {
       "Keyword": "critical",
