@@ -1,44 +1,44 @@
 {
-  "GeneratedAt": "2026-11-10T10:56:50Z",
-  "TotalArticles": 2458,
+  "GeneratedAt": "2026-11-11T10:38:49Z",
+  "TotalArticles": 2497,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1073
+      "Count": 1090
     },
     {
       "Source": "BleepingComputer",
-      "Count": 747
+      "Count": 759
     },
     {
       "Source": "Dark Reading",
-      "Count": 364
+      "Count": 372
     },
     {
       "Source": "CISA Advisories",
-      "Count": 247
+      "Count": 248
     },
     {
       "Source": "Krebs on Security",
-      "Count": 27
+      "Count": 28
     }
   ],
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 80
+      "Count": 81
     },
     {
       "Severity": "High",
-      "Count": 184
+      "Count": 192
     },
     {
       "Severity": "Medium",
-      "Count": 1106
+      "Count": 1119
     },
     {
       "Severity": "Low",
-      "Count": 1088
+      "Count": 1105
     }
   ],
   "DailyTrend": {
@@ -173,7 +173,8 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "Datasets": [
       {
@@ -309,6 +310,7 @@
           1,
           0,
           11,
+          17,
           0
         ]
       },
@@ -445,7 +447,8 @@
           3,
           1,
           11,
-          4
+          14,
+          2
         ]
       },
       {
@@ -580,7 +583,8 @@
           4,
           0,
           0,
-          6,
+          7,
+          7,
           0
         ]
       },
@@ -716,6 +720,7 @@
           1,
           0,
           0,
+          1,
           1,
           0
         ]
@@ -853,6 +858,7 @@
           0,
           0,
           0,
+          1,
           0
         ]
       }
@@ -866,10 +872,22 @@
       "Url": "http://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html"
     },
     {
+      "Cve": "CVE-2026-88772",
+      "Count": 5,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
+    },
+    {
       "Cve": "CVE-2026-21589",
       "Count": 5,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
+    },
+    {
+      "Cve": "CVE-2026-109619",
+      "Count": 5,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-86950",
@@ -884,28 +902,10 @@
       "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
     },
     {
-      "Cve": "CVE-2026-88772",
-      "Count": 5,
+      "Cve": "CVE-2026-88771",
+      "Count": 4,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
-    },
-    {
-      "Cve": "CVE-2026-109619",
-      "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
-      "Cve": "CVE-2026-5430",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
       "Cve": "CVE-2026-20079",
@@ -914,32 +914,38 @@
       "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
-      "Cve": "CVE-2026-73570",
+      "Cve": "CVE-2026-82329",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+    },
+    {
+      "Cve": "CVE-2026-104935",
       "Count": 4,
       "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 365
+      "Count": 375
     },
     {
       "Keyword": "critical",
-      "Count": 141
+      "Count": 143
     },
     {
       "Keyword": "malware",
-      "Count": 130
+      "Count": 133
     },
     {
       "Keyword": "zero-day",
-      "Count": 108
+      "Count": 111
     },
     {
       "Keyword": "ransomware",
-      "Count": 85
+      "Count": 86
     },
     {
       "Keyword": "vulnerability",
@@ -951,18 +957,84 @@
     },
     {
       "Keyword": "leak",
-      "Count": 32
+      "Count": 34
     },
     {
       "Keyword": "code execution",
-      "Count": 29
+      "Count": 30
     },
     {
       "Keyword": "cvss",
-      "Count": 25
+      "Count": 26
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-11T10:12:08Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
+      "Source": "Dark Reading",
+      "PublishedAt": "2026-11-10T22:26:51Z",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "Source": "Krebs on Security",
+      "PublishedAt": "2026-11-10T21:55:03Z",
+      "Url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-10T19:07:36Z",
+      "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-10T18:12:21Z",
+      "Url": "http://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-10T16:17:16Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Google patches eighth Chrome zero-day exploited in attacks this year",
       "Source": "BleepingComputer",
@@ -972,6 +1044,39 @@
       "Cvss": null,
       "Cves": [
         null
+      ]
+    },
+    {
+      "Title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-10T06:52:54Z",
+      "Url": "http://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+      "Severity": "High",
+      "Cvss": 8.8,
+      "Cves": [
+        "CVE-2026-125350"
+      ]
+    },
+    {
+      "Title": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-10T06:44:36Z",
+      "Url": "http://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-10T06:31:42Z",
+      "Url": "http://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-123218"
       ]
     },
     {
@@ -1082,105 +1187,6 @@
       "Cvss": 8.1,
       "Cves": [
         "CVE-2026-119977"
-      ]
-    },
-    {
-      "Title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-03T15:59:19Z",
-      "Url": "http://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
-      "Severity": "Critical",
-      "Cvss": 9.3,
-      "Cves": [
-        "CVE-2026-116606"
-      ]
-    },
-    {
-      "Title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-03T05:34:41Z",
-      "Url": "http://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-58115"
-      ]
-    },
-    {
-      "Title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-11-02T12:47:00Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-11-02T09:33:26Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-31T08:27:43Z",
-      "Url": "http://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-      "Severity": "High",
-      "Cvss": 8.8,
-      "Cves": [
-        "CVE-2026-111357"
-      ]
-    },
-    {
-      "Title": "CISA says max severity GitLab flaw now exploited in the wild",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-30T13:00:32Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-30T07:27:05Z",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
-      "Severity": "Critical",
-      "Cvss": 10.0,
-      "Cves": [
-        "CVE-2026-97229"
-      ]
-    },
-    {
-      "Title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-10-29T11:10:13Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-10-29T10:44:46Z",
-      "Url": "http://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        "CVE-2026-76418"
       ]
     }
   ]
