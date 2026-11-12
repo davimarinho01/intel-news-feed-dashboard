@@ -1,18 +1,18 @@
 {
-  "GeneratedAt": "2026-11-11T10:38:49Z",
-  "TotalArticles": 2497,
+  "GeneratedAt": "2026-11-12T10:51:18Z",
+  "TotalArticles": 2524,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1090
+      "Count": 1100
     },
     {
       "Source": "BleepingComputer",
-      "Count": 759
+      "Count": 770
     },
     {
       "Source": "Dark Reading",
-      "Count": 372
+      "Count": 377
     },
     {
       "Source": "CISA Advisories",
@@ -20,25 +20,25 @@
     },
     {
       "Source": "Krebs on Security",
-      "Count": 28
+      "Count": 29
     }
   ],
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 81
+      "Count": 82
     },
     {
       "Severity": "High",
-      "Count": 192
+      "Count": 195
     },
     {
       "Severity": "Medium",
-      "Count": 1119
+      "Count": 1128
     },
     {
       "Severity": "Low",
-      "Count": 1105
+      "Count": 1119
     }
   ],
   "DailyTrend": {
@@ -174,7 +174,8 @@
       "2026-11-08",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "Datasets": [
       {
@@ -311,6 +312,7 @@
           0,
           11,
           17,
+          10,
           0
         ]
       },
@@ -448,6 +450,7 @@
           1,
           11,
           14,
+          11,
           2
         ]
       },
@@ -585,7 +588,8 @@
           0,
           7,
           7,
-          0
+          3,
+          2
         ]
       },
       {
@@ -722,6 +726,7 @@
           0,
           1,
           1,
+          0,
           0
         ]
       },
@@ -859,6 +864,7 @@
           0,
           0,
           1,
+          1,
           0
         ]
       }
@@ -902,16 +908,16 @@
       "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
     },
     {
-      "Cve": "CVE-2026-88771",
+      "Cve": "CVE-2026-73570",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-59310",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-82329",
@@ -929,11 +935,11 @@
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 375
+      "Count": 378
     },
     {
       "Keyword": "critical",
-      "Count": 143
+      "Count": 144
     },
     {
       "Keyword": "malware",
@@ -941,11 +947,11 @@
     },
     {
       "Keyword": "zero-day",
-      "Count": 111
+      "Count": 112
     },
     {
       "Keyword": "ransomware",
-      "Count": 86
+      "Count": 88
     },
     {
       "Keyword": "vulnerability",
@@ -957,7 +963,7 @@
     },
     {
       "Keyword": "leak",
-      "Count": 34
+      "Count": 35
     },
     {
       "Keyword": "code execution",
@@ -970,6 +976,39 @@
   ],
   "RecentCritical": [
     {
+      "Title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
+      "Source": "Dark Reading",
+      "PublishedAt": "2026-11-11T20:05:18Z",
+      "Url": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-11T16:12:46Z",
+      "Url": "http://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+      "Severity": "Critical",
+      "Cvss": 9.6,
+      "Cves": [
+        "CVE-2026-108186"
+      ]
+    },
+    {
+      "Title": "N-able releases security hotfixes for zero-day vulnerabilities",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-11T12:32:27Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
       "Title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
       "Source": "BleepingComputer",
       "PublishedAt": "2026-11-11T10:12:08Z",
@@ -978,6 +1017,17 @@
       "Cvss": null,
       "Cves": [
         null
+      ]
+    },
+    {
+      "Title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-11T06:04:02Z",
+      "Url": "http://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "Severity": "High",
+      "Cvss": 7.5,
+      "Cves": [
+        "CVE-2026-20320"
       ]
     },
     {
@@ -1143,50 +1193,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-11-04T20:58:19Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-04T17:00:38Z",
-      "Url": "http://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
-      "Severity": "Critical",
-      "Cvss": 9.1,
-      "Cves": [
-        "CVE-2026-109593"
-      ]
-    },
-    {
-      "Title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-11-04T12:11:05Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-04T05:43:11Z",
-      "Url": "http://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
-      "Severity": "High",
-      "Cvss": 8.1,
-      "Cves": [
-        "CVE-2026-119977"
       ]
     }
   ]
