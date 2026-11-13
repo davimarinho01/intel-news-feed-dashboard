@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-11-12T10:51:18Z",
-  "TotalArticles": 2524,
+  "GeneratedAt": "2026-11-13T10:47:11Z",
+  "TotalArticles": 2563,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1100
+      "Count": 1116
     },
     {
       "Source": "BleepingComputer",
-      "Count": 770
+      "Count": 783
     },
     {
       "Source": "Dark Reading",
-      "Count": 377
+      "Count": 382
     },
     {
       "Source": "CISA Advisories",
-      "Count": 248
+      "Count": 253
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 82
+      "Count": 84
     },
     {
       "Severity": "High",
-      "Count": 195
+      "Count": 199
     },
     {
       "Severity": "Medium",
-      "Count": 1128
+      "Count": 1149
     },
     {
       "Severity": "Low",
-      "Count": 1119
+      "Count": 1131
     }
   ],
   "DailyTrend": {
@@ -175,7 +175,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "Datasets": [
       {
@@ -313,6 +314,7 @@
           11,
           17,
           10,
+          16,
           0
         ]
       },
@@ -451,7 +453,8 @@
           11,
           14,
           11,
-          2
+          12,
+          3
         ]
       },
       {
@@ -588,8 +591,9 @@
           0,
           7,
           7,
-          3,
-          2
+          4,
+          6,
+          0
         ]
       },
       {
@@ -727,6 +731,7 @@
           1,
           1,
           0,
+          5,
           0
         ]
       },
@@ -865,6 +870,7 @@
           0,
           1,
           1,
+          0,
           0
         ]
       }
@@ -873,15 +879,21 @@
   "TopCves": [
     {
       "Cve": "CVE-2026-109618",
-      "Count": 6,
+      "Count": 8,
       "Severity": "Medium",
-      "Url": "http://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html"
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05"
     },
     {
-      "Cve": "CVE-2026-88772",
-      "Count": 5,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
+      "Cve": "CVE-2026-111497",
+      "Count": 8,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03"
+    },
+    {
+      "Cve": "CVE-2026-109619",
+      "Count": 7,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05"
     },
     {
       "Cve": "CVE-2026-21589",
@@ -890,22 +902,22 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-109619",
-      "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
-    },
-    {
       "Cve": "CVE-2026-86950",
       "Count": 5,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
     },
     {
-      "Cve": "CVE-2026-111497",
+      "Cve": "CVE-2026-88772",
       "Count": 5,
       "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
+      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
+    },
+    {
+      "Cve": "CVE-2026-20079",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     },
     {
       "Cve": "CVE-2026-73570",
@@ -920,34 +932,28 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
-      "Cve": "CVE-2026-82329",
+      "Cve": "CVE-2026-5430",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
-    },
-    {
-      "Cve": "CVE-2026-104935",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 378
+      "Count": 382
     },
     {
       "Keyword": "critical",
-      "Count": 144
+      "Count": 149
     },
     {
       "Keyword": "malware",
-      "Count": 133
+      "Count": 137
     },
     {
       "Keyword": "zero-day",
-      "Count": 112
+      "Count": 116
     },
     {
       "Keyword": "ransomware",
@@ -963,11 +969,11 @@
     },
     {
       "Keyword": "leak",
-      "Count": 35
+      "Count": 37
     },
     {
       "Keyword": "code execution",
-      "Count": 30
+      "Count": 32
     },
     {
       "Keyword": "cvss",
@@ -975,6 +981,72 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Check Point warns of zero-day flaw exploited for root access",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-13T10:44:22Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-12T19:51:16Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-12T17:50:27Z",
+      "Url": "http://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-12T16:04:00Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-12T15:38:49Z",
+      "Url": "http://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+      "Severity": "Critical",
+      "Cvss": 9.3,
+      "Cves": [
+        "CVE-2026-120868"
+      ]
+    },
+    {
+      "Title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-12T13:08:28Z",
+      "Url": "http://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
+      "Severity": "Critical",
+      "Cvss": 9.9,
+      "Cves": [
+        "CVE-2026-84869"
+      ]
+    },
     {
       "Title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
       "Source": "Dark Reading",
@@ -1127,72 +1199,6 @@
       "Cvss": 9.8,
       "Cves": [
         "CVE-2026-123218"
-      ]
-    },
-    {
-      "Title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-11-09T21:26:25Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-09T06:05:24Z",
-      "Url": "http://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
-      "Severity": "High",
-      "Cvss": 7.1,
-      "Cves": [
-        "CVE-2026-19868"
-      ]
-    },
-    {
-      "Title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-06T16:08:38Z",
-      "Url": "http://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-06T15:21:49Z",
-      "Url": "http://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
-      "Severity": "High",
-      "Cvss": 8.1,
-      "Cves": [
-        "CVE-2026-123158"
-      ]
-    },
-    {
-      "Title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-11-06T12:37:22Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-05T07:06:33Z",
-      "Url": "http://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
       ]
     }
   ]
