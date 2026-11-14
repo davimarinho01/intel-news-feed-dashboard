@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-11-13T10:47:11Z",
-  "TotalArticles": 2563,
+  "GeneratedAt": "2026-11-14T10:01:57Z",
+  "TotalArticles": 2581,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1116
+      "Count": 1125
     },
     {
       "Source": "BleepingComputer",
-      "Count": 783
+      "Count": 788
     },
     {
       "Source": "Dark Reading",
-      "Count": 382
+      "Count": 385
     },
     {
       "Source": "CISA Advisories",
-      "Count": 253
+      "Count": 254
     },
     {
       "Source": "Krebs on Security",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 1149
+      "Count": 1157
     },
     {
       "Severity": "Low",
-      "Count": 1131
+      "Count": 1141
     }
   ],
   "DailyTrend": {
@@ -315,7 +315,7 @@
           17,
           10,
           16,
-          0
+          9
         ]
       },
       {
@@ -454,7 +454,7 @@
           14,
           11,
           12,
-          3
+          8
         ]
       },
       {
@@ -591,9 +591,9 @@
           0,
           7,
           7,
-          4,
+          5,
           6,
-          0
+          2
         ]
       },
       {
@@ -732,7 +732,7 @@
           1,
           0,
           5,
-          0
+          1
         ]
       },
       {
@@ -878,22 +878,28 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-109618",
-      "Count": 8,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05"
-    },
-    {
       "Cve": "CVE-2026-111497",
       "Count": 8,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03"
     },
     {
+      "Cve": "CVE-2026-109618",
+      "Count": 8,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05"
+    },
+    {
       "Cve": "CVE-2026-109619",
       "Count": 7,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05"
+    },
+    {
+      "Cve": "CVE-2026-88772",
+      "Count": 5,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
       "Cve": "CVE-2026-21589",
@@ -908,16 +914,10 @@
       "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
     },
     {
-      "Cve": "CVE-2026-88772",
-      "Count": 5,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
-    },
-    {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-59310",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     },
     {
       "Cve": "CVE-2026-73570",
@@ -926,26 +926,26 @@
       "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     },
     {
-      "Cve": "CVE-2026-59310",
+      "Cve": "CVE-2026-82329",
       "Count": 4,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
     },
     {
-      "Cve": "CVE-2026-5430",
+      "Cve": "CVE-2026-104935",
       "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+      "Severity": "High",
+      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 382
+      "Count": 385
     },
     {
       "Keyword": "critical",
-      "Count": 149
+      "Count": 150
     },
     {
       "Keyword": "malware",
