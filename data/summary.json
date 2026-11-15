@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-11-14T10:01:57Z",
-  "TotalArticles": 2581,
+  "GeneratedAt": "2026-11-15T10:37:53Z",
+  "TotalArticles": 2584,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1125
+      "Count": 1126
     },
     {
       "Source": "BleepingComputer",
-      "Count": 788
+      "Count": 790
     },
     {
       "Source": "Dark Reading",
@@ -30,7 +30,7 @@
     },
     {
       "Severity": "High",
-      "Count": 199
+      "Count": 200
     },
     {
       "Severity": "Medium",
@@ -38,7 +38,7 @@
     },
     {
       "Severity": "Low",
-      "Count": 1141
+      "Count": 1143
     }
   ],
   "DailyTrend": {
@@ -176,7 +176,8 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-14"
     ],
     "Datasets": [
       {
@@ -315,7 +316,8 @@
           17,
           10,
           16,
-          9
+          9,
+          1
         ]
       },
       {
@@ -454,7 +456,8 @@
           14,
           11,
           12,
-          8
+          8,
+          2
         ]
       },
       {
@@ -593,7 +596,8 @@
           7,
           5,
           6,
-          2
+          2,
+          0
         ]
       },
       {
@@ -732,7 +736,8 @@
           1,
           0,
           5,
-          1
+          1,
+          0
         ]
       },
       {
@@ -871,6 +876,7 @@
           1,
           1,
           0,
+          0,
           0
         ]
       }
@@ -878,22 +884,22 @@
   },
   "TopCves": [
     {
-      "Cve": "CVE-2026-111497",
-      "Count": 8,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03"
-    },
-    {
       "Cve": "CVE-2026-109618",
       "Count": 8,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05"
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
+    },
+    {
+      "Cve": "CVE-2026-111497",
+      "Count": 8,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04"
     },
     {
       "Cve": "CVE-2026-109619",
       "Count": 7,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05"
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
     },
     {
       "Cve": "CVE-2026-88772",
@@ -902,46 +908,46 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-21589",
-      "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
-    },
-    {
       "Cve": "CVE-2026-86950",
       "Count": 5,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
     },
     {
-      "Cve": "CVE-2026-59310",
-      "Count": 4,
+      "Cve": "CVE-2026-21589",
+      "Count": 5,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-73570",
+      "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
-    },
-    {
-      "Cve": "CVE-2026-82329",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/"
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
       "Cve": "CVE-2026-104935",
       "Count": 4,
       "Severity": "High",
       "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+    },
+    {
+      "Cve": "CVE-2026-105133",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "http://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html"
+    },
+    {
+      "Cve": "CVE-2026-73570",
+      "Count": 4,
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 385
+      "Count": 386
     },
     {
       "Keyword": "critical",
@@ -981,6 +987,17 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-14T12:38:35Z",
+      "Url": "http://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "Severity": "High",
+      "Cvss": 8.6,
+      "Cves": [
+        "CVE-2026-114713"
+      ]
+    },
     {
       "Title": "Check Point warns of zero-day flaw exploited for root access",
       "Source": "BleepingComputer",
@@ -1188,17 +1205,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-10T06:31:42Z",
-      "Url": "http://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
-      "Severity": "Critical",
-      "Cvss": 9.8,
-      "Cves": [
-        "CVE-2026-123218"
       ]
     }
   ]
