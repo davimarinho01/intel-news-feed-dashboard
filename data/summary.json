@@ -1,14 +1,14 @@
 {
-  "GeneratedAt": "2026-11-15T10:37:53Z",
-  "TotalArticles": 2584,
+  "GeneratedAt": "2026-11-16T10:54:48Z",
+  "TotalArticles": 2590,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1126
+      "Count": 1128
     },
     {
       "Source": "BleepingComputer",
-      "Count": 790
+      "Count": 794
     },
     {
       "Source": "Dark Reading",
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 1157
+      "Count": 1159
     },
     {
       "Severity": "Low",
-      "Count": 1143
+      "Count": 1147
     }
   ],
   "DailyTrend": {
@@ -177,7 +177,9 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15",
+      "2026-11-16"
     ],
     "Datasets": [
       {
@@ -317,7 +319,9 @@
           10,
           16,
           9,
-          1
+          1,
+          2,
+          0
         ]
       },
       {
@@ -457,6 +461,8 @@
           11,
           12,
           8,
+          2,
+          2,
           2
         ]
       },
@@ -597,6 +603,8 @@
           5,
           6,
           2,
+          0,
+          0,
           0
         ]
       },
@@ -737,6 +745,8 @@
           0,
           5,
           1,
+          0,
+          0,
           0
         ]
       },
@@ -877,6 +887,8 @@
           1,
           0,
           0,
+          0,
+          0,
           0
         ]
       }
@@ -893,7 +905,7 @@
       "Cve": "CVE-2026-111497",
       "Count": 8,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04"
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03"
     },
     {
       "Cve": "CVE-2026-109619",
@@ -967,7 +979,7 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 59
+      "Count": 60
     },
     {
       "Keyword": "phishing",
