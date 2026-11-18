@@ -1,26 +1,26 @@
 {
-  "GeneratedAt": "2026-11-17T11:39:32Z",
-  "TotalArticles": 2616,
+  "GeneratedAt": "2026-11-18T11:26:35Z",
+  "TotalArticles": 2656,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1135
+      "Count": 1145
     },
     {
       "Source": "BleepingComputer",
-      "Count": 809
+      "Count": 820
     },
     {
       "Source": "Dark Reading",
-      "Count": 389
+      "Count": 394
     },
     {
       "Source": "CISA Advisories",
-      "Count": 254
+      "Count": 267
     },
     {
       "Source": "Krebs on Security",
-      "Count": 29
+      "Count": 30
     }
   ],
   "SeverityBreakdown": [
@@ -34,11 +34,11 @@
     },
     {
       "Severity": "Medium",
-      "Count": 1171
+      "Count": 1195
     },
     {
       "Severity": "Low",
-      "Count": 1160
+      "Count": 1176
     }
   ],
   "DailyTrend": {
@@ -180,7 +180,8 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "Datasets": [
       {
@@ -323,6 +324,7 @@
           1,
           2,
           7,
+          10,
           0
         ]
       },
@@ -466,7 +468,8 @@
           2,
           2,
           12,
-          5
+          13,
+          3
         ]
       },
       {
@@ -608,6 +611,7 @@
           2,
           0,
           0,
+          5,
           4,
           0
         ]
@@ -752,6 +756,7 @@
           0,
           0,
           0,
+          13,
           0
         ]
       },
@@ -895,23 +900,24 @@
           0,
           0,
           0,
-          0
+          0,
+          1
         ]
       }
     ]
   },
   "TopCves": [
     {
+      "Cve": "CVE-2026-111497",
+      "Count": 10,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04"
+    },
+    {
       "Cve": "CVE-2026-109618",
       "Count": 8,
       "Severity": "Medium",
       "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
-    },
-    {
-      "Cve": "CVE-2026-111497",
-      "Count": 8,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03"
     },
     {
       "Cve": "CVE-2026-109619",
@@ -920,16 +926,16 @@
       "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
     },
     {
-      "Cve": "CVE-2026-88772",
-      "Count": 5,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
-    },
-    {
       "Cve": "CVE-2026-86950",
       "Count": 5,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
+    },
+    {
+      "Cve": "CVE-2026-88772",
+      "Count": 5,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
       "Cve": "CVE-2026-21589",
@@ -938,42 +944,42 @@
       "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
-    },
-    {
       "Cve": "CVE-2026-104935",
       "Count": 4,
       "Severity": "High",
       "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
     },
     {
-      "Cve": "CVE-2026-105133",
-      "Count": 4,
-      "Severity": "Medium",
-      "Url": "http://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html"
-    },
-    {
       "Cve": "CVE-2026-73570",
       "Count": 4,
       "Severity": "High",
       "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+    },
+    {
+      "Cve": "CVE-2026-88771",
+      "Count": 4,
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+    },
+    {
+      "Cve": "CVE-2026-105133",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "http://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 388
+      "Count": 393
     },
     {
       "Keyword": "critical",
-      "Count": 150
+      "Count": 153
     },
     {
       "Keyword": "malware",
-      "Count": 140
+      "Count": 142
     },
     {
       "Keyword": "zero-day",
@@ -985,15 +991,15 @@
     },
     {
       "Keyword": "vulnerability",
-      "Count": 60
+      "Count": 63
     },
     {
       "Keyword": "phishing",
-      "Count": 57
+      "Count": 59
     },
     {
       "Keyword": "leak",
-      "Count": 37
+      "Count": 38
     },
     {
       "Keyword": "code execution",
