@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-11-18T11:26:35Z",
-  "TotalArticles": 2656,
+  "GeneratedAt": "2026-11-19T11:24:31Z",
+  "TotalArticles": 2683,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1145
+      "Count": 1157
     },
     {
       "Source": "BleepingComputer",
-      "Count": 820
+      "Count": 828
     },
     {
       "Source": "Dark Reading",
-      "Count": 394
+      "Count": 400
     },
     {
       "Source": "CISA Advisories",
-      "Count": 267
+      "Count": 268
     },
     {
       "Source": "Krebs on Security",
@@ -26,19 +26,19 @@
   "SeverityBreakdown": [
     {
       "Severity": "Critical",
-      "Count": 84
+      "Count": 86
     },
     {
       "Severity": "High",
-      "Count": 201
+      "Count": 202
     },
     {
       "Severity": "Medium",
-      "Count": 1195
+      "Count": 1204
     },
     {
       "Severity": "Low",
-      "Count": 1176
+      "Count": 1191
     }
   ],
   "DailyTrend": {
@@ -181,7 +181,8 @@
       "2026-11-15",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "Datasets": [
       {
@@ -325,6 +326,7 @@
           2,
           7,
           10,
+          12,
           0
         ]
       },
@@ -469,7 +471,8 @@
           2,
           12,
           13,
-          3
+          9,
+          2
         ]
       },
       {
@@ -613,7 +616,8 @@
           0,
           5,
           4,
-          0
+          5,
+          1
         ]
       },
       {
@@ -757,6 +761,7 @@
           0,
           0,
           13,
+          1,
           0
         ]
       },
@@ -901,7 +906,8 @@
           0,
           0,
           0,
-          1
+          1,
+          0
         ]
       }
     ]
@@ -911,7 +917,7 @@
       "Cve": "CVE-2026-111497",
       "Count": 10,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04"
+      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03"
     },
     {
       "Cve": "CVE-2026-109618",
@@ -926,10 +932,10 @@
       "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
     },
     {
-      "Cve": "CVE-2026-86950",
+      "Cve": "CVE-2026-21589",
       "Count": 5,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
       "Cve": "CVE-2026-88772",
@@ -938,22 +944,22 @@
       "Url": "http://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
     },
     {
-      "Cve": "CVE-2026-21589",
+      "Cve": "CVE-2026-86950",
       "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
+      "Severity": "High",
+      "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
     },
     {
-      "Cve": "CVE-2026-104935",
+      "Cve": "CVE-2026-18577",
       "Count": 4,
       "Severity": "High",
-      "Url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
     },
     {
-      "Cve": "CVE-2026-73570",
+      "Cve": "CVE-2026-76504",
       "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
     },
     {
       "Cve": "CVE-2026-88771",
@@ -962,24 +968,24 @@
       "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
     },
     {
-      "Cve": "CVE-2026-105133",
+      "Cve": "CVE-2026-20079",
       "Count": 4,
-      "Severity": "Medium",
-      "Url": "http://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html"
+      "Severity": "Critical",
+      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 393
+      "Count": 396
     },
     {
       "Keyword": "critical",
-      "Count": 153
+      "Count": 156
     },
     {
       "Keyword": "malware",
-      "Count": 142
+      "Count": 143
     },
     {
       "Keyword": "zero-day",
@@ -987,7 +993,7 @@
     },
     {
       "Keyword": "ransomware",
-      "Count": 90
+      "Count": 92
     },
     {
       "Keyword": "vulnerability",
@@ -1003,7 +1009,7 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 32
+      "Count": 33
     },
     {
       "Keyword": "cvss",
@@ -1011,6 +1017,39 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-18T17:10:45Z",
+      "Url": "http://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+      "Severity": "Critical",
+      "Cvss": 9.8,
+      "Cves": [
+        "CVE-2026-129448"
+      ]
+    },
+    {
+      "Title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-18T08:24:31Z",
+      "Url": "http://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+      "Severity": "Critical",
+      "Cvss": 9.4,
+      "Cves": [
+        "CVE-2026-115731"
+      ]
+    },
+    {
+      "Title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-18T08:24:23Z",
+      "Url": "http://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+      "Severity": "High",
+      "Cvss": 8.1,
+      "Cves": [
+        "CVE-2026-114938"
+      ]
+    },
     {
       "Title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
       "Source": "The Hacker News",
@@ -1196,39 +1235,6 @@
       "Cvss": null,
       "Cves": [
         null
-      ]
-    },
-    {
-      "Title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-11-10T16:17:16Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Google patches eighth Chrome zero-day exploited in attacks this year",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-11-10T08:51:25Z",
-      "Url": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-10T06:52:54Z",
-      "Url": "http://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-      "Severity": "High",
-      "Cvss": 8.8,
-      "Cves": [
-        "CVE-2026-125350"
       ]
     }
   ]
