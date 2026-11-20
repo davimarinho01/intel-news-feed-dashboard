@@ -1,22 +1,22 @@
 {
-  "GeneratedAt": "2026-11-19T11:24:31Z",
-  "TotalArticles": 2683,
+  "GeneratedAt": "2026-11-20T11:15:15Z",
+  "TotalArticles": 2713,
   "SourceBreakdown": [
     {
       "Source": "The Hacker News",
-      "Count": 1157
+      "Count": 1168
     },
     {
       "Source": "BleepingComputer",
-      "Count": 828
+      "Count": 839
     },
     {
       "Source": "Dark Reading",
-      "Count": 400
+      "Count": 405
     },
     {
       "Source": "CISA Advisories",
-      "Count": 268
+      "Count": 271
     },
     {
       "Source": "Krebs on Security",
@@ -30,15 +30,15 @@
     },
     {
       "Severity": "High",
-      "Count": 202
+      "Count": 204
     },
     {
       "Severity": "Medium",
-      "Count": 1204
+      "Count": 1224
     },
     {
       "Severity": "Low",
-      "Count": 1191
+      "Count": 1199
     }
   ],
   "DailyTrend": {
@@ -182,7 +182,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "Datasets": [
       {
@@ -327,6 +328,7 @@
           7,
           10,
           12,
+          11,
           0
         ]
       },
@@ -472,7 +474,8 @@
           12,
           13,
           9,
-          2
+          10,
+          3
         ]
       },
       {
@@ -617,7 +620,8 @@
           5,
           4,
           5,
-          1
+          6,
+          0
         ]
       },
       {
@@ -762,6 +766,7 @@
           0,
           13,
           1,
+          3,
           0
         ]
       },
@@ -907,6 +912,7 @@
           0,
           0,
           1,
+          0,
           0
         ]
       }
@@ -921,21 +927,15 @@
     },
     {
       "Cve": "CVE-2026-109618",
-      "Count": 8,
+      "Count": 9,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
+      "Url": "http://thehackernews.com/2026/11/everything-is-web-application-including.html"
     },
     {
       "Cve": "CVE-2026-109619",
-      "Count": 7,
+      "Count": 8,
       "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
-    },
-    {
-      "Cve": "CVE-2026-21589",
-      "Count": 5,
-      "Severity": "Medium",
-      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
+      "Url": "http://thehackernews.com/2026/11/everything-is-web-application-including.html"
     },
     {
       "Cve": "CVE-2026-88772",
@@ -950,54 +950,60 @@
       "Url": "http://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
     },
     {
-      "Cve": "CVE-2026-18577",
-      "Count": 4,
-      "Severity": "High",
-      "Url": "http://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+      "Cve": "CVE-2026-21589",
+      "Count": 5,
+      "Severity": "Medium",
+      "Url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
     },
     {
-      "Cve": "CVE-2026-76504",
+      "Cve": "CVE-2026-85706",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+      "Severity": "Medium",
+      "Url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk"
     },
     {
-      "Cve": "CVE-2026-88771",
+      "Cve": "CVE-2026-114938",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+      "Severity": "Low",
+      "Url": "http://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
     },
     {
-      "Cve": "CVE-2026-20079",
+      "Cve": "CVE-2026-105133",
       "Count": 4,
-      "Severity": "Critical",
-      "Url": "http://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+      "Severity": "Medium",
+      "Url": "http://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html"
+    },
+    {
+      "Cve": "CVE-2026-5430",
+      "Count": 4,
+      "Severity": "Medium",
+      "Url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
     }
   ],
   "TopKeywords": [
     {
       "Keyword": "exploit",
-      "Count": 396
+      "Count": 400
     },
     {
       "Keyword": "critical",
-      "Count": 156
+      "Count": 167
     },
     {
       "Keyword": "malware",
-      "Count": 143
+      "Count": 144
     },
     {
       "Keyword": "zero-day",
-      "Count": 116
+      "Count": 118
     },
     {
       "Keyword": "ransomware",
-      "Count": 92
+      "Count": 94
     },
     {
       "Keyword": "vulnerability",
-      "Count": 63
+      "Count": 64
     },
     {
       "Keyword": "phishing",
@@ -1009,7 +1015,7 @@
     },
     {
       "Keyword": "code execution",
-      "Count": 33
+      "Count": 36
     },
     {
       "Keyword": "cvss",
@@ -1017,6 +1023,28 @@
     }
   ],
   "RecentCritical": [
+    {
+      "Title": "VMware patches vCenter zero-day exploited in attacks since September",
+      "Source": "BleepingComputer",
+      "PublishedAt": "2026-11-20T00:26:25Z",
+      "Url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
+    {
+      "Title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
+      "Source": "The Hacker News",
+      "PublishedAt": "2026-11-19T15:11:06Z",
+      "Url": "http://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+      "Severity": "High",
+      "Cvss": null,
+      "Cves": [
+        null
+      ]
+    },
     {
       "Title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
       "Source": "The Hacker News",
@@ -1209,28 +1237,6 @@
       "Source": "Krebs on Security",
       "PublishedAt": "2026-11-10T21:55:03Z",
       "Url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-      "Source": "BleepingComputer",
-      "PublishedAt": "2026-11-10T19:07:36Z",
-      "Url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
-      "Severity": "High",
-      "Cvss": null,
-      "Cves": [
-        null
-      ]
-    },
-    {
-      "Title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
-      "Source": "The Hacker News",
-      "PublishedAt": "2026-11-10T18:12:21Z",
-      "Url": "http://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
       "Severity": "High",
       "Cvss": null,
       "Cves": [
